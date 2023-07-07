@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0brw1u5h2pvf"]
+
+[ext_resource type="PackedScene" uid="uid://crq2xjn1pfqua" path="res://Scenes/Player/Player.tscn" id="1_5blo6"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hj7ca"]
+sky_top_color = Color(0.219608, 0.690196, 1, 1)
+sky_horizon_color = Color(0.639216, 0.858824, 0.878431, 1)
+
+[sub_resource type="Sky" id="Sky_g0ddr"]
+sky_material = SubResource("ProceduralSkyMaterial_hj7ca")
+
+[sub_resource type="Environment" id="Environment_kpapw"]
+background_mode = 2
+sky = SubResource("Sky_g0ddr")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.369935, 0)
+use_collision = true
+size = Vector3(24.5121, 0.027, 24.6863)
+
+[node name="Player" parent="." instance=ExtResource("1_5blo6")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_kpapw")
