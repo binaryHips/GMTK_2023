@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://c1gv8twl1ft85"]
 
 [ext_resource type="PackedScene" uid="uid://crq2xjn1pfqua" path="res://Scenes/Player/Player.tscn" id="1_jnyte"]
-[ext_resource type="PackedScene" uid="uid://est2r0xb5v75" path="res://Assets/3D/Meshes/Foliage/Trees/Tree_001.fbx" id="2_nb3br"]
-[ext_resource type="PackedScene" uid="uid://dnukn3mfoapqs" path="res://Assets/3D/Meshes/Foliage/Trees/Tree_003.fbx" id="3_ejgva"]
-[ext_resource type="PackedScene" uid="uid://bi7kpgdtj8l7l" path="res://Assets/3D/Meshes/Foliage/Trees/Tree_004.fbx" id="4_pai21"]
-[ext_resource type="PackedScene" uid="uid://iloho5l732t6" path="res://Assets/3D/Meshes/Foliage/Trees/Tree_002.fbx" id="5_gblro"]
+[ext_resource type="PackedScene" uid="uid://est2r0xb5v75" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_001.fbx" id="2_nb3br"]
+[ext_resource type="PackedScene" uid="uid://dnukn3mfoapqs" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_003.fbx" id="3_ejgva"]
+[ext_resource type="PackedScene" uid="uid://bi7kpgdtj8l7l" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_004.fbx" id="4_pai21"]
+[ext_resource type="PackedScene" uid="uid://iloho5l732t6" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_002.fbx" id="5_gblro"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gvu4f"]
 sky_top_color = Color(0.321569, 0.447059, 0.666667, 1)

@@ -28,7 +28,7 @@ size = Vector3(0.135, 0.105, 0.455)
 height = 2.80009
 radius = 0.0335869
 
-[node name="Door" type="Node3D"]
+[node name="Door" type="Node3D" groups=["Persistant"]]
 script = ExtResource("1_p73jc")
 
 [node name="door_body" type="RigidBody3D" parent="." groups=["Interactables"]]

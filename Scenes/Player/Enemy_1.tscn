@@ -10,7 +10,7 @@ radius = 0.408599
 [sub_resource type="BoxShape3D" id="BoxShape3D_xaaei"]
 size = Vector3(10, 2, 10)
 
-[node name="Enemy_1" type="CharacterBody3D" groups=["Alive"]]
+[node name="Enemy_1" type="CharacterBody3D" groups=["Alive", "Persistant"]]
 script = ExtResource("1_m56q8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

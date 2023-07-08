@@ -10,7 +10,7 @@ colors = PackedColorArray(0.522695, 0.602834, 0.849887, 1, 0.623529, 0.203922, 0
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_3gg5l"]
 gradient = SubResource("Gradient_xk15u")
-width = 300
+width = 250
 height = 50
 
 [sub_resource type="Gradient" id="Gradient_ttwiy"]
@@ -19,7 +19,7 @@ colors = PackedColorArray(0.75036, 0, 0.114829, 1, 0.886275, 0.552941, 0.0156863
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_o1ftw"]
 gradient = SubResource("Gradient_ttwiy")
-width = 300
+width = 250
 height = 50
 fill_from = Vector2(0, 0.0213675)
 fill_to = Vector2(1, 0.025641)
@@ -58,8 +58,8 @@ layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.903
 anchor_bottom = 0.903
-offset_top = -32.144
-offset_right = 287.0
+offset_top = -18.144
+offset_right = 300.0
 offset_bottom = 31.856
 grow_vertical = 2
 value = 100.0

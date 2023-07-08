@@ -8,7 +8,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k17um"]
 radius = 0.612156
 
-[node name="Player" type="CharacterBody3D" groups=["Alive"]]
+[node name="Player" type="CharacterBody3D" groups=["Alive", "Persistant"]]
 collision_layer = 9
 script = ExtResource("1_ibxwc")
 
@@ -18,9 +18,10 @@ shape = SubResource("CapsuleShape3D_k17um")
 
 [node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.58811, 0)
+fov = 80.0
 
 [node name="hand" type="Node3D" parent="Camera"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.247824, -0.255218, -0.435164)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.384767, -0.333582, -0.583434)
 
 [node name="weapon" parent="Camera/hand" instance=ExtResource("1_i4gc5")]
 

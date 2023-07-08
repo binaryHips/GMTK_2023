@@ -19,7 +19,6 @@ func _ready():
 
 func _physics_process(delta):
 	
-	print(GameMaster.interface)
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
@@ -38,7 +37,13 @@ func _physics_process(delta):
 		if direction:
 			velocity.x = direction.x * SPEED
 			velocity.z = direction.z * SPEED
+			
+			$Camera/hand/weapon.position.y = cos(Time.get_ticks_msec()/100.0)/50 * min((velocity/3).length_squared(), 1)
+			
+			
+			
 		else:
+			$Camera/hand/weapon.position.y = lerp($Camera/hand/weapon.position.y, 0.0, 10*delta)
 			velocity.x = move_toward(velocity.x, 0, exp(-abs(velocity.x/40)))
 			velocity.z = move_toward(velocity.z, 0, exp(-abs(velocity.z/40)))
 	else:
@@ -72,8 +77,12 @@ func _input(event):
 		
 	if event.is_action_pressed("primary") && Input.mouse_mode == 2: #mouse captured
 		var pos = $Camera/RayCast.get_collision_point()
+		
 		if pos != null:
-			WEAPON.shoot(pos, self)
+			WEAPON.shoot(
+				(pos-$Camera.global_position) *1.001  + $Camera.global_position, #shoots juuuuuust a little further to avoid rounding errors
+				self
+				)
 	
 	if event.is_action_released("menue") && !GameMaster.game_paused:
 		
@@ -81,12 +90,16 @@ func _input(event):
 		
 	if event.is_action_pressed("interact") && Input.mouse_mode == 2: #mouse captured
 		var collider = $Camera/RayCast.get_collider()
+		
 		if collider:
 			if collider.is_in_group("Interactables"):
 				print($Camera.global_position.distance_to($Camera/RayCast.get_collision_point()))
+				
 				if $Camera.global_position.distance_to($Camera/RayCast.get_collision_point()) <= MAX_INTERACT_DISTANCE:
-					
 					collider.interact()
+					
+	if event.is_action_pressed("reload") && Input.mouse_mode == 2: #mouse captured
+		WEAPON.reload()
 
 
 ########
@@ -107,3 +120,17 @@ func apply_damage(n):
 func heal(n):
 	hp = min(hp+n, max_hp)
 	GameMaster.interface.update_lifebar(hp)
+	
+
+
+
+func save():
+	var save_dict = {
+		"filename" : get_scene_file_path(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x,
+		"pos_y" : position.y,
+		"pos_z" : position.z,
+		
+		"hp" : hp,
+	}
