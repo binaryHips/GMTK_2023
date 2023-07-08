@@ -1,0 +1,39 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dnukn3mfoapqs"
+path="res://.godot/imported/Tree_003.fbx-1666ed4b7d7da590a86a8e3fd89c589a.scn"
+
+[deps]
+
+source_file="res://Assets/3D/Meshes/Foliage/Trees/Tree_003.fbx"
+dest_files=["res://.godot/imported/Tree_003.fbx-1666ed4b7d7da590a86a8e3fd89c589a.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"Leaves": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Materials/Foliage/Trees/M_Tree_003.tres"
+}
+}
+}
+gltf/embedded_image_handling=1

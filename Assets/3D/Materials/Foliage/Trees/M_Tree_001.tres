@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://dttke7q62g3ur"]
+
+[ext_resource type="Texture2D" uid="uid://dc3c3jhd4gtul" path="res://Assets/3D/Textures/Foliage/Trees/T_Tree_001_D.png" id="1_88yid"]
+[ext_resource type="Texture2D" uid="uid://ngcfbnhqoe0j" path="res://Assets/3D/Textures/Foliage/Trees/T_Tree_001_N.png" id="2_q50d3"]
+[ext_resource type="Texture2D" uid="uid://r3k11xq3r2n1" path="res://Assets/3D/Textures/Foliage/Trees/T_Tree_001_ORM.png" id="3_mq57u"]
+
+[resource]
+albedo_texture = ExtResource("1_88yid")
+orm_texture = ExtResource("3_mq57u")
+normal_enabled = true
+normal_texture = ExtResource("2_q50d3")
