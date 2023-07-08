@@ -1,11 +1,11 @@
 [gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://5rdb1gkpvwvb"]
 
-[ext_resource type="Texture2D" uid="uid://bhl7vj2chqd0j" path="res://Assets/3D/Textures/Gameplay/T_Coffee_D.png" id="1_rg7se"]
-[ext_resource type="Texture2D" uid="uid://c7rr5w85dwxml" path="res://Assets/3D/Textures/Gameplay/T_Coffee_N.png" id="2_tqejb"]
-[ext_resource type="Texture2D" uid="uid://b3ej7088qkmcs" path="res://Assets/3D/Textures/Gameplay/T_Coffee_ORM.png" id="3_157ns"]
+[ext_resource type="Texture2D" uid="uid://ca2ood37ca7q0" path="res://Assets/3D/Textures/Gameplay/T_Key_D.png" id="1_ht3q4"]
+[ext_resource type="Texture2D" uid="uid://cvl2iuudd1q58" path="res://Assets/3D/Textures/Gameplay/T_Key_N.png" id="2_rak7t"]
+[ext_resource type="Texture2D" uid="uid://cpug4i5n42q2q" path="res://Assets/3D/Textures/Gameplay/T_Key_ORM.png" id="3_11624"]
 
 [resource]
-albedo_texture = ExtResource("1_rg7se")
-orm_texture = ExtResource("3_157ns")
+albedo_texture = ExtResource("1_ht3q4")
+orm_texture = ExtResource("3_11624")
 normal_enabled = true
-normal_texture = ExtResource("2_tqejb")
+normal_texture = ExtResource("2_rak7t")
