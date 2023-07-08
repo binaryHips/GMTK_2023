@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://b0brw1u5h2pvf"]
+[gd_scene load_steps=6 format=3 uid="uid://b0brw1u5h2pvf"]
 
 [ext_resource type="PackedScene" uid="uid://crq2xjn1pfqua" path="res://Scenes/Player/Player.tscn" id="1_5blo6"]
+[ext_resource type="PackedScene" uid="uid://dmcvphic6b33w" path="res://Assets/Asset_Scenes/Levels/dialogue_trigger_area.tscn" id="1_hddrw"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hj7ca"]
 sky_top_color = Color(0.219608, 0.690196, 1, 1)
@@ -19,6 +20,15 @@ sky = SubResource("Sky_g0ddr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.369935, 0)
 use_collision = true
 size = Vector3(24.5121, 0.027, 24.6863)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.94277, -0.00464821, 0.571642)
+use_collision = true
+size = Vector3(4.31013, 1.28548, 3.89957)
+
+[node name="DialogueTriggerArea" parent="CSGBox3D2" instance=ExtResource("1_hddrw")]
+transform = Transform3D(2.07, 0, 0, 0, 2.07, 0, 0, 0, 2.07, -0.126695, 0.580595, 0.121868)
+dialogue_line_name = "COLONEL_greetings"
 
 [node name="Player" parent="." instance=ExtResource("1_5blo6")]
 

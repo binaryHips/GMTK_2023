@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmcvphic6b33w"]
+
+[sub_resource type="GDScript" id="GDScript_8bleg"]
+resource_name = "DialogueTriggerArea"
+script/source = "extends Area3D
+
+@export var Speaker_name := \"Billy\"
+
+@export var speaker_color := Color.AQUA
+
+@export var dialogue_line_name:String
+
+@export var force_priority := false
+
+@export var speaker_priority := 10
+
+
+
+
+func _on_body_entered(body):
+	print(\"entré!\")
+	if force_priority == false:
+		DialogueManager.queue_dialogue(dialogue_line_name, Speaker_name, speaker_color, speaker_priority)
+	else:
+		DialogueManager.try_force_dialogue(dialogue_line_name, Speaker_name, speaker_color, speaker_priority)
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vd7bb"]
+size = Vector3(2.11942, 1.99662, 2.0118)
+
+[node name="DialogueTriggerArea" type="Area3D"]
+collision_layer = 8
+collision_mask = 8
+script = SubResource("GDScript_8bleg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_vd7bb")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

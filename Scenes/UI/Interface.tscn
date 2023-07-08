@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgr1nxes8lfxh"]
+
+[ext_resource type="PackedScene" uid="uid://ch6njkiom5r7c" path="res://Scenes/UI/Dialogue_window.tscn" id="1_r35xm"]
+[ext_resource type="Script" path="res://Scripts/UI/Interface.gd" id="1_vwxnt"]
+
+[node name="Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_vwxnt")
+
+[node name="DialogueWindow" parent="." instance=ExtResource("1_r35xm")]
+layout_mode = 1
+mouse_filter = 2

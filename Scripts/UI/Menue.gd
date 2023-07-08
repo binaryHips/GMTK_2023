@@ -23,7 +23,4 @@ func _on_quit_pressed():
 func _input(event):
 	if event.is_action_released("menue"):
 		
-		
 		GameMaster.toggle_pause(false)
-		
-		

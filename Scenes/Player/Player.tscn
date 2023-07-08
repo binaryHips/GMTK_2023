@@ -1,13 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://crq2xjn1pfqua"]
+[gd_scene load_steps=6 format=3 uid="uid://crq2xjn1pfqua"]
 
 [ext_resource type="PackedScene" uid="uid://uivvu1ce1juk" path="res://Scenes/Characters/weapon.tscn" id="1_i4gc5"]
 [ext_resource type="Script" path="res://Scripts/Player/Player.gd" id="1_ibxwc"]
 [ext_resource type="PackedScene" uid="uid://dn6r4vlgqoin" path="res://Scenes/UI/Menue.tscn" id="3_4dd0t"]
+[ext_resource type="PackedScene" uid="uid://dgr1nxes8lfxh" path="res://Scenes/UI/Interface.tscn" id="4_rkfip"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k17um"]
 radius = 0.612156
 
 [node name="Player" type="CharacterBody3D" groups=["Alive"]]
+collision_layer = 9
 script = ExtResource("1_ibxwc")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -25,6 +27,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.247824, -0.255218, -0.43516
 [node name="RayCast" type="RayCast3D" parent="Camera"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
 target_position = Vector3(0, -1000, 0)
+
+[node name="Interface" parent="." instance=ExtResource("4_rkfip")]
+rotation = -0.000494634
 
 [node name="Menue" parent="." instance=ExtResource("3_4dd0t")]
 visible = false

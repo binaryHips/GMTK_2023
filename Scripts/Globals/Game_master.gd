@@ -4,7 +4,9 @@ extends Node
 
 var player:CharacterBody3D
 
+var interface:Control
 var pause_menue:Control
+
 var game_paused := false
 
 func game_over():
