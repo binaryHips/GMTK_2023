@@ -1,0 +1,99 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn6r4vlgqoin"]
+
+[ext_resource type="Script" path="res://Scripts/UI/Menue.gd" id="1_yoy6p"]
+[ext_resource type="Shader" path="res://Assets/UI/Shaders/SS_Blur.gdshader" id="2_5h1gp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u51hh"]
+shader = ExtResource("2_5h1gp")
+shader_parameter/amount = 1.354
+
+[node name="Menue" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yoy6p")
+
+[node name="Resume" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.2
+anchor_right = 0.6
+anchor_bottom = 0.3
+offset_left = -1.80002
+offset_top = -6.40001
+offset_right = 2.79999
+offset_bottom = 6.79999
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "Resume"
+
+[node name="Reload" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.4
+anchor_right = 0.6
+anchor_bottom = 0.5
+offset_left = -1.80002
+offset_top = -7.20001
+offset_right = 2.79999
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 21
+text = "Reload from
+checkpoint"
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.6
+anchor_right = 0.6
+anchor_bottom = 0.7
+offset_left = -1.80002
+offset_top = -6.80002
+offset_right = 2.79999
+offset_bottom = 6.39999
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "Options"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.8
+anchor_right = 0.6
+anchor_bottom = 0.9
+offset_left = -1.80002
+offset_top = -6.80002
+offset_right = 2.79999
+offset_bottom = 6.39999
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "Quit"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+material = SubResource("ShaderMaterial_u51hh")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Reload" to="." method="_on_reload_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

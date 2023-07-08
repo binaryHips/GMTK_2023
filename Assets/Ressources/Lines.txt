@@ -1,0 +1,31 @@
+//File for the text and audio.
+//All audio file paths are from Assets/Audio/Lines/
+//If there are variations,The lines are separated by || and the audios have the number at the end (in order)
+
+//Colonel lines
+
+COLONEL_greetings ; Greetings soldier. I'm the Colonel, but you can call me just Colonel. I'll be the one guiding you through your mission. ; /Colonel/colonel_greetings
+
+COLONEL_mission ; You're currently in Reversistan. It's a country far from civilisation. We don't know much about except that they're in war and possess a large amount of lithium mines. Of course we're here to pacify those mines and exploit this war. ; /Colonel/colonel_mission
+
+COLONEL_mission_2 ; This is one of their military sites. Your objective is to kill their boss. I trust you with that matter. ; /Colonel/colonel_mission_2
+
+COLONEL_asks_pickup_cigarettes ; How look! they have cigarettes, so far away from civilisation? break one out kid, you deserve it. ; /Colonel/colonel_asks_pickup_cigarettes
+
+COLONEL_pickup_first_cigarettes ; Oh my god it actually healed you. Guess once we're done pacifying I'll start an import company. ; /Colonel/colonel_pickup_first_cigarettes
+
+
+
+COLONEL_gg_you_win ; Nice job kid! You killed their- wait... I just got a report telling me their boss was, in fact, that dumbass with the knife you killed when you arrived. This one was their janitor. Oh well, remember what I said about civilians? Anyway, your mission here is done. We're gonna send you an aircraft with the bill for your shock treatment. Don't even think about coming back without paying. Colonel, over. ; /Colonel/colonel_gg_you_win
+
+COLONEL_civilians_1 ; Don't worry about civilians. There's no civilians here. Not in this country... At least Officially. ;  /Colonel/colonel_civilians_1
+
+COLONEL_civilians_2 ; Y'know, there was that lad who tried to tell everyone we were the bad guys. Like we kill civilians or some lie. The funniest part is that it's not even us who put him in a jail ; /Colonel/colonel_civilians_2
+
+COLONEL_civilians_3 ; Our new generation of military drones integrate a powerful neural network that can detect the presence of civilians with virtually 100% confidence. We also added a state-of-the-art image-blur filter. ; /Colonel/colonel_civilians_3
+
+//Enemies lines
+
+ENEMY_got_hit ; AAArg || OOF || OUÏE || J'AI MAL PUTAIN || AAAÏEUUH || *cries in french* ; /Enemies/got_hit
+
+ENEMY_detect_player ; Hé, un ennemi ! || Oh merde il est là ! || *screams in french* ; /Enemies/detect_player

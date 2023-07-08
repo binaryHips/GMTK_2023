@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://uivvu1ce1juk"]
+
+[ext_resource type="Script" path="res://Scripts/Characters/weapon.gd" id="1_5p2hi"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yape6"]
+top_radius = 0.03
+bottom_radius = 0.1
+height = 1.2
+
+[node name="weapon" type="Node3D"]
+script = ExtResource("1_5p2hi")
+
+[node name="muzzle" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.364908)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.54, 0, 0, 0, -2.36041e-08, 0.54, 0, -0.54, -2.36041e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_yape6")
+skeleton = NodePath("../muzzle")
