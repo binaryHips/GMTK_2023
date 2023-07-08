@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://est2r0xb5v75"
-path="res://.godot/imported/Tree_001.fbx-0ac90d1485028d2c2764e267c277a1d9.scn"
+uid="uid://dtblr5jshjqbx"
+path="res://.godot/imported/Cigare_Boite.fbx-89a29c15e3632e59f51797bfa50b450a.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_001.fbx"
-dest_files=["res://.godot/imported/Tree_001.fbx-0ac90d1485028d2c2764e267c277a1d9.scn"]
+source_file="res://Assets/3D/Meshes/Gameplay/Cigares/Cigare_Boite.fbx"
+dest_files=["res://.godot/imported/Cigare_Boite.fbx-89a29c15e3632e59f51797bfa50b450a.scn"]
 
 [params]
 
@@ -30,9 +30,9 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "materials": {
-"Material #21": {
+"DefaultMaterial": {
 "use_external/enabled": true,
-"use_external/path": "res://Assets/3D/Materials/Environement/Foliage/Trees/M_Tree_001.tres"
+"use_external/path": "res://Assets/3D/Materials/Gameplay/M_Cigares.tres"
 }
 }
 }

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://est2r0xb5v75"
-path="res://.godot/imported/Tree_001.fbx-0ac90d1485028d2c2764e267c277a1d9.scn"
+uid="uid://b0p66n3rftl37"
+path="res://.godot/imported/Bush.fbx-4d08cacf047c1a285206de81ac6cfdb9.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_001.fbx"
-dest_files=["res://.godot/imported/Tree_001.fbx-0ac90d1485028d2c2764e267c277a1d9.scn"]
+source_file="res://Assets/3D/Meshes/Environement/Foliage/Grass/Bush.fbx"
+dest_files=["res://.godot/imported/Bush.fbx-4d08cacf047c1a285206de81ac6cfdb9.scn"]
 
 [params]
 
@@ -30,9 +30,9 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "materials": {
-"Material #21": {
+"Leaves": {
 "use_external/enabled": true,
-"use_external/path": "res://Assets/3D/Materials/Environement/Foliage/Trees/M_Tree_001.tres"
+"use_external/path": "res://Assets/3D/Materials/Environement/Foliage/Grass/M_Grass.tres"
 }
 }
 }
