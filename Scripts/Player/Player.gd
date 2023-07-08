@@ -2,13 +2,13 @@ extends CharacterBody3D
 
 
 const SPEED = 8.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 8
 const MAX_INTERACT_DISTANCE := 3.5
 
 const sens = 0.3 #à mettre dans settings à terme
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") * 2
 
 
 @onready var WEAPON = $Camera/hand/weapon
@@ -18,6 +18,8 @@ func _ready():
 	
 
 func _physics_process(delta):
+	
+	print(GameMaster.interface)
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
@@ -30,12 +32,18 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+
+
+	if is_on_floor(): #stop faster if on ground
+		if direction:
+			velocity.x = direction.x * SPEED
+			velocity.z = direction.z * SPEED
+		else:
+			velocity.x = move_toward(velocity.x, 0, exp(-abs(velocity.x/40)))
+			velocity.z = move_toward(velocity.z, 0, exp(-abs(velocity.z/40)))
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, exp(-abs(velocity.x)))
+		velocity.z = move_toward(velocity.z, 0, exp(-abs(velocity.z)))
 
 	move_and_slide()
 	
@@ -79,7 +87,6 @@ func _input(event):
 				if $Camera.global_position.distance_to($Camera/RayCast.get_collision_point()) <= MAX_INTERACT_DISTANCE:
 					
 					collider.interact()
-					print("interagi!")
 
 
 ########
@@ -94,6 +101,9 @@ func apply_damage(n):
 	
 	if hp <= 0:
 		GameMaster.game_over()
+	
+	GameMaster.interface.update_lifebar(hp)
 
 func heal(n):
 	hp = min(hp+n, max_hp)
+	GameMaster.interface.update_lifebar(hp)
