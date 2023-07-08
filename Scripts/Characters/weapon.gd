@@ -28,11 +28,24 @@ func shoot_raycast(pos:Vector3, excluded:Node):
 	
 func shoot(pos:Vector3, caller:Node):
 	
-	if current_ammo > 0:
+	if current_ammo == 0:
+			reload()
+			return
+	
+	if current_ammo > 0 && !$AnimationPlayer.is_playing():
+		
+		
+		$muzzle/MuzzleFlash.rotate_z(randf())
+		$muzzle/MuzzleFlash.scale.z = 1 + randf_range(0, 2)
+		$AnimationPlayer.play("weapon_shoot")
+		
+		
 		current_ammo -= 1
 		var res = shoot_raycast(pos, caller)
 		
-		if res == {}: return null #edge case with no collider.
+		if res == {}:
+			print("nyulll")
+			return null #edge case with no collider.
 		
 		if res["collider"].is_in_group("Alive"): #Checks if the hit target is alive.
 			caller.apply_damage(damage)
@@ -43,12 +56,17 @@ func shoot(pos:Vector3, caller:Node):
 		
 		
 		debugSphere(res["position"])
+	print("Ammo: ", current_ammo)
+	
+	
 
 
 
 func reload():
-	current_ammo = max_ammo
 	
+	if !$AnimationPlayer.is_playing() && current_ammo < max_ammo:
+		$AnimationPlayer.play("weapon_reload")
+		current_ammo = max_ammo
 
 func debugSphere(pos:Vector3):
 	
@@ -57,4 +75,19 @@ func debugSphere(pos:Vector3):
 	
 	sphere.scale *= 0.1
 	sphere.position = pos
+	
+
+
+func save():
+
+	var save_dict = {
+		"filename" : get_scene_file_path(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x,
+		"pos_y" : position.y,
+		"pos_z" : position.z,
+		
+		"ammo" : current_ammo,
+	}
+	return save_dict
 	

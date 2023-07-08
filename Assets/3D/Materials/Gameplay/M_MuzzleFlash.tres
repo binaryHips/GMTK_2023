@@ -1,4 +1,4 @@
-[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://81jmqoumpmr4"]
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://btxm6rwjoppvn"]
 
 [ext_resource type="Texture2D" uid="uid://qhdxmayh6r74" path="res://Assets/3D/Textures/Gameplay/T_MuzzleFlash_D.png" id="1_7lhk7"]
 [ext_resource type="Texture2D" uid="uid://bjrq3ejwe7ljc" path="res://Assets/3D/Textures/Gameplay/T_MuzzleFlash_N.png" id="2_sv51s"]
@@ -8,6 +8,7 @@
 albedo_texture = ExtResource("1_7lhk7")
 orm_texture = ExtResource("3_gdrpk")
 emission_enabled = true
+emission_energy_multiplier = 3.82
 emission_texture = ExtResource("1_7lhk7")
 normal_enabled = true
 normal_texture = ExtResource("2_sv51s")
