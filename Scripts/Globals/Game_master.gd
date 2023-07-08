@@ -8,9 +8,12 @@ var interface:Control
 var pause_menue:Control
 
 var game_paused := false
+var game_lost := false
 
-func game_over():
-	pass
+func game_over(cause:int = 0):
+	game_lost = true
+	get_tree().paused = true
+	print("perdu")
 
 func game_won():
 	pass
@@ -18,6 +21,7 @@ func game_won():
 
 
 func toggle_pause(state:bool):
+	if game_lost: return
 	if !state:
 		
 		pause_menue.visible = false
@@ -30,5 +34,12 @@ func toggle_pause(state:bool):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		get_tree().paused = true
 		game_paused = true
+
+
+
+## player
+
+var acquired_keys = []
+
 
 

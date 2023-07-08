@@ -22,7 +22,6 @@ func create_dictionary():
 		create_dict_line(line)
 		
 	f.close()
-	print(lines_dict)
 
 
 func create_dict_line(line):
@@ -125,8 +124,6 @@ func _ready():
 	create_dictionary()
 
 
-
-		
 
 func play_next_dialogue():
 	currently_playing = null

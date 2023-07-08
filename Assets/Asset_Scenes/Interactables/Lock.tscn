@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwnf10rwbeapf"]
+
+[ext_resource type="Script" path="res://Scripts/Game/Lock.gd" id="1_penr6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_noec7"]
+size = Vector3(0.4, 0.2, 0.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4tf7h"]
+size = Vector3(0.41188, 0.19538, 0.596349)
+
+[node name="Lock" type="RigidBody3D" groups=["Interactables"]]
+script = ExtResource("1_penr6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_noec7")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_4tf7h")

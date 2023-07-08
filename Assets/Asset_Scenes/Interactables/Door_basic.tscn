@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://gif5k0ycyjty"]
+
+[ext_resource type="Script" path="res://Scripts/Game/Door_basic.gd" id="1_p73jc"]
+
+[sub_resource type="GDScript" id="GDScript_pmrht"]
+resource_name = "door"
+script/source = "extends RigidBody3D
+
+
+
+
+func interact():
+	
+	if freeze and get_parent().key_id in GameMaster.acquired_keys:
+		freeze = false
+		$key.hide()
+"
+
+[sub_resource type="BoxMesh" id="BoxMesh_fud8p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_akhg6"]
+size = Vector3(1.33544, 2.62265, 0.137507)
+
+[sub_resource type="PrismMesh" id="PrismMesh_djxe8"]
+size = Vector3(0.135, 0.105, 0.455)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_wb02u"]
+height = 2.80009
+radius = 0.0335869
+
+[node name="Door" type="Node3D"]
+script = ExtResource("1_p73jc")
+
+[node name="door_body" type="RigidBody3D" parent="." groups=["Interactables"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.736876, 1.37167, 0)
+mass = 5.0
+script = SubResource("GDScript_pmrht")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="door_body"]
+transform = Transform3D(1.44, 0, 0, 0, 2.688, 0, 0, 0, 0.1, 0, 0, 0)
+mesh = SubResource("BoxMesh_fud8p")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="door_body"]
+shape = SubResource("BoxShape3D_akhg6")
+
+[node name="key" type="MeshInstance3D" parent="door_body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.681581, 0.0302249, -0.013253)
+visible = false
+mesh = SubResource("PrismMesh_djxe8")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.32117, 0)
+shape = SubResource("CylinderShape3D_wb02u")
+
+[node name="HingeJoint3D" type="HingeJoint3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.00369096, 1.37167, 0)
+node_a = NodePath("../door_body")
+node_b = NodePath("../StaticBody3D")
+angular_limit/enable = true
+angular_limit/upper = 2.0944
+angular_limit/lower = -2.0944
