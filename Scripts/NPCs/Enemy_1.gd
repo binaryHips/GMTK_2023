@@ -8,7 +8,7 @@ var anim = ANIM_IDLE
 var chasing = false
 var dead = false
 
-@onready var animation = $EnemyMesh/AnimationTree
+@onready var animation = $Sk_mesh/AnimationTree
 @onready var navigationagent = $NavigationAgent3D
 
 
@@ -110,12 +110,12 @@ func animate():
 	move_state = clamp(move_state, 0, 1)
 	
 	# ANIMATIONTREE BLEND
-	animation["parameters/Blend2/blend_amount"]=move_state
-	animation["parameters/Blend3/blend_amount"]=move_state
+	#animation["parameters/Blend2/blend_amount"]=move_state
+	#animation["parameters/Blend3/blend_amount"]=move_state
 	
 	# ANIMATIONTREE TRANSITION
-	if animation.get("parameters/state/current_index") != anim:
-		animation["parameters/state/transition_request"]="state " + str(anim)
+	#if animation.get("parameters/state/current_index") != anim:
+	#	animation["parameters/state/transition_request"]="state " + str(anim)
 
 # MAKE THE ENEMY MOVE
 func _on_navigation_agent_3d_velocity_computed(safe_velocity):

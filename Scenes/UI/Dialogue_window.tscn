@@ -34,10 +34,10 @@ script = ExtResource("1_buwyj")
 [node name="text" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.3
-anchor_top = 0.926
-anchor_right = 0.7
-anchor_bottom = 1.0
+anchor_left = 0.25
+anchor_top = 0.8
+anchor_right = 0.75
+anchor_bottom = 0.95
 offset_left = -0.800018
 offset_top = -0.0480347
 offset_right = -0.35199
