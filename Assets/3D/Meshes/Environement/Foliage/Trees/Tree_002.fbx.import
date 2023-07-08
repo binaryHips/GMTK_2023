@@ -32,7 +32,7 @@ _subresources={
 "materials": {
 "Leaves": {
 "use_external/enabled": true,
-"use_external/path": "res://Assets/3D/Materials/Foliage/Trees/M_Tree_002.tres"
+"use_external/path": "res://Assets/3D/Materials/Environement/Foliage/Trees/M_Tree_002.tres"
 }
 }
 }

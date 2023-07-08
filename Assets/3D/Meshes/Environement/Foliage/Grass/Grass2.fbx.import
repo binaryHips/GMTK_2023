@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://est2r0xb5v75"
-path="res://.godot/imported/Tree_001.fbx-0ac90d1485028d2c2764e267c277a1d9.scn"
+uid="uid://bp5x7p37ibcwv"
+path="res://.godot/imported/Grass2.fbx-04a8dda1f71e3f0dd85623d0a8db0e8d.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_001.fbx"
-dest_files=["res://.godot/imported/Tree_001.fbx-0ac90d1485028d2c2764e267c277a1d9.scn"]
+source_file="res://Assets/3D/Meshes/Environement/Foliage/Grass/Grass2.fbx"
+dest_files=["res://.godot/imported/Grass2.fbx-04a8dda1f71e3f0dd85623d0a8db0e8d.scn"]
 
 [params]
 
@@ -32,7 +32,7 @@ _subresources={
 "materials": {
 "Material #21": {
 "use_external/enabled": true,
-"use_external/path": "res://Assets/3D/Materials/Environement/Foliage/Trees/M_Tree_001.tres"
+"use_external/path": "res://Assets/3D/Materials/Environement/Foliage/Grass/M_Grass.tres"
 }
 }
 }
