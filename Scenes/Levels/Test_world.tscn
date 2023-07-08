@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://b0brw1u5h2pvf"]
+[gd_scene load_steps=9 format=3 uid="uid://b0brw1u5h2pvf"]
 
 [ext_resource type="PackedScene" uid="uid://crq2xjn1pfqua" path="res://Scenes/Player/Player.tscn" id="1_5blo6"]
 [ext_resource type="PackedScene" uid="uid://dmcvphic6b33w" path="res://Assets/Asset_Scenes/Levels/dialogue_trigger_area.tscn" id="1_hddrw"]
+[ext_resource type="PackedScene" uid="uid://gif5k0ycyjty" path="res://Assets/Asset_Scenes/Interactables/Door_basic.tscn" id="3_bb5a2"]
+[ext_resource type="PackedScene" uid="uid://jbjcevw7m6oc" path="res://Assets/Asset_Scenes/Interactables/cigars.tscn" id="4_l4053"]
+[ext_resource type="PackedScene" uid="uid://cwnf10rwbeapf" path="res://Assets/Asset_Scenes/Interactables/Lock.tscn" id="5_umrvy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hj7ca"]
 sky_top_color = Color(0.219608, 0.690196, 1, 1)
@@ -34,3 +37,12 @@ dialogue_line_name = "COLONEL_greetings"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_kpapw")
+
+[node name="Door" parent="." instance=ExtResource("3_bb5a2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0295024, -3.85356)
+
+[node name="cigarbox" parent="." instance=ExtResource("4_l4053")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, 0)
+
+[node name="Lock" parent="." instance=ExtResource("5_umrvy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.62009, 0.365146, 0)
