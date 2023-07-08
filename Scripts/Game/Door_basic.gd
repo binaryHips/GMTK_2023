@@ -20,6 +20,7 @@ func save():
 		"pos_y" : position.y,
 		"pos_z" : position.z,
 		
-		"locked" : locked
+		"locked" : locked,
+		"key_id" : key_id
 	}
 	return save_dict

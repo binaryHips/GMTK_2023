@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://b0brw1u5h2pvf"]
+[gd_scene load_steps=12 format=3 uid="uid://b0brw1u5h2pvf"]
 
 [ext_resource type="PackedScene" uid="uid://crq2xjn1pfqua" path="res://Scenes/Player/Player.tscn" id="1_5blo6"]
 [ext_resource type="PackedScene" uid="uid://dmcvphic6b33w" path="res://Assets/Asset_Scenes/Levels/dialogue_trigger_area.tscn" id="1_hddrw"]
+[ext_resource type="PackedScene" uid="uid://de2mb6dviknqk" path="res://Assets/Asset_Scenes/Levels/CheckpointArea.tscn" id="2_s81a1"]
 [ext_resource type="PackedScene" uid="uid://c1exy8ydgrli" path="res://Scenes/Characters/grenade.tscn" id="3_3fpev"]
 [ext_resource type="PackedScene" uid="uid://gif5k0ycyjty" path="res://Assets/Asset_Scenes/Interactables/Door_basic.tscn" id="3_bb5a2"]
 [ext_resource type="PackedScene" uid="uid://jbjcevw7m6oc" path="res://Assets/Asset_Scenes/Interactables/cigars.tscn" id="4_l4053"]
@@ -29,13 +30,21 @@ use_collision = true
 size = Vector3(24.5121, 0.027, 24.6863)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.94277, -0.00464821, 0.571642)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.11576, -0.00464821, 0.571642)
 use_collision = true
 size = Vector3(4.31013, 1.28548, 3.89957)
 
 [node name="DialogueTriggerArea" parent="CSGBox3D2" instance=ExtResource("1_hddrw")]
 transform = Transform3D(2.07, 0, 0, 0, 2.07, 0, 0, 0, 2.07, -0.126695, 0.580595, 0.121868)
+can_retrigger = true
 dialogue_line_name = "COLONEL_greetings"
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.03974, -0.00464821, -8.36985)
+use_collision = true
+size = Vector3(4.31013, 1.28548, 3.89957)
+
+[node name="Checkpoint" parent="CSGBox3D3" instance=ExtResource("2_s81a1")]
 
 [node name="Player" parent="." instance=ExtResource("1_5blo6")]
 

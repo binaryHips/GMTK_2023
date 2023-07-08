@@ -1,7 +1,41 @@
-[gd_scene load_steps=4 format=3 uid="uid://dn6r4vlgqoin"]
+[gd_scene load_steps=6 format=3 uid="uid://dn6r4vlgqoin"]
 
 [ext_resource type="Script" path="res://Scripts/UI/Menue.gd" id="1_yoy6p"]
 [ext_resource type="Shader" path="res://Assets/UI/Shaders/SS_Blur.gdshader" id="2_5h1gp"]
+
+[sub_resource type="Animation" id="Animation_uwpso"]
+resource_name = "screen_fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../fader:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 0.7001),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.0980392, 0.0980392, 0.0980392, 0), Color(0.0980392, 0.0980392, 0.0980392, 1), Color(0.0980392, 0.0980392, 0.0980392, 1), Color(0.0980392, 0.0980392, 0.0980392, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.7),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"load_checkpoint"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uvb8y"]
+_data = {
+"screen_fade": SubResource("Animation_uwpso")
+}
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_u51hh"]
 shader = ExtResource("2_5h1gp")
@@ -16,6 +50,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yoy6p")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Reload")
+libraries = {
+"": SubResource("AnimationLibrary_uvb8y")
+}
 
 [node name="Resume" type="Button" parent="."]
 layout_mode = 1
@@ -93,6 +133,17 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="fader" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.319946
+offset_bottom = -0.176025
+mouse_filter = 2
+color = Color(0.0980392, 0.0980392, 0.0980392, 0)
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
 [connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="Reload" to="." method="_on_reload_pressed"]
 [connection signal="pressed" from="Options" to="." method="_on_options_pressed"]

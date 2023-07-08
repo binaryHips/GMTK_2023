@@ -14,6 +14,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") * 2
 @onready var WEAPON = $Camera/hand/weapon
 func _ready():
 	GameMaster.player = self
+	print("player revenu")
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 
@@ -134,3 +135,4 @@ func save():
 		
 		"hp" : hp,
 	}
+	return save_dict
