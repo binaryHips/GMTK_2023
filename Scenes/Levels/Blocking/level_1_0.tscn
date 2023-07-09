@@ -934,6 +934,7 @@ key_id = 4
 
 [node name="cigarbox" parent="NavigationRegion3D/Cigarbox" instance=ExtResource("8_bvorn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.3719, 2.06224, 11.3302)
+trigger_dialogue = true
 dialogue_line_name = "COLONEL_pickup_first_cigarettes"
 speaker_name = "COLONEL"
 
@@ -2559,31 +2560,31 @@ shape = SubResource("CylinderShape3D_jehml")
 [node name="Dialogue" type="Node" parent="NavigationRegion3D"]
 
 [node name="DialogueTriggerArea" parent="NavigationRegion3D/Dialogue" instance=ExtResource("15_jgyjt")]
-transform = Transform3D(2.38617, 0, 0, 0, 2.38617, 0, 0, 0, 2.38617, -19.7129, 2.29196, -44.2781)
+transform = Transform3D(2.38617, 0, 0, 0, 2.38617, 0, 0, 0, 2.38617, -19.7129, 3.09396, -44.2781)
 speaker_name = "COLONEL"
 speaker_color = Color(0.596078, 0.113725, 0, 1)
 dialogue_line_name = "COLONEL_greetings"
 
 [node name="DialogueTriggerArea2" parent="NavigationRegion3D/Dialogue" instance=ExtResource("15_jgyjt")]
-transform = Transform3D(7.47446, 0, 0, 0, 7.47446, 0, 0, 0, 7.47446, -20.2767, 1.46483, -7.42313)
+transform = Transform3D(7.47446, 0, 0, 0, 7.47446, 0, 0, 0, 7.47446, -24.9944, 1.46483, -7.42313)
 speaker_name = "COLONEL"
 speaker_color = Color(0.597988, 0.112677, 3.85046e-07, 1)
 dialogue_line_name = "COLONEL_mission"
 
 [node name="DialogueTriggerArea3" parent="NavigationRegion3D/Dialogue" instance=ExtResource("15_jgyjt")]
-transform = Transform3D(3.01767, 0, 0, 0, 3.01767, 0, 0, 0, 3.01767, 3.00131, 0.125177, -3.0656)
+transform = Transform3D(3.01767, 0, 0, 0, 3.01767, 0, 0, 0, 3.01767, 3.00131, 0.241693, -1.77536)
 speaker_name = "COLONEL"
 speaker_color = Color(0.597988, 0.112677, 3.85046e-07, 1)
 dialogue_line_name = "COLONEL_mission_2"
 
 [node name="DialogueTriggerArea4" parent="NavigationRegion3D/Dialogue" instance=ExtResource("15_jgyjt")]
-transform = Transform3D(2.83501, 0, 0, 0, 2.83501, 0, 0, 0, 2.83501, 46.0384, 0.958866, 11.7332)
+transform = Transform3D(2.83501, 0, 0, 0, 2.83501, 0, 0, 0, 2.83501, 46.0384, 0.958866, 11.957)
 speaker_name = "COLONEL"
 speaker_color = Color(0.597988, 0.112677, 3.85046e-07, 1)
 dialogue_line_name = "COLONEL_asks_pickup_cigarettes"
 
 [node name="DialogueTriggerArea6" parent="NavigationRegion3D/Dialogue" instance=ExtResource("15_jgyjt")]
-transform = Transform3D(5.09509, 0, 0, 0, 5.09509, 0, 0, 0, 5.09509, -5.686, 0.0596456, 18.798)
+transform = Transform3D(5.09509, 0, 0, 0, 5.09509, 0, 0, 0, 5.09509, -5.4006, 0.0596456, 22.1608)
 speaker_name = "COLONEL"
 speaker_color = Color(0.597988, 0.112677, 3.85046e-07, 1)
 dialogue_line_name = "COLONEL_dont_kill_them"
