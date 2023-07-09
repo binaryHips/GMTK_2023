@@ -5,8 +5,6 @@ const SPEED = 8.0
 const JUMP_VELOCITY = 8
 const MAX_INTERACT_DISTANCE := 3.5
 
-const sens = 0.3 #à mettre dans settings à terme
-
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") * 2
 
@@ -16,9 +14,12 @@ func _ready():
 	GameMaster.player = self
 	print("player revenu")
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	$Camera.current = true
+	
 	
 
 func _physics_process(delta):
+	
 	
 	# Add the gravity.
 	if not is_on_floor():
@@ -30,7 +31,7 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
+	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backwards")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 
 
@@ -65,18 +66,16 @@ func _physics_process(delta):
 
 func _input(event):         
 	if event is InputEventMouseMotion && Input.mouse_mode == 2: #mouse captured
-		rotate_y(deg_to_rad(-event.relative.x*sens))
+		rotate_y(deg_to_rad(-event.relative.x*Settings.sens))
 		
 		$Camera.rotation.x = clamp(
-			$Camera.rotation.x - deg_to_rad(event.relative.y*sens),
+			$Camera.rotation.x - deg_to_rad(event.relative.y*Settings.sens),
 			deg_to_rad(-80),
 			deg_to_rad(80)
 		)
 	
-	if event.is_action_pressed("secondary") && Input.mouse_mode == 2: #mouse captured
-		pass
 		
-	if event.is_action_pressed("primary") && Input.mouse_mode == 2: #mouse captured
+	if event.is_action_pressed("shoot") && Input.mouse_mode == 2: #mouse captured
 		var pos = $Camera/RayCast.get_collision_point()
 		
 		if pos != null:
