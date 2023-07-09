@@ -20,7 +20,7 @@ func shoot_raycast(pos:Vector3, excluded:Node):
 	
 	var space_state = get_world_3d().direct_space_state
 	
-	var query = PhysicsRayQueryParameters3D.create($muzzle.position, pos)
+	var query = PhysicsRayQueryParameters3D.create($muzzle.global_position, pos)
 	query.exclude = [excluded]
 	query.collision_mask = 0b1 #only first collision layer
 	
