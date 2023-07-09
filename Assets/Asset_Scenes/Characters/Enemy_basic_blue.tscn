@@ -1,5 +1,101 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2f102nouuywk"]
+[gd_scene load_steps=11 format=3 uid="uid://b2f102nouuywk"]
 
 [ext_resource type="PackedScene" uid="uid://cuwx7owkajs2m" path="res://Assets/3D/Meshes/Character/SWAT_Blue.glb" id="1_2cldw"]
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tfqg0"]
+animation = &"CharacterArmature|Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_gf7pt"]
+animation = &"CharacterArmature|HitRecieve"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_35clv"]
+animation = &"CharacterArmature|Sword_Slash"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7fif1"]
+animation = &"CharacterArmature|Run"
+
+[sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_ukcaf"]
+
+[sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_bb3db"]
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_ueubh"]
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_jnd5s"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_0nokv"]
+graph_offset = Vector2(30.0578, 62.3636)
+nodes/Animation/node = SubResource("AnimationNodeAnimation_7fif1")
+nodes/Animation/position = Vector2(-80, 220)
+"nodes/Animation 2/node" = SubResource("AnimationNodeAnimation_tfqg0")
+"nodes/Animation 2/position" = Vector2(-80, 100)
+"nodes/Animation 3/node" = SubResource("AnimationNodeAnimation_gf7pt")
+"nodes/Animation 3/position" = Vector2(220, 400)
+"nodes/Animation 4/node" = SubResource("AnimationNodeAnimation_35clv")
+"nodes/Animation 4/position" = Vector2(540, 400)
+"nodes/Get shot/node" = SubResource("AnimationNodeOneShot_ukcaf")
+"nodes/Get shot/position" = Vector2(560, 140)
+nodes/OneShot/node = SubResource("AnimationNodeOneShot_bb3db")
+nodes/OneShot/position = Vector2(800, 120)
+nodes/Run/node = SubResource("AnimationNodeBlend2_ueubh")
+nodes/Run/position = Vector2(200, 160)
+nodes/TimeScale/node = SubResource("AnimationNodeTimeScale_jnd5s")
+nodes/TimeScale/position = Vector2(420, 260)
+nodes/output/position = Vector2(1040, 120)
+node_connections = [&"output", 0, &"OneShot", &"Get shot", 0, &"Run", &"Get shot", 1, &"TimeScale", &"OneShot", 0, &"Get shot", &"OneShot", 1, &"Animation 4", &"Run", 0, &"Animation 2", &"Run", 1, &"Animation", &"TimeScale", 0, &"Animation 3"]
+
 [node name="SWAT_Blue" instance=ExtResource("1_2cldw")]
+
+[node name="Skeleton3D" parent="RootNode/CharacterArmature" index="0"]
+bones/1/position = Vector3(4.53219e-06, 0.00828953, -0.000456057)
+bones/1/rotation = Quaternion(3.75739e-32, 0.23553, -1.55038e-31, 0.971867)
+bones/4/rotation = Quaternion(0.0854647, -0.237483, 0.0115782, 0.967555)
+bones/5/rotation = Quaternion(0.00363648, 2.25668e-10, -2.13629e-09, 0.999993)
+bones/6/rotation = Quaternion(-0.00947105, 6.77982e-07, -8.58601e-10, 0.999955)
+bones/7/rotation = Quaternion(-0.0245109, -0.000275392, 0.000120303, 0.9997)
+bones/9/rotation = Quaternion(0.456199, 0.840232, 0.106907, -0.272881)
+bones/10/rotation = Quaternion(0.674998, -0.403884, -0.387776, -0.480506)
+bones/11/rotation = Quaternion(-0.121328, -0.0295654, -0.184313, 0.974902)
+bones/12/rotation = Quaternion(0.0112397, 0.0177445, 0.0104792, 0.999724)
+bones/14/rotation = Quaternion(-0.0408909, -0.0321456, 0.0670435, 0.996393)
+bones/15/rotation = Quaternion(-0.0790735, 0.0116557, 0.0250531, 0.996486)
+bones/16/rotation = Quaternion(-0.0298723, 0.00978076, 0.00496208, 0.999494)
+bones/19/rotation = Quaternion(-0.0899747, 0.0254326, -0.00615306, 0.9956)
+bones/20/rotation = Quaternion(-0.12041, 0.00623888, -0.0188473, 0.992526)
+bones/24/rotation = Quaternion(-0.0819329, 0.160517, -0.0365543, 0.982947)
+bones/25/rotation = Quaternion(-0.118164, 0.0402264, -0.0414629, 0.991312)
+bones/26/rotation = Quaternion(-0.0751798, 0.0300851, -0.00748025, 0.996688)
+bones/33/rotation = Quaternion(0.00387702, 0.198608, -0.345762, 0.917054)
+bones/34/rotation = Quaternion(0.0417278, -0.122015, 0.0851815, 0.987985)
+bones/35/rotation = Quaternion(-0.0885877, -0.0556028, 0.121992, 0.987005)
+bones/38/rotation = Quaternion(-0.626873, -0.307534, -0.439377, 0.565156)
+bones/39/rotation = Quaternion(-0.205763, -0.193786, 0.323958, 0.902862)
+bones/42/rotation = Quaternion(-0.0528572, 0.0336407, -0.0664886, 0.995818)
+bones/43/rotation = Quaternion(-0.0887832, -0.0113618, -0.0247415, 0.995679)
+bones/44/rotation = Quaternion(-0.0298723, -0.00978076, -0.00496206, 0.999494)
+bones/47/rotation = Quaternion(-0.104393, -0.0269019, -0.0690116, 0.991774)
+bones/51/rotation = Quaternion(0.00911316, 0.0503409, -0.127957, 0.990459)
+bones/52/rotation = Quaternion(-0.0819329, -0.160517, 0.0365542, 0.982947)
+bones/54/rotation = Quaternion(-0.0751798, -0.0300851, 0.00748026, 0.996688)
+bones/56/rotation = Quaternion(0.0170325, 0.07192, -0.226359, 0.971236)
+bones/57/rotation = Quaternion(-0.126589, -0.179584, 0.161972, 0.962024)
+bones/61/rotation = Quaternion(0.0195577, -0.185723, 0.435159, 0.880773)
+bones/62/rotation = Quaternion(0.0417277, 0.122015, -0.0851815, 0.987986)
+bones/63/rotation = Quaternion(-0.0885877, 0.0556028, -0.121992, 0.987005)
+bones/65/rotation = Quaternion(-0.535617, 0.0211013, 0.835658, -0.119768)
+bones/66/rotation = Quaternion(0.186823, 0.68198, -0.186822, 0.681981)
+bones/68/rotation = Quaternion(0.55499, 0.125435, 0.804817, 0.168885)
+bones/69/rotation = Quaternion(0.167543, -0.686971, 0.167542, 0.686972)
+bones/71/rotation = Quaternion(0.614414, 0.348044, -0.346153, 0.617689)
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="2"]
+tree_root = SubResource("AnimationNodeBlendTree_0nokv")
+anim_player = NodePath("../AnimationPlayer")
+active = true
+"parameters/Get shot/active" = false
+"parameters/Get shot/internal_active" = false
+"parameters/Get shot/request" = 0
+parameters/OneShot/active = false
+parameters/OneShot/internal_active = false
+parameters/OneShot/request = 0
+parameters/Run/blend_amount = 0.0
+parameters/TimeScale/scale = 3.0

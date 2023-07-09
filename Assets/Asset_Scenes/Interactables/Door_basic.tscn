@@ -1,6 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://gif5k0ycyjty"]
 
 [ext_resource type="Script" path="res://Scripts/Game/Door_basic.gd" id="1_p73jc"]
+[ext_resource type="PackedScene" uid="uid://mqqodvu5ev1t" path="res://Assets/3D/Meshes/Environement/Modules/Door.fbx" id="2_m0p3q"]
+[ext_resource type="PackedScene" uid="uid://qeapngn5lvn6" path="res://Assets/3D/Meshes/Gameplay/Key.fbx" id="3_3teot"]
 
 [sub_resource type="GDScript" id="GDScript_pmrht"]
 resource_name = "door"
@@ -18,13 +20,8 @@ func interact():
 
 "
 
-[sub_resource type="BoxMesh" id="BoxMesh_fud8p"]
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_akhg6"]
-size = Vector3(1.33544, 2.62265, 0.137507)
-
-[sub_resource type="PrismMesh" id="PrismMesh_djxe8"]
-size = Vector3(0.135, 0.105, 0.455)
+size = Vector3(1.02171, 2.15131, 0.137507)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_wb02u"]
 height = 2.80009
@@ -35,21 +32,22 @@ script = ExtResource("1_p73jc")
 
 [node name="door_body" type="RigidBody3D" parent="." groups=["Interactables"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.736876, 1.37167, 0)
-mass = 5.0
+mass = 0.1
 script = SubResource("GDScript_pmrht")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="door_body"]
-transform = Transform3D(1.44, 0, 0, 0, 2.688, 0, 0, 0, 0.1, 0, 0, 0)
-mesh = SubResource("BoxMesh_fud8p")
+[node name="Door" parent="door_body" instance=ExtResource("2_m0p3q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.172815, -1.27791, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="door_body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.177585, 0.246091, 0)
 shape = SubResource("BoxShape3D_akhg6")
 
-[node name="key" type="MeshInstance3D" parent="door_body"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.681581, 0.0302249, -0.013253)
+[node name="key" parent="door_body" instance=ExtResource("3_3teot")]
+transform = Transform3D(1.80916, 0, 0, 0, 1.80916, 0, 0, 0, 1.80916, 0.734427, 0.2352, 0.0951685)
 visible = false
-mesh = SubResource("PrismMesh_djxe8")
-skeleton = NodePath("../..")
+
+[node name="Key2" parent="door_body/key" instance=ExtResource("3_3teot")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.0805463)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
