@@ -9,7 +9,7 @@ radius = 0.612156
 [sub_resource type="BoxShape3D" id="BoxShape3D_scclt"]
 size = Vector3(10, 2, 10)
 
-[node name="Player" type="CharacterBody3D" groups=["Alive", "Persistant"]]
+[node name="enemy" type="CharacterBody3D" groups=["Alive", "Persistant"]]
 collision_layer = 9
 script = ExtResource("1_a8iod")
 
