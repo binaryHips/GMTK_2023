@@ -3,17 +3,17 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bljdlpn8t70ek"
-path="res://.godot/imported/Grass.fbx-dbc5245967c2dc6e6eb8d31884f48194.scn"
+uid="uid://drls73edqqhkg"
+path="res://.godot/imported/Walls_Pillar.fbx-d2b9f8d3759146c27842709fe6c3d5ef.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Meshes/Environement/Foliage/Grass/Grass.fbx"
-dest_files=["res://.godot/imported/Grass.fbx-dbc5245967c2dc6e6eb8d31884f48194.scn"]
+source_file="res://Assets/3D/Meshes/Environement/Modules/Walls_Pillar.fbx"
+dest_files=["res://.godot/imported/Walls_Pillar.fbx-d2b9f8d3759146c27842709fe6c3d5ef.scn"]
 
 [params]
 
-nodes/root_type="MeshInstance3D"
+nodes/root_type="Node3D"
 nodes/root_name="Scene Root"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
@@ -30,9 +30,9 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "materials": {
-"Material #21": {
+"DefaultMaterial": {
 "use_external/enabled": true,
-"use_external/path": "res://Assets/3D/Materials/Environement/Foliage/Grass/M_Grass.tres"
+"use_external/path": "res://Assets/3D/Materials/Environement/Modules/M_Wall.tres"
 }
 }
 }

@@ -1,11 +1,11 @@
 [gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://bi0ngiue0a0u1"]
 
-[ext_resource type="Texture2D" uid="uid://banu54y61v2hf" path="res://Assets/3D/Textures/Environement/Modules/Walls_DefaultMaterial_BaseColor.png" id="1_oiuxo"]
-[ext_resource type="Texture2D" uid="uid://bfuq0wm80ll3t" path="res://Assets/3D/Textures/Environement/Modules/Walls_DefaultMaterial_Normal.png" id="2_my304"]
-[ext_resource type="Texture2D" uid="uid://0k6e6rgk6b24" path="res://Assets/3D/Textures/Environement/Modules/Walls_DefaultMaterial_OcclusionRoughnessMetallic.png" id="3_7g4tu"]
+[ext_resource type="Texture2D" uid="uid://emt42ai2gtwb" path="res://Assets/3D/Textures/Environement/Modules/Walls_Pillar_DefaultMaterial_BaseColor.png" id="1_anhat"]
+[ext_resource type="Texture2D" uid="uid://dtcnwqv6us28a" path="res://Assets/3D/Textures/Environement/Modules/Walls_Pillar_DefaultMaterial_Normal.png" id="2_ogp3m"]
+[ext_resource type="Texture2D" uid="uid://dl1gr5mde1kiq" path="res://Assets/3D/Textures/Environement/Modules/Walls_Pillar_DefaultMaterial_OcclusionRoughnessMetallic.png" id="3_p53wh"]
 
 [resource]
-albedo_texture = ExtResource("1_oiuxo")
-orm_texture = ExtResource("3_7g4tu")
+albedo_texture = ExtResource("1_anhat")
+orm_texture = ExtResource("3_p53wh")
 normal_enabled = true
-normal_texture = ExtResource("2_my304")
+normal_texture = ExtResource("2_ogp3m")
