@@ -8,7 +8,7 @@ COLONEL_greetings ; Greetings soldier. I'm the Colonel, but you can call me just
 
 COLONEL_mission ; You're currently in Reversistan. It's a country far from civilisation. We don't know much about except that they're in war and possess a large amount of lithium mines. Of course we're here to pacify those mines and exploit this war. ; /Colonel/colonel_mission
 
-COLONEL_mission_2 ; This is one of their military sites. Your objective is to kill their boss. I trust you with that matter. ; /Colonel/colonel_mission_2
+COLONEL_mission_2 ; Your objective is to infiltrate their lines ! don't worry about collateral damages, there are no civilians in those kind of coutries anyway. ; /Colonel/colonel_mission_2
 
 COLONEL_asks_pickup_cigarettes ; How look! they have cigarettes, so far away from civilisation? break one out kid, you deserve it. ; /Colonel/colonel_asks_pickup_cigarettes
 
