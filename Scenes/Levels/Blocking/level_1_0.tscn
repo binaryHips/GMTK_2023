@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c1gv8twl1ft85"]
+[gd_scene load_steps=26 format=3 uid="uid://c1gv8twl1ft85"]
 
 [ext_resource type="PackedScene" uid="uid://crq2xjn1pfqua" path="res://Scenes/Player/Player.tscn" id="1_jnyte"]
 [ext_resource type="PackedScene" uid="uid://est2r0xb5v75" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_001.fbx" id="2_nb3br"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bljdlpn8t70ek" path="res://Assets/3D/Meshes/Environement/Foliage/Grass/Grass.fbx" id="12_g7230"]
 [ext_resource type="PackedScene" uid="uid://ccjicd7ibqa5d" path="res://Assets/Asset_Scenes/Props/box_002.tscn" id="15_bgdng"]
 [ext_resource type="PackedScene" uid="uid://dmcvphic6b33w" path="res://Assets/Asset_Scenes/Levels/dialogue_trigger_area.tscn" id="15_jgyjt"]
+[ext_resource type="PackedScene" uid="uid://de2mb6dviknqk" path="res://Assets/Asset_Scenes/Levels/CheckpointArea.tscn" id="16_4qvbd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gvu4f"]
 sky_top_color = Color(0.321569, 0.447059, 0.666667, 1)
@@ -2694,3 +2695,6 @@ dialogue_line_name = "COLONEL_pickup_first_cigarettes"
 [node name="DialogueTriggerArea6" parent="Dialogue" instance=ExtResource("15_jgyjt")]
 transform = Transform3D(5.09509, 0, 0, 0, 5.09509, 0, 0, 0, 5.09509, -5.686, 0.0596456, 18.798)
 dialogue_line_name = "COLONEL_dont_kill_them"
+
+[node name="Checkpoint" parent="." instance=ExtResource("16_4qvbd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5694, 0, -6.96024)
