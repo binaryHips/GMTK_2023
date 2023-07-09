@@ -1,0 +1,51 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dxbj1ujc3guhp"
+path="res://.godot/imported/SWAT_Red.glb-2c022f1098aa689b12474cb90a4721a8.scn"
+
+[deps]
+
+source_file="res://Assets/3D/Meshes/Character/SWAT_Red.glb"
+dest_files=["res://.godot/imported/SWAT_Red.glb-2c022f1098aa689b12474cb90a4721a8.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"Skin": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Materials/Character/M_Swat_Skin.tres"
+},
+"Swat": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Materials/Character/M_Swat_MainColor_RED.tres"
+},
+"Swat_Black": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Materials/Character/M_Swat_MainColorDark_RED.tres"
+},
+"Visor": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Materials/Character/M_Swat_Visor.tres"
+}
+}
+}
+gltf/embedded_image_handling=1
