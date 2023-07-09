@@ -51,7 +51,7 @@ func attack():
 		$Timer.start()
 	
 		apply_damage(20)
-		
+		DialogueManager.try_force_dialogue("ENEMY_got_hit", "Enemy soldier", Color.GREEN, 0)
 	
 func _physics_process(delta):
 	
@@ -154,6 +154,7 @@ func _on_vision_cone_body_entered(body):
 	if body == GameMaster.player:
 		target = body
 		chasing = true
+		DialogueManager.try_force_dialogue("ENEMY_detect_player", "Enemy soldier", Color.GREEN, 0)
 
 
 func _on_vision_cone_body_exited(body):

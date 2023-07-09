@@ -71,7 +71,7 @@ class Dialogue_line:
 	
 	var audio:AudioStreamOggVorbis
 	
-	var length:int = 3
+	var length:int = 5
 	
 	var player #Audiostreamplayer or audiostreamplayer3d
 	
@@ -126,6 +126,8 @@ func _ready():
 
 
 func play_next_dialogue():
+	
+	
 	currently_playing = null
 	if dialogue_queue != []:
 		currently_playing = dialogue_queue.pop_front()
@@ -141,6 +143,8 @@ func play_dialogue_audio_only(line:Dialogue_line):
 	line.play_audio()
 
 func queue_dialogue(line_name:String, talker_name:String, name_color := Color.CORNSILK, priority := 0, at = null):
+	
+	
 	dialogue_queue.append(
 		Dialogue_line.new(line_name, talker_name, priority, name_color, at)
 	)
@@ -150,8 +154,11 @@ func queue_dialogue(line_name:String, talker_name:String, name_color := Color.CO
 #plays the dialogue only if greater or equal priority. Always plays the audio.
 func try_force_dialogue(line_name:String, talker_name:String, name_color := Color.CORNSILK, priority := 0, at = null):
 	var d := Dialogue_line.new(line_name, talker_name, priority, name_color, at)
-	if currently_playing.priority < priority:
-		play_dialogue_now(d)
+	if currently_playing:
+		if currently_playing.priority < priority:
+			play_dialogue_now(d)
+		else:
+			play_dialogue_audio_only(d)
 	else:
-		play_dialogue_audio_only(d)
+		play_dialogue_now(d)
 
