@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://3a1go5l7py1x"]
+[gd_scene load_steps=9 format=3 uid="uid://3a1go5l7py1x"]
 
 [ext_resource type="Script" path="res://Scripts/UI/Menue.gd" id="1_c2b27"]
 [ext_resource type="Shader" path="res://Assets/UI/Shaders/SS_Blur.gdshader" id="2_qq3io"]
 [ext_resource type="Texture2D" uid="uid://bxmdgetmejssc" path="res://Assets/2D/Images/TitreJeu.png" id="3_r40ie"]
+[ext_resource type="AudioStream" uid="uid://dbck8wwvnhl3l" path="res://Assets/Ressources/Sound/music/title.mp3" id="4_2ggf2"]
 
 [sub_resource type="Animation" id="Animation_uwpso"]
 resource_name = "screen_fade"
@@ -207,6 +208,11 @@ offset_right = -0.319946
 offset_bottom = -0.176025
 mouse_filter = 2
 color = Color(0.0980392, 0.0980392, 0.0980392, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_2ggf2")
+volume_db = -7.051
+autoplay = true
 
 [connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="Reload" to="." method="_on_reload_pressed"]

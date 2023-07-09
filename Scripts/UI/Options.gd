@@ -30,4 +30,4 @@ func _on_sens_value_changed(value):
 
 func _on_volume_value_changed(value):
 	Settings.global_volume = value
-	$volume/volume_text.text = "[center]volume \n" + str(value) + "[/center]"
+	$volume/volume_text.text = "[center]volume \n" + str(value) + " (Sound not implemented due to time constraints, sorry ^^'[/center])"

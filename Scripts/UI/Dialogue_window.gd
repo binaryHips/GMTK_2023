@@ -31,7 +31,7 @@ func play_dialogue(talker_name:String, name_color:Color, text:String, length:int
 		"[/center]"
 		)
 	
-	$AnimationPlayer.speed_scale =1.0/ (length * len(text)/60)
+	$AnimationPlayer.speed_scale =1.0/ (length * len(text)/150)
 	$AnimationPlayer.play("Dialogue_window_animation")
 	
 
