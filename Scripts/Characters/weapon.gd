@@ -54,8 +54,6 @@ func shoot(pos:Vector3, caller:Node):
 		print(res["position"])
 		print("Ammo: ", current_ammo)
 		
-		
-		debugSphere(res["position"])
 	print("Ammo: ", current_ammo)
 	
 	

@@ -17,7 +17,7 @@ COLONEL_pickup_first_cigarettes ; Oh my god it actually healed you. Guess once w
 COLONEL_dont_kill_them ; This enemy must not be killed ! (He spend a lot of money in my ... HUM HUM) ; /Colonel/COLONEL_dont_kill_them
 
 
-COLONEL_gg_you_win ; Nice job kid! You killed their- wait... I just got a report telling me their boss was, in fact, that dumbass with the knife you killed when you arrived. This one was their janitor. Oh well, remember what I said about civilians? Anyway, your mission here is done. We're gonna send you an aircraft with the bill for your shock treatment. Don't even think about coming back without paying. Colonel, over. ; /Colonel/colonel_gg_you_win
+COLONEL_gg_you_win ; Wait... I just got a report telling me their boss was, in fact, that dumbass with the knife you killed when you arrived. Oh well... Anyway, your mission here is done. We're gonna send you an aircraft with the bill for your shock treatment. Don't even think about coming back without paying. Colonel, over. ; /Colonel/colonel_gg_you_win
 
 COLONEL_civilians_1 ; Don't worry about civilians. There's no civilians here. Not in this country... At least Officially. ;  /Colonel/colonel_civilians_1
 
@@ -27,6 +27,6 @@ COLONEL_civilians_3 ; Our new generation of military drones integrate a powerful
 
 //Enemies lines
 
-ENEMY_got_hit ; AAArg || OOF || OUÏE || J'AI MAL PUTAIN || AAAÏEUUH || *cries in french* ; /Enemies/got_hit
+ENEMY_got_hit ; AAArg || OOF || OUÏE || J'AI MAL PUTAIN || AAAÏEUUH ; /Enemies/got_hit
 
-ENEMY_detect_player ; Hé, un ennemi ! || Oh merde il est là ! || *screams in french* ; /Enemies/detect_player
+ENEMY_detect_player ; Hé, un ennemi ! || Oh merde il est là ! ; /Enemies/detect_player 
