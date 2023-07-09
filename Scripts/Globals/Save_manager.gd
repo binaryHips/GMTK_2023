@@ -10,7 +10,7 @@ func _ready():
 
 
 func save_checkpoint(exclude):
-	var save_game = FileAccess.open(str("user://savegame.dat"), FileAccess.WRITE)
+	var save_game = FileAccess.open(str("/savegame.dat"), FileAccess.WRITE)
 	var save_nodes = get_tree().get_nodes_in_group("Persistant")
 	
 	var level = get_tree().get_root().get_node("/root/GAME_level")
@@ -61,11 +61,11 @@ func load_checkpoint():
 	
 	
 	
-	if not FileAccess.file_exists("user://savegame.dat"):
+	if not FileAccess.file_exists("/savegame.dat"):
 		print("can't access save file!")
 		return # Error! We don't have a save to load.
 	
-	var save_game = FileAccess.open("user://savegame.dat", FileAccess.READ)
+	var save_game = FileAccess.open("/savegame.dat", FileAccess.READ)
 	
 	if level:
 		level.queue_free()
