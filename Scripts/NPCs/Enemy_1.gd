@@ -1,7 +1,10 @@
 extends CharacterBody3D
 
+const BLUEY = preload("res://Scenes/Player/Enemy_1.tscn")
+
+
 var target
-var chase_speed = 10.0
+var chase_speed = 3.0
 var move_state = 0
 var direction = Vector3()
 var anim = ANIM_IDLE
@@ -11,7 +14,7 @@ var dead = false
 @onready var animation = $Sk_mesh/AnimationTree
 @onready var navigationagent = $NavigationAgent3D
 
-
+const LOSE_DISTANCE = 20
 const ANIM_IDLE = 0
 const ANIM_CHASE = 2
 const ANIM_DEAD = 3
@@ -41,27 +44,32 @@ func _ready():
 	
 	# RANDOMIZE PATROL POINTS
 	randomize()
-	
+
+func updata_target_location():
+	navigationagent.target_position = GameMaster.player.position
+
+
 func _physics_process(delta):
-	
+	updata_target_location()
 	# RUNS ENEMY ANIMATION
 	animate()
 	
 	# HANDLES CHASING
 	if target and not dead:
 		if chasing:
-			chasing_player(delta)
 			var next_path_position = navigationagent.get_next_path_position()
 			var new_velocity = (next_path_position - global_position).normalized() * chase_speed
 			navigationagent.set_velocity(new_velocity)
+			
+			if position.distance_squared_to(target.position) > LOSE_DISTANCE**2:
+				target = null
+				print("perdu!")
+			
+			look_at(navigationagent.target_position)
 			rotation.x = 0
-			rotation.y = lerp_angle(rotation.y, atan2(new_velocity.x,new_velocity.z), delta * 5.0)
-
-
-
-# FUNCTION FOR CHASING
-func chasing_player(delta):
-	navigationagent.set_target_position(GameMaster.player.global_position)
+			rotation.z = 0
+			velocity = new_velocity
+			move_and_slide()
 
 # PATROLLING AREA RANGE
 func get_random_pos_in_sphere (radius : float) -> Vector3:
@@ -117,15 +125,13 @@ func animate():
 	#if animation.get("parameters/state/current_index") != anim:
 	#	animation["parameters/state/transition_request"]="state " + str(anim)
 
-# MAKE THE ENEMY MOVE
-func _on_navigation_agent_3d_velocity_computed(safe_velocity):
-	velocity = safe_velocity
-	move_and_slide()
+
 
 
 
 # DETECTION AREA - PLAYER IS NEARBY
 func _on_vision_cone_body_entered(body):
+	print("jtévu")
 	if body == GameMaster.player:
 		target = body
 		chasing = true
@@ -133,9 +139,10 @@ func _on_vision_cone_body_entered(body):
 
 
 func _on_vision_cone_body_exited(body):
+	
 	if body == GameMaster.player:
-		target = null
-		chasing = false
+		#target = null
+		#chasing = false
 		$Timer.start()
 
 

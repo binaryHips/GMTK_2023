@@ -1,7 +1,7 @@
 extends Node
 
 const LEVELS = [
-	preload("res://Scenes/Levels/Test_world.tscn"),
+	preload("res://Scenes/Levels/Blocking/level_1_0.tscn"),
 	]
 
 # Called when the node enters the scene tree for the first time.

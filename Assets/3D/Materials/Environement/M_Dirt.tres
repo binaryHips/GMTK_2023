@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://j5j2vgsbftkc"]
+
+[ext_resource type="Texture2D" uid="uid://du3hvbuxwtg40" path="res://Assets/3D/Textures/Environement/Plane_Text_DefaultMaterial_BaseColor.png" id="1_cvwxo"]
+[ext_resource type="Texture2D" uid="uid://b3q4bvjijvijm" path="res://Assets/3D/Textures/Environement/Plane_Text_DefaultMaterial_Normal.png" id="2_5l2j2"]
+[ext_resource type="Texture2D" uid="uid://cwi64xl1nksok" path="res://Assets/3D/Textures/Environement/Plane_Text_DefaultMaterial_OcclusionRoughnessMetallic.png" id="3_ex74b"]
+
+[resource]
+albedo_texture = ExtResource("1_cvwxo")
+orm_texture = ExtResource("3_ex74b")
+normal_enabled = true
+normal_texture = ExtResource("2_5l2j2")

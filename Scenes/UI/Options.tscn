@@ -152,7 +152,7 @@ offset_left = -172.872
 offset_right = 0.12793
 offset_bottom = -0.104
 grow_horizontal = 0
-text = "reset input mapping!"
+text = "reset keybinds"
 
 [connection signal="pressed" from="Go_back" to="." method="_on_go_back_pressed"]
 [connection signal="value_changed" from="sens" to="." method="_on_sens_value_changed"]

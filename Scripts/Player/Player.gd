@@ -80,7 +80,7 @@ func _input(event):
 		
 		if pos != null:
 			WEAPON.shoot(
-				(pos-$Camera.global_position) *1.001  + $Camera.global_position, #shoots juuuuuust a little further to avoid rounding errors
+				(pos-$Camera.global_position) *1.002  + $Camera.global_position, #shoots juuuuuust a little further to avoid rounding errors
 				self
 				)
 	
