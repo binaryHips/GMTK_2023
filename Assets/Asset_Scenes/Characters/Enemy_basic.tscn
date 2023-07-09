@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c2vgamxlo4ylp"]
 
-[ext_resource type="PackedScene" uid="uid://dxbj1ujc3guhp" path="res://Assets/3D/Meshes/Character/SWAT_Red.glb" id="1_igokw"]
+[ext_resource type="PackedScene" uid="uid://dxbj1ujc3guhp" path="res://Assets/3D/Meshes/Character/SWAT.glb" id="1_igokw"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qfbyt"]
 animation = &"CharacterArmature|Idle"

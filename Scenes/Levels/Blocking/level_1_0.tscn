@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://dnukn3mfoapqs" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_003.fbx" id="3_ejgva"]
 [ext_resource type="PackedScene" uid="uid://bi7kpgdtj8l7l" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_004.fbx" id="4_pai21"]
 [ext_resource type="PackedScene" uid="uid://iloho5l732t6" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_002.fbx" id="5_gblro"]
-
 [ext_resource type="PackedScene" uid="uid://dkcl1oxbyhc3c" path="res://Assets/Asset_Scenes/Props/box_001.tscn" id="6_1sk2u"]
 [ext_resource type="PackedScene" uid="uid://gif5k0ycyjty" path="res://Assets/Asset_Scenes/Interactables/Door_basic.tscn" id="7_olr8l"]
 [ext_resource type="PackedScene" uid="uid://jbjcevw7m6oc" path="res://Assets/Asset_Scenes/Interactables/cigars.tscn" id="8_bvorn"]
@@ -27,12 +26,6 @@ sky_material = SubResource("ProceduralSkyMaterial_gvu4f")
 [sub_resource type="Environment" id="Environment_67i3u"]
 background_mode = 2
 sky = SubResource("Sky_hk1f2")
-
-[sub_resource type="NavigationMesh" id="NavigationMesh_3kcbt"]
-vertices = PackedVector3Array(-29.827, 1.58862, -47.7292, -36.077, 1.58862, -47.7292, -36.077, 1.58862, -38.4792, -10.827, 1.58862, -38.4792, -10.827, 1.58862, -47.7292, -17.327, 1.58862, -47.7292, -36.077, 1.58862, -19.9792, -36.077, 1.58862, -10.4792, -29.827, 1.58862, -10.4792, -17.327, 1.58862, -10.4792, -10.827, 1.58862, -10.4792, -10.827, 1.58862, -19.9792, -23.577, 1.58862, -47.7292, -29.827, 1.58862, -47.7292, -36.077, 1.58862, -38.4792, -36.077, 1.58862, -29.2292, -36.077, 1.58862, -19.9792, -29.827, 1.58862, -10.4792, -23.577, 1.58862, -10.4792, -10.827, 1.58862, -38.4792, -17.327, 1.58862, -47.7292, -23.577, 1.58862, -47.7292, -10.827, 1.58862, -29.2292, -23.577, 1.58862, -10.4792, -17.327, 1.58862, -10.4792, -10.827, 1.58862, -19.9792, -36.077, 1.58862, -29.2292, -36.077, 1.58862, -19.9792, -23.577, 1.58862, -10.4792, -10.827, 1.58862, -19.9792, -10.827, 1.58862, -29.2292, -23.577, 1.58862, -47.7292, -20.827, 0.10862, 9.5208, -12.827, 0.10862, 9.5208, -12.577, 0.10862, 7.7708, -28.577, 0.10862, 0.770798, -28.577, 0.10862, 9.5208, -20.827, 0.10862, 9.5208, -12.577, 0.10862, 7.7708, -10.577, 0.10862, -7.7292, -19.577, 0.10862, -7.7292, -19.577, 0.10862, -7.7292, -28.577, 0.10862, -7.7292, -28.577, 0.10862, 0.770798, -12.577, 0.10862, 7.7708, -10.577, 0.10862, 7.7708, -10.577, 0.10862, -7.7292, 35.673, 0.10862, 7.7708, 42.423, 0.10862, 7.7708, 42.423, 0.10862, 3.5208, 42.423, 0.10862, 3.5208, 42.923, 0.10862, 3.2708, 42.923, 0.10862, -7.7292, 36.173, 0.10862, -7.7292, 22.423, 0.10862, 7.7708, 22.673, 0.10862, -7.7292, 16.173, 0.10862, -7.7292, 15.923, 0.10862, 7.7708, 29.173, 0.10862, 7.7708, 35.673, 0.10862, 7.7708, 42.423, 0.10862, 3.5208, 36.173, 0.10862, -7.7292, 29.423, 0.10862, -7.7292, -4.07697, 0.10862, -7.7292, -10.577, 0.10862, -7.7292, -10.577, 0.10862, 7.7708, -4.07697, 0.10862, 7.7708, 29.173, 0.10862, 7.7708, 29.423, 0.10862, -7.7292, 22.673, 0.10862, -7.7292, 22.423, 0.10862, 7.7708, 2.67303, 0.10862, -7.7292, -4.07697, 0.10862, -7.7292, -4.07697, 0.10862, 7.7708, 2.67303, 0.10862, 7.7708, 9.42303, 0.10862, -7.7292, 9.17303, 0.10862, 7.7708, 15.923, 0.10862, 7.7708, 16.173, 0.10862, -7.7292, 2.67303, 0.10862, -7.7292, 2.67303, 0.10862, 7.7708, 9.17303, 0.10862, 7.7708, 9.42303, 0.10862, -7.7292, 48.673, 1.50862, 15.2708, 48.673, 1.50862, 4.2708, 43.423, 1.50862, 4.2708, 43.423, 1.50862, 15.2708, 43.423, 1.50862, 15.2708, 43.423, 1.50862, 26.5208, 48.673, 1.50862, 26.5208, 48.673, 1.50862, 15.2708, 10.923, 0.10862, 13.5208, 0.673035, 0.10862, 13.5208, 0.673035, 0.10862, 16.5208, 0.673035, 0.10862, 33.5208, 0.673035, 0.10862, 38.0208, 10.923, 0.10862, 38.0208, 42.423, 0.10862, 19.5208, 42.423, 0.10862, 13.5208, 31.923, 0.10862, 13.5208, 31.923, 0.10862, 38.0208, 42.423, 0.10862, 38.0208, 42.423, 0.10862, 31.7708, 31.923, 0.10862, 38.0208, 42.423, 0.10862, 31.7708, 42.423, 0.10862, 25.7708, 42.423, 0.10862, 25.7708, 42.423, 0.10862, 19.5208, 31.923, 0.10862, 13.5208, 21.423, 0.10862, 13.5208, -1.57697, 0.0786197, 16.7708, -1.57697, 0.0786197, 33.2708, 0.673035, 0.10862, 33.5208, 0.673035, 0.10862, 16.5208, -0.451965, 0.0786197, 16.6458, -0.451965, 0.0786197, 33.3958, 21.423, 0.10862, 38.0208, 31.923, 0.10862, 38.0208, 42.423, 0.10862, 25.7708, 21.423, 0.10862, 13.5208, 0.673035, 0.10862, 16.5208, 0.673035, 0.10862, 33.5208, 21.423, 0.10862, 13.5208, 10.923, 0.10862, 13.5208, 0.673035, 0.10862, 16.5208, 0.673035, 0.10862, 33.5208, 10.923, 0.10862, 38.0208, 21.423, 0.10862, 38.0208, -13.327, 0.0886197, 34.7708, -7.07697, 0.0886197, 35.0208, -6.82697, 0.0786197, 33.2708, -13.327, 0.0786197, 25.7708, -13.327, 0.0786197, 25.7708, -6.82697, 0.0786197, 33.2708, -1.57697, 0.0786197, 33.2708, -1.57697, 0.0786197, 16.7708, -13.327, 0.0786197, 16.7708, -46.577, 1.69862, 26.7708, -44.327, 1.69862, 26.5208, -44.327, 1.69862, 23.2708, -46.577, 1.69862, 23.0208, -52.827, 1.69862, 24.5208, -46.577, 1.69862, 23.0208, -46.577, 1.69862, 18.0208, -52.827, 1.69862, 18.0208, -52.827, 1.69862, 24.5208, -52.827, 1.69862, 31.2708, -46.577, 1.69862, 31.2708, -46.577, 1.69862, 26.7708, -52.827, 1.69862, 24.5208, -42.077, 1.69862, 23.0208, -44.327, 1.69862, 23.2708, -44.327, 1.69862, 26.5208, -42.077, 1.69862, 26.7708, -35.827, 1.69862, 24.5208, -35.827, 1.69862, 18.0208, -42.077, 1.69862, 18.0208, -42.077, 1.69862, 23.0208, -35.827, 1.69862, 24.5208, -42.077, 1.69862, 26.7708, -42.077, 1.69862, 31.2708, -35.827, 1.69862, 31.2708, -35.827, 1.69862, 24.5208, -25.827, 0.0586197, 36.7708, -22.577, 0.0586197, 37.0208, -22.327, 0.0586197, 35.2708, -26.077, 0.0586197, 31.2708, -25.327, 0.0586197, 18.0208, -33.577, 0.0586197, 18.0208, -33.577, 0.0586197, 24.5208, -26.077, 0.0586197, 31.2708, -22.327, 0.0586197, 35.2708, -16.827, 0.0586197, 35.2708, -16.827, 0.0586197, 26.5208, -33.577, 0.0586197, 24.5208, -33.577, 0.0586197, 31.2708, -26.077, 0.0586197, 31.2708, -16.827, 0.0586197, 26.5208, -16.827, 0.0586197, 18.0208, -25.327, 0.0586197, 18.0208, -13.327, 0.0886197, 50.2708, -7.07697, 0.0886197, 50.5208, -7.07697, 0.0886197, 42.7708, -13.327, 0.0886197, 42.5208, -13.327, 0.0886197, 42.5208, -7.07697, 0.0886197, 42.7708, -7.07697, 0.0886197, 35.0208, -13.327, 0.0886197, 34.7708, -21.327, 0.0586197, 43.2708, -21.077, 0.0586197, 40.0208, -22.577, 0.0586197, 39.7708, -22.577, 0.0586197, 39.7708, -22.577, 0.0586197, 37.0208, -25.827, 0.0586197, 36.7708, -22.577, 0.0586197, 39.7708, -25.827, 0.0586197, 36.7708, -25.827, 0.0586197, 43.2708, -21.327, 0.0586197, 43.2708, -21.077, 0.0586197, 40.0208, -21.327, 0.0586197, 43.2708, -20.077, 0.0586197, 43.5208, -16.827, 0.0586197, 40.0208, -20.077, 0.0586197, 43.5208, -20.077, 0.0586197, 50.0208, -16.827, 0.0586197, 50.0208, -16.827, 0.0586197, 40.0208, -16.577, 0.0886197, 52.0208, -16.827, 0.0586197, 50.0208, -20.077, 0.0586197, 50.0208, -17.7436, 0.0586197, 51.3541, -16.702, 0.0586197, 51.0208, -13.827, 0.0886197, 57.0208, -13.827, 0.0886197, 52.0208, -16.577, 0.0886197, 52.0208, -20.327, 0.0886197, 57.0208, -13.827, 0.0886197, 57.0208, -16.577, 0.0886197, 52.0208, -20.077, 0.0586197, 50.0208, -20.127, 0.0586197, 51.4208, -20.177, 0.0886197, 52.8208, -17.7436, 0.0586197, 51.3541, -13.327, 0.0886197, 51.7708, -13.827, 0.0886197, 52.0208, -13.827, 0.0886197, 57.0208, -7.07697, 0.0886197, 57.0208, -7.07697, 0.0886197, 50.5208, -7.07697, 0.0886197, 50.5208, -13.327, 0.0886197, 50.2708, -13.327, 0.0886197, 51.7708)
-polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(5, 4, 3), PackedInt32Array(8, 7, 6), PackedInt32Array(11, 10, 9), PackedInt32Array(13, 12, 14), PackedInt32Array(14, 12, 15), PackedInt32Array(18, 17, 16), PackedInt32Array(20, 19, 21), PackedInt32Array(21, 19, 22), PackedInt32Array(25, 24, 23), PackedInt32Array(27, 26, 28), PackedInt32Array(28, 26, 29), PackedInt32Array(29, 26, 30), PackedInt32Array(30, 26, 31), PackedInt32Array(32, 34, 33), PackedInt32Array(36, 35, 37), PackedInt32Array(37, 35, 38), PackedInt32Array(38, 35, 40), PackedInt32Array(38, 40, 39), PackedInt32Array(43, 42, 41), PackedInt32Array(46, 45, 44), PackedInt32Array(49, 48, 47), PackedInt32Array(51, 50, 52), PackedInt32Array(52, 50, 53), PackedInt32Array(57, 56, 54), PackedInt32Array(54, 56, 55), PackedInt32Array(59, 58, 60), PackedInt32Array(60, 58, 61), PackedInt32Array(61, 58, 62), PackedInt32Array(66, 65, 63), PackedInt32Array(63, 65, 64), PackedInt32Array(70, 69, 67), PackedInt32Array(67, 69, 68), PackedInt32Array(74, 73, 71), PackedInt32Array(71, 73, 72), PackedInt32Array(78, 77, 75), PackedInt32Array(75, 77, 76), PackedInt32Array(80, 79, 81), PackedInt32Array(81, 79, 82), PackedInt32Array(86, 85, 83), PackedInt32Array(83, 85, 84), PackedInt32Array(90, 89, 87), PackedInt32Array(87, 89, 88), PackedInt32Array(93, 92, 91), PackedInt32Array(96, 95, 94), PackedInt32Array(99, 98, 97), PackedInt32Array(102, 101, 100), PackedInt32Array(105, 104, 103), PackedInt32Array(107, 106, 108), PackedInt32Array(108, 106, 109), PackedInt32Array(110, 114, 111), PackedInt32Array(111, 114, 115), PackedInt32Array(115, 114, 113), PackedInt32Array(115, 113, 112), PackedInt32Array(117, 116, 118), PackedInt32Array(118, 116, 119), PackedInt32Array(119, 116, 121), PackedInt32Array(119, 121, 120), PackedInt32Array(124, 123, 122), PackedInt32Array(127, 126, 125), PackedInt32Array(129, 128, 130), PackedInt32Array(130, 128, 131), PackedInt32Array(133, 132, 134), PackedInt32Array(134, 132, 136), PackedInt32Array(134, 136, 135), PackedInt32Array(138, 137, 139), PackedInt32Array(139, 137, 140), PackedInt32Array(140, 137, 141), PackedInt32Array(143, 142, 144), PackedInt32Array(144, 142, 145), PackedInt32Array(147, 146, 148), PackedInt32Array(148, 146, 149), PackedInt32Array(151, 150, 152), PackedInt32Array(152, 150, 153), PackedInt32Array(153, 150, 154), PackedInt32Array(156, 155, 157), PackedInt32Array(157, 155, 158), PackedInt32Array(160, 159, 161), PackedInt32Array(161, 159, 162), PackedInt32Array(164, 163, 165), PackedInt32Array(165, 163, 166), PackedInt32Array(169, 168, 167), PackedInt32Array(171, 170, 172), PackedInt32Array(172, 170, 173), PackedInt32Array(175, 174, 176), PackedInt32Array(176, 174, 179), PackedInt32Array(176, 179, 177), PackedInt32Array(177, 179, 178), PackedInt32Array(183, 182, 180), PackedInt32Array(180, 182, 181), PackedInt32Array(187, 186, 184), PackedInt32Array(184, 186, 185), PackedInt32Array(190, 189, 188), PackedInt32Array(193, 192, 191), PackedInt32Array(197, 196, 194), PackedInt32Array(194, 196, 195), PackedInt32Array(199, 198, 200), PackedInt32Array(200, 198, 201), PackedInt32Array(203, 202, 204), PackedInt32Array(204, 202, 205), PackedInt32Array(206, 209, 210), PackedInt32Array(210, 209, 207), PackedInt32Array(207, 209, 208), PackedInt32Array(213, 212, 211), PackedInt32Array(217, 220, 218), PackedInt32Array(218, 220, 219), PackedInt32Array(219, 220, 216), PackedInt32Array(219, 216, 214), PackedInt32Array(214, 216, 215), PackedInt32Array(222, 221, 223), PackedInt32Array(223, 221, 224), PackedInt32Array(224, 221, 225), PackedInt32Array(228, 227, 226)]
-cell_height = 0.01
-agent_height = 2.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_64b1r"]
 albedo_color = Color(0.211765, 0.0784314, 0, 1)
@@ -778,36 +771,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.862, 1.35002, -45.6161)
 [node name="Tree_223" parent="Tree" instance=ExtResource("5_gblro")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.1924, 1.35003, -44.3667)
 
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
-navigation_mesh = SubResource("NavigationMesh_3kcbt")
+[node name="Sol" type="Node" parent="."]
 
-[node name="Sol" type="Node" parent="NavigationRegion3D"]
-
-[node name="Sol2" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol2" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5113, -0.0125942, 25.7406)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(42.6438, 0.203569, 25.2097)
 
-[node name="Sol4" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol4" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.76603, -0.0421386, 24.98)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(14, 0.203569, 17.343)
 
-[node name="Sol11" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol11" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.1599, -0.0595958, 24.7474)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(17.3453, 0.203569, 14)
 
-[node name="Sol3" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol3" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.0799, 1.39091, 15.3)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(5.94022, 0.203569, 22.9646)
 
-[node name="Sol" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3191, -0.00629711, 0.00314665)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
@@ -815,24 +805,23 @@ size = Vector3(55.8092, 0.203569, 16.405)
 
 [node name="Sol15" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20.6388, -0.00629711, -1.43699)
-
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(20.6166, 0.203569, 16.405)
 
-[node name="Sol16" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol16" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -23.4408, 1.47293, -29.2292)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(38, 0.203569, 26.1237)
 
-[node name="Sol5" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol5" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10.2806, -0.033005, 42.6178)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(18, 0.203569, 7.03713)
 
-[node name="Sol12" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol12" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -38.9073, 1.58287, 24.6178)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
@@ -840,7 +829,6 @@ size = Vector3(14, 0.203569, 7.03713)
 
 [node name="Sol14" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -57.1957, 1.58287, 35.6178)
-
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(32, 0.203569, 21.9894)
@@ -893,37 +881,37 @@ material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(6, 0.203569, 6)
 
-[node name="Sol13" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol13" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -44.4112, 1.58287, 24.7798)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(4, 0.203569, 4)
 
-[node name="Sol6" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol6" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -13.7669, -0.033005, 54.6147)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(14, 0.203569, 6)
 
-[node name="Sol7" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol7" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -18.3398, -0.0564706, 48.7391)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(9.68433, 0.203569, 4)
 
-[node name="Sol8" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol8" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -21.3398, -0.0564706, 41.7391)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(9.68433, 0.203569, 4)
 
-[node name="Sol10" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol10" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -21.3398, -0.0564706, 33.7391)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
 size = Vector3(9.68433, 0.203569, 4)
 
-[node name="Sol9" type="CSGBox3D" parent="NavigationRegion3D/Sol"]
+[node name="Sol9" type="CSGBox3D" parent="Sol"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -24.1724, -0.0564706, 37.7374)
 material_override = SubResource("StandardMaterial3D_64b1r")
 use_collision = true
@@ -1674,1029 +1662,773 @@ transform = Transform3D(0.552243, -0.000518805, -0.0803201, 0.000558138, 0.55805
 
 [node name="Fougerre" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.7136, 1.57471, -39.7795)
-skeleton = NodePath("../..")
 
 [node name="Fougerre36" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.7858, 1.57471, -37.5818)
-skeleton = NodePath("../..")
 
 [node name="Fougerre37" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.2248, 1.57471, -36.9497)
-skeleton = NodePath("../..")
 
 [node name="Fougerre2" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5748, 1.57471, -28.5882)
-skeleton = NodePath("../..")
 
 [node name="Fougerre3" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.208424, 0, 0.978039, 0, 1, 0, -0.978039, 0, 0.208424, -13.7828, 1.57471, -27.5746)
-skeleton = NodePath("../..")
 
 [node name="Fougerre6" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.208424, 0, 0.978039, 0, 1, 0, -0.978039, 0, 0.208424, -15.0379, 1.57471, -27.8004)
-skeleton = NodePath("../..")
 
 [node name="Fougerre4" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.322134, 0, 0.946694, 0, 1, 0, -0.946694, 0, 0.322134, -15.3168, 1.57471, -26.9846)
-skeleton = NodePath("../..")
 
 [node name="Fougerre5" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.185478, 0, -0.982648, 0, 1, 0, 0.982648, 0, -0.185478, -15.5129, 1.57471, -28.3626)
-skeleton = NodePath("../..")
 
 [node name="Fougerre7" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.935364, 0, -0.353687, 0, 1, 0, 0.353687, 0, 0.935364, -21.1159, 1.57471, -21.3804)
-skeleton = NodePath("../..")
 
 [node name="Fougerre8" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.343234, 0, -0.93925, 0, 1, 0, 0.93925, 0, -0.343234, -30.422, 1.57471, -22.4018)
-skeleton = NodePath("../..")
 
 [node name="Fougerre9" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.343234, 0, -0.93925, 0, 1, 0, 0.93925, 0, -0.343234, -29.2109, 1.57471, -22.0027)
-skeleton = NodePath("../..")
 
 [node name="Fougerre10" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.451438, 0, -0.892302, 0, 1, 0, 0.892302, 0, -0.451438, -28.8205, 1.57471, -22.7714)
-skeleton = NodePath("../..")
 
 [node name="Fougerre11" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.321159, 0, 0.947025, 0, 1, 0, -0.947025, 0, 0.321159, -28.8191, 1.57471, -21.3795)
-skeleton = NodePath("../..")
 
 [node name="Fougerre12" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.994719, 0, -0.102636, 0, 1, 0, 0.102636, 0, 0.994719, -21.1878, 1.57471, -30.7636)
-skeleton = NodePath("../..")
 
 [node name="Fougerre13" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.307705, 0, 0.951482, 0, 1, 0, -0.951482, 0, 0.307705, -20.504, 1.57471, -29.6742)
-skeleton = NodePath("../..")
 
 [node name="Fougerre38" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.725459, 0, -0.688266, 0, 1, 0, 0.688266, 0, -0.725459, -34.9493, 1.57471, -17.6762)
-skeleton = NodePath("../..")
 
 [node name="Fougerre39" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.725459, 0, -0.688266, 0, 1, 0, 0.688266, 0, -0.725459, -34.0425, 1.57471, -16.7797)
-skeleton = NodePath("../..")
 
 [node name="Fougerre40" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.801452, 0, -0.598059, 0, 1, 0, 0.598059, 0, -0.801452, -33.3507, 1.57471, -17.2943)
-skeleton = NodePath("../..")
 
 [node name="Fougerre41" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.709153, 0, 0.705055, 0, 1, 0, -0.705055, 0, 0.709153, -33.9691, 1.57471, -16.0473)
-skeleton = NodePath("../..")
 
 [node name="Fougerre42" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.845038, 0, -0.534707, 0, 1, 0, 0.534707, 0, 0.845038, -22.9583, 1.57471, -21.0533)
-skeleton = NodePath("../..")
 
 [node name="Fougerre43" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.69909, 0, 0.715034, 0, 1, 0, -0.715034, 0, 0.69909, -22.8309, 1.57471, -19.7733)
-skeleton = NodePath("../..")
 
 [node name="Fougerre44" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.725459, 0, -0.688266, 0, 1, 0, 0.688266, 0, -0.725459, -30.4916, 1.57471, -41.561)
-skeleton = NodePath("../..")
 
 [node name="Fougerre45" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.725459, 0, -0.688266, 0, 1, 0, 0.688266, 0, -0.725459, -29.5847, 1.57471, -40.6645)
-skeleton = NodePath("../..")
 
 [node name="Fougerre46" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.801452, 0, -0.598059, 0, 1, 0, 0.598059, 0, -0.801452, -28.893, 1.57471, -41.1791)
-skeleton = NodePath("../..")
 
 [node name="Fougerre47" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.709153, 0, 0.705055, 0, 1, 0, -0.705055, 0, 0.709153, -29.5114, 1.57471, -39.9321)
-skeleton = NodePath("../..")
 
 [node name="Fougerre48" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.845038, 0, -0.534707, 0, 1, 0, 0.534707, 0, 0.845038, -18.5005, 1.57471, -44.9381)
-skeleton = NodePath("../..")
 
 [node name="Fougerre49" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.69909, 0, 0.715034, 0, 1, 0, -0.715034, 0, 0.69909, -18.3731, 1.57471, -43.6581)
-skeleton = NodePath("../..")
 
 [node name="Fougerre50" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.725459, 0, -0.688266, 0, 1, 0, 0.688266, 0, -0.725459, -23.8324, 0.0466394, -3.02663)
-skeleton = NodePath("../..")
 
 [node name="Fougerre51" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.725459, 0, -0.688266, 0, 1, 0, 0.688266, 0, -0.725459, -23.9881, 0.0466399, -2.14858)
-skeleton = NodePath("../..")
 
 [node name="Fougerre52" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.801452, 0, -0.598059, 0, 1, 0, 0.598059, 0, -0.801452, -22.2338, 0.0466397, -2.64469)
-skeleton = NodePath("../..")
 
 [node name="Fougerre53" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.709153, 0, 0.705055, 0, 1, 0, -0.705055, 0, 0.709153, -22.8522, 0.0466397, -1.39772)
-skeleton = NodePath("../..")
 
 [node name="Fougerre54" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.845038, 0, -0.534707, 0, 1, 0, 0.534707, 0, 0.845038, -11.8413, 0.0466394, -6.40366)
-skeleton = NodePath("../..")
 
 [node name="Fougerre55" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.69909, 0, 0.715034, 0, 1, 0, -0.715034, 0, 0.69909, -11.714, 0.0466394, -5.12366)
-skeleton = NodePath("../..")
 
 [node name="Fougerre56" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.725459, 0, -0.688266, 0, 1, 0, 0.688266, 0, -0.725459, -28.1622, 0.0466394, 4.61031)
-skeleton = NodePath("../..")
 
 [node name="Fougerre57" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.725459, 0, -0.688266, 0, 1, 0, 0.688266, 0, -0.725459, -27.0627, 0.046639, 3.76444)
-skeleton = NodePath("../..")
 
 [node name="Fougerre58" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.801452, 0, -0.598059, 0, 1, 0, 0.598059, 0, -0.801452, -26.5636, 0.0466397, 4.99224)
-skeleton = NodePath("../..")
 
 [node name="Fougerre59" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.709153, 0, 0.705055, 0, 1, 0, -0.705055, 0, 0.709153, -27.1819, 0.0466397, 6.23922)
-skeleton = NodePath("../..")
 
 [node name="Fougerre60" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.845038, 0, -0.534707, 0, 1, 0, 0.534707, 0, 0.845038, -16.1711, 0.0466394, 1.23328)
-skeleton = NodePath("../..")
 
 [node name="Fougerre61" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.69909, 0, 0.715034, 0, 1, 0, -0.715034, 0, 0.69909, -16.0437, 0.0466394, 2.51327)
-skeleton = NodePath("../..")
 
 [node name="Fougerre62" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.821637, 0, 0.570011, 0, 1, 0, -0.570011, 0, -0.821637, -25.738, 0.0466394, -9.71001)
-skeleton = NodePath("../..")
 
 [node name="Fougerre63" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.821637, 0, 0.570011, 0, 1, 0, -0.570011, 0, -0.821637, -26.2722, 0.0466394, -7.01403)
-skeleton = NodePath("../..")
 
 [node name="Fougerre64" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.748805, 0, 0.66279, 0, 1, 0, -0.66279, 0, -0.748805, -25.7862, 0.0466397, -8.06713)
-skeleton = NodePath("../..")
 
 [node name="Fougerre65" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.834752, 0, -0.550627, 0, 1, 0, 0.550627, 0, 0.834752, -27.133, 0.0466397, -8.41848)
-skeleton = NodePath("../..")
 
 [node name="Fougerre66" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.351319, 0, -0.936256, 0, 1, 0, 0.936256, 0, -0.351319, -19.9887, 0.0466394, 1.34146)
-skeleton = NodePath("../..")
 
 [node name="Fougerre67" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.842471, 0, -0.538741, 0, 1, 0, 0.538741, 0, 0.842471, -21.2159, 0.0466394, 1.72696)
-skeleton = NodePath("../..")
 
 [node name="Fougerre68" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.275554, 0, 0.961286, 0, 1, 0, -0.961286, 0, 0.275554, -17.7333, 0.0466394, -7.99808)
-skeleton = NodePath("../..")
 
 [node name="Fougerre69" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.275554, 0, 0.961286, 0, 1, 0, -0.961286, 0, 0.275554, -17.731, 0.0466394, -9.05596)
-skeleton = NodePath("../..")
 
 [node name="Fougerre70" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.386824, 0, 0.922154, 0, 1, 0, -0.922154, 0, 0.386824, -19.3045, 0.0466397, -7.51549)
-skeleton = NodePath("../..")
 
 [node name="Fougerre71" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.252981, 0, -0.967471, 0, 1, 0, 0.967471, 0, -0.252981, -19.4048, 0.0466397, -8.90376)
-skeleton = NodePath("../..")
 
 [node name="Fougerre72" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.9995, 0, 0.0316203, 0, 1, 0, -0.0316203, 0, -0.9995, -26.3493, 0.0466394, 0.999379)
-skeleton = NodePath("../..")
 
 [node name="Fougerre73" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.239245, 0, -0.970959, 0, 1, 0, 0.970959, 0, -0.239245, -27.1089, 0.0466394, -0.0386863)
-skeleton = NodePath("../..")
 
 [node name="Fougerre74" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.275554, 0, 0.961286, 0, 1, 0, -0.961286, 0, 0.275554, 1.98129, 0.0466433, -2.72182)
-skeleton = NodePath("../..")
 
 [node name="Fougerre75" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.275554, 0, 0.961286, 0, 1, 0, -0.961286, 0, 0.275554, 0.744829, 0.0466433, -3.03383)
-skeleton = NodePath("../..")
 
 [node name="Fougerre76" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.386824, 0, 0.922154, 0, 1, 0, -0.922154, 0, 0.386824, 0.410145, 0.0466435, -2.23923)
-skeleton = NodePath("../..")
 
 [node name="Fougerre77" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.252981, 0, -0.967471, 0, 1, 0, 0.967471, 0, -0.252981, 0.309788, 0.0466435, -3.6275)
-skeleton = NodePath("../..")
 
 [node name="Fougerre78" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.9995, 0, 0.0316203, 0, 1, 0, -0.0316203, 0, -0.9995, -6.63468, 0.0466433, 6.27564)
-skeleton = NodePath("../..")
 
 [node name="Fougerre79" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.239245, 0, -0.970959, 0, 1, 0, 0.970959, 0, -0.239245, -7.39431, 0.0466433, 5.23757)
-skeleton = NodePath("../..")
 
 [node name="Fougerre80" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.275554, 0, 0.961286, 0, 1, 0, -0.961286, 0, 0.275554, 17.7132, 0.0466413, -2.0315)
-skeleton = NodePath("../..")
 
 [node name="Fougerre81" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.275554, 0, 0.961286, 0, 1, 0, -0.961286, 0, 0.275554, 16.4768, 0.0466413, -2.34351)
-skeleton = NodePath("../..")
 
 [node name="Fougerre82" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.386824, 0, 0.922154, 0, 1, 0, -0.922154, 0, 0.386824, 16.1421, 0.0466416, -1.54891)
-skeleton = NodePath("../..")
 
 [node name="Fougerre83" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.252981, 0, -0.967471, 0, 1, 0, 0.967471, 0, -0.252981, 16.1082, 0.0466416, -3.20574)
-skeleton = NodePath("../..")
 
 [node name="Fougerre84" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.9995, 0, 0.0316203, 0, 1, 0, -0.0316203, 0, -0.9995, 9.09727, 0.0466413, 6.96596)
-skeleton = NodePath("../..")
 
 [node name="Fougerre85" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.239245, 0, -0.970959, 0, 1, 0, 0.970959, 0, -0.239245, 8.33764, 0.0466413, 5.92789)
-skeleton = NodePath("../..")
 
 [node name="Fougerre86" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.946063, 0, 0.323984, 0, 1, 0, -0.323984, 0, -0.946063, 27.622, 0.0466394, -3.00778)
-skeleton = NodePath("../..")
 
 [node name="Fougerre87" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.946063, 0, 0.323984, 0, 1, 0, -0.323984, 0, -0.946063, 26.7459, 0.0466394, -2.18926)
-skeleton = NodePath("../..")
 
 [node name="Fougerre88" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.901334, 0, 0.433124, 0, 1, 0, -0.433124, 0, -0.901334, 28.0242, 0.0466397, -1.41417)
-skeleton = NodePath("../..")
 
 [node name="Fougerre89" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.953386, 0, -0.301754, 0, 1, 0, 0.301754, 0, 0.953386, 26.6326, 0.0466397, -1.3844)
-skeleton = NodePath("../..")
 
 [node name="Fougerre90" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.0823041, 0, -0.996607, 0, 1, 0, 0.996607, 0, -0.0823041, 36.1706, 0.0466394, 6.05371)
-skeleton = NodePath("../..")
 
 [node name="Fougerre91" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.957566, 0, -0.288213, 0, 1, 0, 0.288213, 0, 0.957566, 35.0953, 0.0466394, 6.75967)
-skeleton = NodePath("../..")
 
 [node name="Fougerre92" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.339329, 0, -0.940668, 0, 1, 0, 0.940668, 0, -0.339329, 17.2141, 0.0466394, 3.58735)
-skeleton = NodePath("../..")
 
 [node name="Fougerre93" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.339329, 0, -0.940668, 0, 1, 0, 0.940668, 0, -0.339329, 18.4269, 0.0466394, 3.98149)
-skeleton = NodePath("../..")
 
 [node name="Fougerre94" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.447728, 0, -0.89417, 0, 1, 0, 0.89417, 0, -0.447728, 18.814, 0.0466397, 3.21109)
-skeleton = NodePath("../..")
 
 [node name="Fougerre95" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.317222, 0, 0.948351, 0, 1, 0, -0.948351, 0, 0.317222, 18.8212, 0.0466397, 4.60296)
-skeleton = NodePath("../..")
 
 [node name="Fougerre110" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.339329, 0, -0.940668, 0, 1, 0, 0.940668, 0, -0.339329, 18.4269, 0.0466394, 19.0206)
-skeleton = NodePath("../..")
 
 [node name="Fougerre111" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.447728, 0, -0.89417, 0, 1, 0, 0.89417, 0, -0.447728, 18.814, 0.0466397, 18.2502)
-skeleton = NodePath("../..")
 
 [node name="Fougerre112" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.317222, 0, 0.948351, 0, 1, 0, -0.948351, 0, 0.317222, 18.8212, 0.0466397, 19.6421)
-skeleton = NodePath("../..")
 
 [node name="Fougerre113" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.810195, 0, 0.58616, 0, 1, 0, -0.58616, 0, -0.810195, 25.5157, 0.0466394, 18.7069)
-skeleton = NodePath("../..")
 
 [node name="Fougerre114" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.735542, 0, 0.67748, 0, 1, 0, -0.67748, 0, -0.735542, 26.149, 0.0466397, 19.292)
-skeleton = NodePath("../..")
 
 [node name="Fougerre115" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.823691, 0, -0.567039, 0, 1, 0, 0.567039, 0, 0.823691, 24.8094, 0.0466397, 18.9141)
-skeleton = NodePath("../..")
 
 [node name="Fougerre116" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.833722, 0, -0.552185, 0, 1, 0, 0.552185, 0, 0.833722, 24.9935, 0.0466394, 20.307)
-skeleton = NodePath("../..")
 
 [node name="Fougerre117" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.762905, 0, -0.64651, 0, 1, 0, 0.64651, 0, 0.762905, 24.3365, 0.0466397, 19.7486)
-skeleton = NodePath("../..")
 
 [node name="Fougerre118" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.846416, 0, 0.532522, 0, 1, 0, -0.532522, 0, -0.846416, 25.6906, 0.0466397, 20.0709)
-skeleton = NodePath("../..")
 
 [node name="Fougerre119" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.810195, 0, 0.58616, 0, 1, 0, -0.58616, 0, -0.810195, 13.9424, 0.0466394, 32.2106)
-skeleton = NodePath("../..")
 
 [node name="Fougerre120" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.735542, 0, 0.67748, 0, 1, 0, -0.67748, 0, -0.735542, 14.5758, 0.0466397, 32.7956)
-skeleton = NodePath("../..")
 
 [node name="Fougerre121" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.823691, 0, -0.567039, 0, 1, 0, 0.567039, 0, 0.823691, 13.2362, 0.0466397, 32.4177)
-skeleton = NodePath("../..")
 
 [node name="Fougerre122" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.833722, 0, -0.552185, 0, 1, 0, 0.552185, 0, 0.833722, 13.4202, 0.0466394, 33.8106)
-skeleton = NodePath("../..")
 
 [node name="Fougerre123" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.762905, 0, -0.64651, 0, 1, 0, 0.64651, 0, 0.762905, 12.7633, 0.0466397, 33.2522)
-skeleton = NodePath("../..")
 
 [node name="Fougerre124" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.846416, 0, 0.532522, 0, 1, 0, -0.532522, 0, -0.846416, 14.1173, 0.0466397, 33.5745)
-skeleton = NodePath("../..")
 
 [node name="Fougerre125" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.954282, 0, 0.298908, 0, 1, 0, -0.298908, 0, 0.954282, 24.4321, 0.0466394, 34.3568)
-skeleton = NodePath("../..")
 
 [node name="Fougerre126" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.982839, 0, 0.184466, 0, 1, 0, -0.184466, 0, 0.982839, 23.5845, 0.0466397, 34.5146)
-skeleton = NodePath("../..")
 
 [node name="Fougerre127" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.947025, 0, -0.321158, 0, 1, 0, 0.321158, 0, -0.947025, 24.6884, 0.0466397, 33.6669)
-skeleton = NodePath("../..")
 
 [node name="Fougerre128" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.941117, 0, -0.338081, 0, 1, 0, 0.338081, 0, -0.941117, 23.4619, 0.0466394, 32.9815)
-skeleton = NodePath("../..")
 
 [node name="Fougerre129" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.974378, 0, -0.224917, 0, 1, 0, 0.224917, 0, -0.974378, 24.3023, 0.0466397, 32.7888)
-skeleton = NodePath("../..")
 
 [node name="Fougerre130" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.932947, 0, 0.360013, 0, 1, 0, -0.360013, 0, 0.932947, 23.2343, 0.0466397, 33.6815)
-skeleton = NodePath("../..")
 
 [node name="Fougerre131" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.954282, 0, 0.298908, 0, 1, 0, -0.298908, 0, 0.954282, 3.0739, 0.0466394, 22.8325)
-skeleton = NodePath("../..")
 
 [node name="Fougerre132" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.982839, 0, 0.184466, 0, 1, 0, -0.184466, 0, 0.982839, 2.22626, 0.0466397, 22.9903)
-skeleton = NodePath("../..")
 
 [node name="Fougerre133" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.947025, 0, -0.321158, 0, 1, 0, 0.321158, 0, -0.947025, 3.33019, 0.0466397, 22.1425)
-skeleton = NodePath("../..")
 
 [node name="Fougerre134" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.941117, 0, -0.338081, 0, 1, 0, 0.338081, 0, -0.941117, 2.10365, 0.0466394, 21.4572)
-skeleton = NodePath("../..")
 
 [node name="Fougerre135" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.974378, 0, -0.224917, 0, 1, 0, 0.224917, 0, -0.974378, 2.94404, 0.0466397, 21.2645)
-skeleton = NodePath("../..")
 
 [node name="Fougerre136" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.932947, 0, 0.360013, 0, 1, 0, -0.360013, 0, 0.932947, 1.87608, 0.0466397, 22.1571)
-skeleton = NodePath("../..")
 
 [node name="Fougerre137" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.954282, 0, 0.298908, 0, 1, 0, -0.298908, 0, 0.954282, -1.86212, 0.0466394, 31.8754)
-skeleton = NodePath("../..")
 
 [node name="Fougerre138" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.982839, 0, 0.184466, 0, 1, 0, -0.184466, 0, 0.982839, -2.70976, 0.0466397, 32.0332)
-skeleton = NodePath("../..")
 
 [node name="Fougerre139" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.947025, 0, -0.321158, 0, 1, 0, 0.321158, 0, -0.947025, -1.60582, 0.0466397, 31.1854)
-skeleton = NodePath("../..")
 
 [node name="Fougerre140" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.941117, 0, -0.338081, 0, 1, 0, 0.338081, 0, -0.941117, -2.83237, 0.0466394, 30.5001)
-skeleton = NodePath("../..")
 
 [node name="Fougerre141" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.974378, 0, -0.224917, 0, 1, 0, 0.224917, 0, -0.974378, -1.99198, 0.0466397, 30.3074)
-skeleton = NodePath("../..")
 
 [node name="Fougerre142" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.932947, 0, 0.360013, 0, 1, 0, -0.360013, 0, 0.932947, -3.05994, 0.0466397, 31.2)
-skeleton = NodePath("../..")
 
 [node name="Fougerre143" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.748782, 0, -0.662816, 0, 1, 0, 0.662816, 0, 0.748782, -2.22575, 0.0466394, 19.1026)
-skeleton = NodePath("../..")
 
 [node name="Fougerre144" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.66553, 0, -0.746371, 0, 1, 0, 0.746371, 0, 0.66553, -2.79864, 0.0466397, 18.4582)
-skeleton = NodePath("../..")
 
 [node name="Fougerre145" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.764089, 0, 0.645111, 0, 1, 0, -0.645111, 0, -0.764089, -1.50258, 0.0466397, 18.9657)
-skeleton = NodePath("../..")
 
 [node name="Fougerre146" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.775529, 0, 0.631312, 0, 1, 0, -0.631312, 0, -0.775529, -1.54912, 0.0466394, 17.5615)
-skeleton = NodePath("../..")
 
 [node name="Fougerre147" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.6958, 0, 0.718236, 0, 1, 0, -0.718236, 0, -0.6958, -0.9501, 0.0466397, 18.1816)
-skeleton = NodePath("../..")
 
 [node name="Fougerre148" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.790091, 0, -0.61299, 0, 1, 0, 0.61299, 0, 0.790091, -2.26602, 0.0466397, 17.7281)
-skeleton = NodePath("../..")
 
 [node name="Fougerre149" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.748782, 0, -0.662816, 0, 1, 0, 0.662816, 0, 0.748782, -12.3829, 0.0466394, 19.6249)
-skeleton = NodePath("../..")
 
 [node name="Fougerre150" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.66553, 0, -0.746371, 0, 1, 0, 0.746371, 0, 0.66553, -12.9558, 0.0466397, 18.9806)
-skeleton = NodePath("../..")
 
 [node name="Fougerre151" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.764089, 0, 0.645111, 0, 1, 0, -0.645111, 0, -0.764089, -11.6598, 0.0466397, 19.4881)
-skeleton = NodePath("../..")
 
 [node name="Fougerre152" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.775529, 0, 0.631312, 0, 1, 0, -0.631312, 0, -0.775529, -11.7063, 0.0466394, 18.0838)
-skeleton = NodePath("../..")
 
 [node name="Fougerre153" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.6958, 0, 0.718236, 0, 1, 0, -0.718236, 0, -0.6958, -11.1073, 0.0466397, 18.704)
-skeleton = NodePath("../..")
 
 [node name="Fougerre154" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.790091, 0, -0.61299, 0, 1, 0, 0.61299, 0, 0.790091, -12.4232, 0.0466397, 18.2504)
-skeleton = NodePath("../..")
 
 [node name="Fougerre155" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.748782, 0, -0.662816, 0, 1, 0, 0.662816, 0, 0.748782, -10.7246, 0.0466404, 38.0276)
-skeleton = NodePath("../..")
 
 [node name="Fougerre156" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.66553, 0, -0.746371, 0, 1, 0, 0.746371, 0, 0.66553, -12.0747, 0.0466406, 37.2027)
-skeleton = NodePath("../..")
 
 [node name="Fougerre157" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.764089, 0, 0.645111, 0, 1, 0, -0.645111, 0, -0.764089, -11.0384, 0.0466406, 37.2928)
-skeleton = NodePath("../..")
 
 [node name="Fougerre158" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.775529, 0, 0.631312, 0, 1, 0, -0.631312, 0, -0.775529, -10.8252, 0.0466404, 36.306)
-skeleton = NodePath("../..")
 
 [node name="Fougerre159" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.6958, 0, 0.718236, 0, 1, 0, -0.718236, 0, -0.6958, -10.2261, 0.0466406, 36.9261)
-skeleton = NodePath("../..")
 
 [node name="Fougerre160" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.790091, 0, -0.61299, 0, 1, 0, 0.61299, 0, 0.790091, -12.0593, 0.0466406, 36.3506)
-skeleton = NodePath("../..")
 
 [node name="Fougerre161" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.748782, 0, -0.662816, 0, 1, 0, 0.662816, 0, 0.748782, -8.74251, 0.0466404, 49.3084)
-skeleton = NodePath("../..")
 
 [node name="Fougerre162" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.66553, 0, -0.746371, 0, 1, 0, 0.746371, 0, 0.66553, -10.0926, 0.0466406, 48.4835)
-skeleton = NodePath("../..")
 
 [node name="Fougerre163" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.764089, 0, 0.645111, 0, 1, 0, -0.645111, 0, -0.764089, -9.05631, 0.0466406, 48.5735)
-skeleton = NodePath("../..")
 
 [node name="Fougerre164" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.775529, 0, 0.631312, 0, 1, 0, -0.631312, 0, -0.775529, -8.84309, 0.0466404, 47.5868)
-skeleton = NodePath("../..")
 
 [node name="Fougerre165" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.6958, 0, 0.718236, 0, 1, 0, -0.718236, 0, -0.6958, -8.24407, 0.0466406, 48.2069)
-skeleton = NodePath("../..")
 
 [node name="Fougerre166" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.790091, 0, -0.61299, 0, 1, 0, 0.61299, 0, 0.790091, -10.0773, 0.0466406, 47.6314)
-skeleton = NodePath("../..")
 
 [node name="Fougerre96" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.995137, 0, -0.0985037, 0, 1, 0, 0.0985037, 0, 0.995137, 26.4134, 0.0466394, -4.81274)
-skeleton = NodePath("../..")
 
 [node name="Fougerre97" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.30375, 0, 0.952752, 0, 1, 0, -0.952752, 0, 0.30375, 27.1018, 0.0466394, -3.72612)
-skeleton = NodePath("../..")
 
 [node name="Fougerre98" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.313976, 0, -0.949431, 0, 1, 0, 0.949431, 0, -0.313976, 5.00482, 0.0466394, 4.41919)
-skeleton = NodePath("../..")
 
 [node name="Fougerre99" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.313976, 0, -0.949431, 0, 1, 0, 0.949431, 0, -0.313976, 6.22774, 0.0466394, 4.78066)
-skeleton = NodePath("../..")
 
 [node name="Fougerre100" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.423583, 0, -0.905857, 0, 1, 0, 0.905857, 0, -0.423583, 6.59409, 0.0466397, 4.00015)
-skeleton = NodePath("../..")
 
 [node name="Fougerre101" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.291671, 0, 0.956519, 0, 1, 0, -0.956519, 0, 0.291671, 6.63856, 0.0466397, 5.39133)
-skeleton = NodePath("../..")
 
 [node name="Fougerre102" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.997421, 0, -0.0717762, 0, 1, 0, 0.0717762, 0, 0.997421, 13.9755, 0.0466394, -4.22462)
-skeleton = NodePath("../..")
 
 [node name="Fougerre103" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.278086, 0, 0.960556, 0, 1, 0, -0.960556, 0, 0.278086, 14.6928, 0.0466394, -3.15686)
-skeleton = NodePath("../..")
 
 [node name="Fougerre104" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.348719, 0, 0.937227, 0, 1, 0, -0.937227, 0, 0.348719, 36.942, 0.0466394, -3.46754)
-skeleton = NodePath("../..")
 
 [node name="Fougerre105" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.348719, 0, 0.937227, 0, 1, 0, -0.937227, 0, 0.348719, 36.7215, 0.0466394, -4.31477)
-skeleton = NodePath("../..")
 
 [node name="Fougerre106" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.456648, 0, 0.889648, 0, 1, 0, -0.889648, 0, 0.456648, 35.3384, 0.0466397, -3.1073)
-skeleton = NodePath("../..")
 
 [node name="Fougerre107" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.32669, 0, -0.945132, 0, 1, 0, 0.945132, 0, -0.32669, 35.3452, 0.0466397, -4.49917)
-skeleton = NodePath("../..")
 
 [node name="Fougerre108" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.994102, 0, 0.108451, 0, 1, 0, -0.108451, 0, -0.994102, 27.6592, 0.0466394, 4.84013)
-skeleton = NodePath("../..")
 
 [node name="Fougerre109" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.313263, 0, -0.949666, 0, 1, 0, 0.949666, 0, -0.313263, 26.9817, 0.0466394, 3.74668)
-skeleton = NodePath("../..")
 
 [node name="Fougerre14" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.508891, 0, -0.860831, 0, 1, 0, 0.860831, 0, -0.508891, -30.887, 1.57471, -14.6187)
-skeleton = NodePath("../..")
 
 [node name="Fougerre15" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.60671, 0, -0.794923, 0, 1, 0, 0.794923, 0, -0.60671, -30.3629, 1.57471, -15.3033)
-skeleton = NodePath("../..")
 
 [node name="Fougerre16" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.488606, 0, 0.872504, 0, 1, 0, -0.872504, 0, 0.488606, -30.6156, 1.57471, -13.9345)
-skeleton = NodePath("../..")
 
 [node name="Fougerre17" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.324842, 0, -0.945768, 0, 1, 0, 0.945768, 0, -0.324842, -32.7076, 1.57471, -29.8743)
-skeleton = NodePath("../..")
 
 [node name="Fougerre18" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.857293, 0, -0.514829, 0, 1, 0, 0.514829, 0, 0.857293, -33.9234, 1.57471, -29.4544)
-skeleton = NodePath("../..")
 
 [node name="Fougerre19" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.857293, 0, -0.514829, 0, 1, 0, 0.514829, 0, 0.857293, -33.3022, 1.57471, -30.5681)
-skeleton = NodePath("../..")
 
 [node name="Fougerre20" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.790711, 0, -0.61219, 0, 1, 0, 0.61219, 0, 0.790711, -33.9832, 1.57471, -31.0969)
-skeleton = NodePath("../..")
 
 [node name="Fougerre21" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.869107, 0, 0.494625, 0, 1, 0, -0.494625, 0, -0.869107, -32.6162, 1.57471, -30.8348)
-skeleton = NodePath("../..")
 
 [node name="Fougerre22" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.842706, 0, 0.538374, 0, 1, 0, -0.538374, 0, -0.842706, -34.4539, 1.57471, -41.4242)
-skeleton = NodePath("../..")
 
 [node name="Fougerre23" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.70219, 0, -0.711989, 0, 1, 0, 0.711989, 0, -0.70219, -34.5758, 1.57471, -42.7047)
-skeleton = NodePath("../..")
 
 [node name="Fougerre24" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.70219, 0, -0.711989, 0, 1, 0, 0.711989, 0, -0.70219, -33.6396, 1.57471, -41.8388)
-skeleton = NodePath("../..")
 
 [node name="Fougerre25" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.781139, 0, -0.624357, 0, 1, 0, 0.624357, 0, -0.781139, -32.9653, 1.57471, -42.3761)
-skeleton = NodePath("../..")
 
 [node name="Fougerre26" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.685336, 0, 0.728227, 0, 1, 0, -0.728227, 0, 0.685336, -33.542, 1.57471, -41.1093)
-skeleton = NodePath("../..")
 
 [node name="Fougerre27" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.842706, 0, 0.538374, 0, 1, 0, -0.538374, 0, -0.842706, -15.3442, 1.57471, -24.3273)
-skeleton = NodePath("../..")
 
 [node name="Fougerre28" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.70219, 0, -0.711989, 0, 1, 0, 0.711989, 0, -0.70219, -15.466, 1.57471, -25.6079)
-skeleton = NodePath("../..")
 
 [node name="Fougerre29" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.70219, 0, -0.711989, 0, 1, 0, 0.711989, 0, -0.70219, -14.5299, 1.57471, -24.7419)
-skeleton = NodePath("../..")
 
 [node name="Fougerre30" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.781139, 0, -0.624357, 0, 1, 0, 0.624357, 0, -0.781139, -13.8556, 1.57471, -25.2793)
-skeleton = NodePath("../..")
 
 [node name="Fougerre31" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(0.685336, 0, 0.728227, 0, 1, 0, -0.728227, 0, 0.685336, -14.4322, 1.57471, -24.0124)
-skeleton = NodePath("../..")
 
 [node name="Fougerre32" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.842706, 0, 0.538374, 0, 1, 0, -0.538374, 0, -0.842706, -13.4895, 1.57471, -13.8351)
-skeleton = NodePath("../..")
 
 [node name="Fougerre33" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.70219, 0, -0.711989, 0, 1, 0, 0.711989, 0, -0.70219, -13.6114, 1.57471, -15.1156)
-skeleton = NodePath("../..")
 
 [node name="Fougerre34" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.70219, 0, -0.711989, 0, 1, 0, 0.711989, 0, -0.70219, -12.6753, 1.57471, -14.2496)
-skeleton = NodePath("../..")
 
 [node name="Fougerre35" parent="Fougerre" instance=ExtResource("10_4j0in")]
 transform = Transform3D(-0.781139, 0, -0.624357, 0, 1, 0, 0.624357, 0, -0.781139, -12.001, 1.57471, -14.787)
-skeleton = NodePath("../..")
 
 [node name="Bush" type="Node" parent="."]
 
 [node name="Bush" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.8067, 1.66572, -38.6569)
-skeleton = NodePath("../..")
 
 [node name="Bush2" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5357, 1.66572, -37.4081)
-skeleton = NodePath("../..")
 
 [node name="Bush3" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6087, 1.66572, -38.6425)
-skeleton = NodePath("../..")
 
 [node name="Bush4" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0611531, 0, -0.998128, 0, 1, 0, 0.998128, 0, 0.0611531, -32.5508, 1.67714, -33.4219)
-skeleton = NodePath("../..")
 
 [node name="Bush5" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0611531, 0, -0.998128, 0, 1, 0, 0.998128, 0, 0.0611531, -33.7807, 1.67714, -33.0751)
-skeleton = NodePath("../..")
 
 [node name="Bush6" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0611531, 0, -0.998128, 0, 1, 0, 0.998128, 0, 0.0611531, -32.4919, 1.67714, -32.2253)
-skeleton = NodePath("../..")
 
 [node name="Bush7" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.818821, 0, -0.574048, 0, 1, 0, 0.574048, 0, -0.818821, -17.1606, 1.70937, -24.2372)
-skeleton = NodePath("../..")
 
 [node name="Bush8" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.818821, 0, -0.574048, 0, 1, 0, 0.574048, 0, -0.818821, -18.0994, 1.63168, -25.1042)
-skeleton = NodePath("../..")
 
 [node name="Bush9" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.818821, 0, -0.574048, 0, 1, 0, 0.574048, 0, -0.818821, -18.1499, 1.63168, -23.5613)
-skeleton = NodePath("../..")
 
 [node name="Bush10" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.325717, 0, -0.945467, 0, 1, 0, 0.945467, 0, 0.325717, -17.5647, 1.63168, -24.9011)
-skeleton = NodePath("../..")
 
 [node name="Bush18" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.818821, 0, -0.574048, 0, 1, 0, 0.574048, 0, -0.818821, -15.0171, 0.10237, -5.89337)
-skeleton = NodePath("../..")
 
 [node name="Bush23" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.818821, 0, -0.574048, 0, 1, 0, 0.574048, 0, -0.818821, -16.5805, 0.102371, -6.54611)
-skeleton = NodePath("../..")
 
 [node name="Bush24" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.818821, 0, -0.574048, 0, 1, 0, 0.574048, 0, -0.818821, -16.0064, 0.10237, -5.21748)
-skeleton = NodePath("../..")
 
 [node name="Bush25" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.325717, 0, -0.945467, 0, 1, 0, 0.945467, 0, 0.325717, -15.4211, 0.10237, -7.48028)
-skeleton = NodePath("../..")
 
 [node name="Bush26" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.94524, 0, 0.326377, 0, 1, 0, -0.326377, 0, -0.94524, -23.1874, 0.10237, -5.17182)
-skeleton = NodePath("../..")
 
 [node name="Bush27" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.94524, 0, 0.326377, 0, 1, 0, -0.326377, 0, -0.94524, -23.036, 0.10237, -6.44069)
-skeleton = NodePath("../..")
 
 [node name="Bush28" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.94524, 0, 0.326377, 0, 1, 0, -0.326377, 0, -0.94524, -23.6284, 0.10237, -5.87714)
-skeleton = NodePath("../..")
 
 [node name="Bush29" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.57462, 0, -0.818421, 0, 1, 0, 0.818421, 0, -0.57462, -22.3128, 0.10237, -5.54771)
-skeleton = NodePath("../..")
 
 [node name="Bush30" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.398093, 0, 0.917345, 0, 1, 0, -0.917345, 0, -0.398093, -15.2039, 0.10237, 5.25553)
-skeleton = NodePath("../..")
 
 [node name="Bush31" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.398093, 0, 0.917345, 0, 1, 0, -0.917345, 0, -0.398093, -14.1662, 0.10237, 4.75996)
-skeleton = NodePath("../..")
 
 [node name="Bush32" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.398093, 0, 0.917345, 0, 1, 0, -0.917345, 0, -0.398093, -15.6676, 0.10237, 4.40091)
-skeleton = NodePath("../..")
 
 [node name="Bush33" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.991592, 0, -0.129401, 0, 1, 0, 0.129401, 0, -0.991592, -14.6846, 0.10237, 4.12736)
-skeleton = NodePath("../..")
 
 [node name="Bush34" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.398093, 0, 0.917345, 0, 1, 0, -0.917345, 0, -0.398093, -3.1342, 0.10237, 5.03379)
-skeleton = NodePath("../..")
 
 [node name="Bush35" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.398093, 0, 0.917345, 0, 1, 0, -0.917345, 0, -0.398093, -2.09647, 0.10237, 4.28806)
-skeleton = NodePath("../..")
 
 [node name="Bush36" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.398093, 0, 0.917345, 0, 1, 0, -0.917345, 0, -0.398093, -3.59786, 0.10237, 3.92902)
-skeleton = NodePath("../..")
 
 [node name="Bush37" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.991592, 0, -0.129401, 0, 1, 0, 0.129401, 0, -0.991592, -3.1427, 0.10237, 3.33577)
-skeleton = NodePath("../..")
 
 [node name="Bush38" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.967308, 0, 0.253606, 0, 1, 0, -0.253606, 0, 0.967308, 6.62601, 0.0760658, 0.976913)
-skeleton = NodePath("../..")
 
 [node name="Bush39" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.967308, 0, 0.253606, 0, 1, 0, -0.253606, 0, 0.967308, 7.20484, 0.0760658, 2.11619)
-skeleton = NodePath("../..")
 
 [node name="Bush40" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.967308, 0, 0.253606, 0, 1, 0, -0.253606, 0, 0.967308, 7.78855, 0.0760658, 0.687083)
-skeleton = NodePath("../..")
 
 [node name="Bush41" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.023263, 0, 0.999729, 0, 1, 0, -0.999729, 0, 0.023263, 6.82625, 0.0760658, 0.195181)
-skeleton = NodePath("../..")
 
 [node name="Bush42" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.793619, 0, -0.608415, 0, 1, 0, 0.608415, 0, 0.793619, 29.9682, 0.0760658, 2.39151)
-skeleton = NodePath("../..")
 
 [node name="Bush43" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.793619, 0, -0.608415, 0, 1, 0, 0.608415, 0, 0.793619, 29.4234, 0.0760658, 3.54747)
-skeleton = NodePath("../..")
 
 [node name="Bush44" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.793619, 0, -0.608415, 0, 1, 0, 0.608415, 0, 0.793619, 30.9102, 0.0760658, 3.1319)
-skeleton = NodePath("../..")
 
 [node name="Bush45" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.803846, 0, 0.594837, 0, 1, 0, -0.594837, 0, 0.803846, 31.2136, 0.0760657, 4.80374)
-skeleton = NodePath("../..")
 
 [node name="Bush46" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.934888, 0, -0.354944, 0, 1, 0, 0.354944, 0, 0.934888, 40.4144, 0.0760648, -3.9162)
-skeleton = NodePath("../..")
 
 [node name="Bush47" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.934888, 0, -0.354944, 0, 1, 0, 0.354944, 0, 0.934888, 40.2245, 0.0760648, -2.65251)
-skeleton = NodePath("../..")
 
 [node name="Bush48" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.934888, 0, -0.354944, 0, 1, 0, 0.354944, 0, 0.934888, 41.5293, 0.0760648, -3.47743)
-skeleton = NodePath("../..")
 
 [node name="Bush49" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.599219, 0, 0.800585, 0, 1, 0, -0.800585, 0, 0.599219, 41.3605, 0.0760648, -2.24688)
-skeleton = NodePath("../..")
 
 [node name="Bush50" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.934888, 0, -0.354944, 0, 1, 0, 0.354944, 0, 0.934888, 36.9874, 0.0760667, 20.8254)
-skeleton = NodePath("../..")
 
 [node name="Bush51" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.934888, 0, -0.354944, 0, 1, 0, 0.354944, 0, 0.934888, 36.9755, 0.0760667, 22.247)
-skeleton = NodePath("../..")
 
 [node name="Bush52" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.934888, 0, -0.354944, 0, 1, 0, 0.354944, 0, 0.934888, 38.2612, 0.0760667, 21.5158)
-skeleton = NodePath("../..")
 
 [node name="Bush53" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.595145, 0, 0.803618, 0, 1, 0, -0.803618, 0, 0.595145, 37.5164, -0.0170929, 20.8376)
-skeleton = NodePath("../..")
 
 [node name="Bush54" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 30.0208, 0.0760667, 16.4581)
-skeleton = NodePath("../..")
 
 [node name="Bush55" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 25.8399, 0.0760667, 22.4934)
-skeleton = NodePath("../..")
 
 [node name="Bush56" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 31.4659, 0.0760667, 16.3534)
-skeleton = NodePath("../..")
 
 [node name="Bush57" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0683982, 0, 0.997658, 0, 1, 0, -0.997658, 0, 0.0683982, 30.5472, 0.0760667, 17.0009)
-skeleton = NodePath("../..")
 
 [node name="Bush58" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 28.4695, 0.0760667, 31.6011)
-skeleton = NodePath("../..")
 
 [node name="Bush59" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 33.5121, 0.0760667, 33.2115)
-skeleton = NodePath("../..")
 
 [node name="Bush60" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 34.2013, 0.0760667, 31.9028)
-skeleton = NodePath("../..")
 
 [node name="Bush61" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0683982, 0, 0.997658, 0, 1, 0, -0.997658, 0, 0.0683982, 27.8114, 0.0760667, 29.7734)
-skeleton = NodePath("../..")
 
 [node name="Bush62" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 35.7007, 0.0760667, 31.1322)
-skeleton = NodePath("../..")
 
 [node name="Bush63" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 36.4566, 0.0760667, 32.3361)
-skeleton = NodePath("../..")
 
 [node name="Bush64" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 37.1458, 0.0760667, 31.0275)
-skeleton = NodePath("../..")
 
 [node name="Bush65" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0683982, 0, 0.997658, 0, 1, 0, -0.997658, 0, 0.0683982, 36.1692, 0.0760667, 32.9476)
-skeleton = NodePath("../..")
 
 [node name="Bush66" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 23.0341, 0.0760686, 30.199)
-skeleton = NodePath("../..")
 
 [node name="Bush67" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 23.79, 0.0760686, 31.403)
-skeleton = NodePath("../..")
 
 [node name="Bush68" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 24.4792, 0.0760686, 30.0943)
-skeleton = NodePath("../..")
 
 [node name="Bush69" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0683982, 0, 0.997658, 0, 1, 0, -0.997658, 0, 0.0683982, 27.3874, 0.0760686, 30.4825)
-skeleton = NodePath("../..")
 
 [node name="Bush70" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 23.5987, 0.0760686, 21.4829)
-skeleton = NodePath("../..")
 
 [node name="Bush71" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 24.3545, 0.0760686, 22.6869)
-skeleton = NodePath("../..")
 
 [node name="Bush72" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.978828, 0, 0.204684, 0, 1, 0, -0.204684, 0, 0.978828, 9.49632, 0.0760686, 16.0765)
-skeleton = NodePath("../..")
 
 [node name="Bush73" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0683982, 0, 0.997658, 0, 1, 0, -0.997658, 0, 0.0683982, 24.1251, 0.0760686, 22.0257)
-skeleton = NodePath("../..")
 
 [node name="Bush74" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0399225, 0, -0.999203, 0, 1, 0, 0.999203, 0, 0.0399225, 19.3681, 0.0760686, 15.5574)
-skeleton = NodePath("../..")
 
 [node name="Bush75" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0399225, 0, -0.999203, 0, 1, 0, 0.999203, 0, 0.0399225, 8.50418, 0.0760686, 17.1942)
-skeleton = NodePath("../..")
 
 [node name="Bush76" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.0399225, 0, -0.999203, 0, 1, 0, 0.999203, 0, 0.0399225, 19.2322, 0.0760686, 16.9999)
-skeleton = NodePath("../..")
 
 [node name="Bush77" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.972594, 0, -0.232512, 0, 1, 0, 0.232512, 0, 0.972594, 18.7456, 0.0760686, 15.9868)
-skeleton = NodePath("../..")
 
 [node name="Bush78" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.940092, 0, 0.340921, 0, 1, 0, -0.340921, 0, 0.940092, -10.0797, 0.0760686, 18.593)
-skeleton = NodePath("../..")
 
 [node name="Bush90" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.940092, 0, 0.340921, 0, 1, 0, -0.340921, 0, 0.940092, -11.042, 0.0760686, 17.8973)
-skeleton = NodePath("../..")
 
 [node name="Bush91" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.940092, 0, 0.340921, 0, 1, 0, -0.340921, 0, 0.940092, -12.147, 0.0760686, 18.8699)
-skeleton = NodePath("../..")
 
 [node name="Bush79" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.940092, 0, 0.340921, 0, 1, 0, -0.340921, 0, 0.940092, 10.1327, 0.0760686, 33.4186)
-skeleton = NodePath("../..")
 
 [node name="Bush80" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.940092, 0, 0.340921, 0, 1, 0, -0.340921, 0, 0.940092, 10.4633, 0.0760686, 21.0077)
-skeleton = NodePath("../..")
 
 [node name="Bush81" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.0732383, 0, 0.997315, 0, 1, 0, -0.997315, 0, -0.0732383, 9.30029, 0.0760686, 24.7711)
-skeleton = NodePath("../..")
 
 [node name="Bush82" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.800177, 0, -0.599764, 0, 1, 0, 0.599764, 0, 0.800177, 9.16422, 0.0760686, 21.7393)
-skeleton = NodePath("../..")
 
 [node name="Bush83" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.800177, 0, -0.599764, 0, 1, 0, 0.599764, 0, 0.800177, 8.75946, 0.0760686, 23.102)
-skeleton = NodePath("../..")
 
 [node name="Bush84" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.800177, 0, -0.599764, 0, 1, 0, 0.599764, 0, 0.800177, 10.1973, 0.0760686, 22.7552)
-skeleton = NodePath("../..")
 
 [node name="Bush85" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.794266, 0, 0.60757, 0, 1, 0, -0.60757, 0, 0.794266, 10.1517, 0.0760686, 26.2452)
-skeleton = NodePath("../..")
 
 [node name="Bush86" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.486534, 0, -0.873662, 0, 1, 0, 0.873662, 0, -0.486534, 4.40794, 0.0760686, 15.5113)
-skeleton = NodePath("../..")
 
 [node name="Bush87" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.486534, 0, -0.873662, 0, 1, 0, 0.873662, 0, -0.486534, 3.00309, 0.0760686, 15.2937)
-skeleton = NodePath("../..")
 
 [node name="Bush88" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.486534, 0, -0.873662, 0, 1, 0, 0.873662, 0, -0.486534, 3.54042, 0.0760686, 16.6717)
-skeleton = NodePath("../..")
 
 [node name="Bush89" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.709005, 0, -0.705204, 0, 1, 0, 0.705204, 0, 0.709005, 7.84242, 0.0760686, 16.5626)
-skeleton = NodePath("../..")
 
 [node name="Bush14" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.818821, 0, -0.574048, 0, 1, 0, 0.574048, 0, -0.818821, -30.3365, 2, -27.3995)
-skeleton = NodePath("../..")
 
 [node name="Bush15" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.818821, 0, -0.574048, 0, 1, 0, 0.574048, 0, -0.818821, -31.2753, 2, -28.2665)
-skeleton = NodePath("../..")
 
 [node name="Bush16" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(-0.818821, 0, -0.574048, 0, 1, 0, 0.574048, 0, -0.818821, -31.3258, 2, -26.7236)
-skeleton = NodePath("../..")
 
 [node name="Bush17" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.325717, 0, -0.945467, 0, 1, 0, 0.945467, 0, 0.325717, -30.7405, 2, -28.0633)
-skeleton = NodePath("../..")
 
 [node name="Bush19" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.555193, 0, -0.831722, 0, 1, 0, 0.831722, 0, 0.555193, -13.2758, 1.63144, -16.5331)
-skeleton = NodePath("../..")
 
 [node name="Bush20" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.555193, 0, -0.831722, 0, 1, 0, 0.831722, 0, 0.555193, -14.164, 1.63144, -15.6143)
-skeleton = NodePath("../..")
 
 [node name="Bush21" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.555193, 0, -0.831722, 0, 1, 0, 0.831722, 0, 0.555193, -12.6227, 1.63144, -15.5286)
-skeleton = NodePath("../..")
 
 [node name="Bush22" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.952661, 0, 0.304033, 0, 1, 0, -0.304033, 0, 0.952661, -13.9487, 1.63144, -16.1443)
-skeleton = NodePath("../..")
 
 [node name="Bush11" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.325717, 0, -0.945467, 0, 1, 0, 0.945467, 0, 0.325717, -18.6571, 1.63168, -24.2381)
-skeleton = NodePath("../..")
 
 [node name="Bush12" parent="Bush" instance=ExtResource("9_hgrvp")]
 transform = Transform3D(0.325717, 0, -0.945467, 0, 1, 0, 0.945467, 0, 0.325717, -17.1881, 1.63168, -23.7636)
-skeleton = NodePath("../..")
 
 [node name="Trees hitBox" type="StaticBody3D" parent="."]
 visible = false
@@ -2962,4 +2694,3 @@ dialogue_line_name = "COLONEL_pickup_first_cigarettes"
 [node name="DialogueTriggerArea6" parent="Dialogue" instance=ExtResource("15_jgyjt")]
 transform = Transform3D(5.09509, 0, 0, 0, 5.09509, 0, 0, 0, 5.09509, -5.686, 0.0596456, 18.798)
 dialogue_line_name = "COLONEL_dont_kill_them"
-

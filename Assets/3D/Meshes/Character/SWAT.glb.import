@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dxbj1ujc3guhp"
-path="res://.godot/imported/SWAT_Red.glb-2c022f1098aa689b12474cb90a4721a8.scn"
+path="res://.godot/imported/SWAT.glb-750970bcb54f6f07333b49631b41e99c.scn"
 
 [deps]
 
-source_file="res://Assets/3D/Meshes/Character/SWAT_Red.glb"
-dest_files=["res://.godot/imported/SWAT_Red.glb-2c022f1098aa689b12474cb90a4721a8.scn"]
+source_file="res://Assets/3D/Meshes/Character/SWAT.glb"
+dest_files=["res://.godot/imported/SWAT.glb-750970bcb54f6f07333b49631b41e99c.scn"]
 
 [params]
 
