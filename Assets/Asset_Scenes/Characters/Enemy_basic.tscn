@@ -22,8 +22,8 @@ animation = &"CharacterArmature|Run"
 
 [sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_jnd5s"]
 
-[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_brvgf"]
-graph_offset = Vector2(-208.934, -49.1795)
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_urkvp"]
+graph_offset = Vector2(30.0578, 62.3636)
 nodes/Animation/node = SubResource("AnimationNodeAnimation_7fif1")
 nodes/Animation/position = Vector2(-80, 220)
 "nodes/Animation 2/node" = SubResource("AnimationNodeAnimation_tfqg0")
@@ -87,7 +87,7 @@ bones/69/rotation = Quaternion(0.167543, -0.686971, 0.167542, 0.686972)
 bones/71/rotation = Quaternion(0.614414, 0.348044, -0.346153, 0.617689)
 
 [node name="AnimationTree" type="AnimationTree" parent="." index="2"]
-tree_root = SubResource("AnimationNodeBlendTree_brvgf")
+tree_root = SubResource("AnimationNodeBlendTree_urkvp")
 anim_player = NodePath("../AnimationPlayer")
 active = true
 "parameters/Get shot/active" = false

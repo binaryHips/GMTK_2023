@@ -11,7 +11,7 @@ var anim = ANIM_IDLE
 var chasing = false
 var dead = false
 
-@onready var animation = $Sk_mesh/AnimationTree
+@onready var animation = $SWAT/AnimationTree
 @onready var navigationagent = $NavigationAgent3D
 
 const LOSE_DISTANCE = 20
@@ -51,6 +51,7 @@ func attack():
 		$Timer.start()
 	
 		apply_damage(20)
+		
 	
 func _physics_process(delta):
 	
@@ -138,7 +139,7 @@ func animate():
 	move_state = clamp(move_state, 0, 1)
 	
 	# ANIMATIONTREE BLEND
-	animation["parameters/Run/blend_amount"] = min(velocity, 1)
+	animation["parameters/Run/blend_amount"] = min(velocity.length(), 1)
 	
 	# ANIMATIONTREE TRANSITION
 	#if animation.get("parameters/state/current_index") != anim:
@@ -170,11 +171,14 @@ func apply_damage(n):
 	
 	hp -= n
 	print("PV: ", hp)
+	animation.set("parameters/Getshot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
+	animation.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
 	if hp <= 0:
 		if bluey:
 			GameMaster.game_over(1)
-	
+			
 		dead = true
+		queue_free()
 
 func save():
 	var save_dict = {
