@@ -21,25 +21,22 @@ script = ExtResource("1_n6s02")
 layout_mode = 0
 offset_left = 50.0
 offset_top = 50.0
-offset_right = 295.0
-offset_bottom = 444.0
+offset_right = 348.0
+offset_bottom = 563.0
+theme_override_font_sizes/normal_font_size = 23
 bbcode_enabled = true
-text = "[center] Credits
-
-A game made for the
+text = "[center] A game made for the
 GMTK jam 2023
+
 by
 Tristan \"SkyToWind\" Bauchet
 Melvil \"Goat_wenn\" Rigot
 Tom \"Ohhnyx\" Zinck
 
-
 title art by Matthieu Aubert
 
-
 Thanks for playing!
-[/center]
-"
+[/center]"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 1

@@ -47,7 +47,6 @@ node_connections = [&"output", 0, &"OneShot", &"Get shot", 0, &"Run", &"Get shot
 
 [node name="Skeleton3D" parent="RootNode/CharacterArmature" index="0"]
 bones/1/position = Vector3(4.53219e-06, 0.00828953, -0.000456057)
-bones/1/rotation = Quaternion(3.75739e-32, 0.23553, -1.55038e-31, 0.971867)
 bones/4/rotation = Quaternion(0.0854647, -0.237483, 0.0115782, 0.967555)
 bones/5/rotation = Quaternion(0.00363648, 2.25668e-10, -2.13629e-09, 0.999993)
 bones/6/rotation = Quaternion(-0.00947105, 6.77982e-07, -8.58601e-10, 0.999955)
