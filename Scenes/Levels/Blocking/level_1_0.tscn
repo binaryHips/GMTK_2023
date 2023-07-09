@@ -2566,7 +2566,7 @@ speaker_color = Color(0.596078, 0.113725, 0, 1)
 dialogue_line_name = "COLONEL_greetings"
 
 [node name="DialogueTriggerArea2" parent="NavigationRegion3D/Dialogue" instance=ExtResource("15_jgyjt")]
-transform = Transform3D(7.47446, 0, 0, 0, 7.47446, 0, 0, 0, 7.47446, -24.9944, 1.46483, -7.42313)
+transform = Transform3D(7.47446, 0, 0, 0, 7.47446, 0, 0, 0, 7.47446, -24.9944, -0.21263, -7.42313)
 speaker_name = "COLONEL"
 speaker_color = Color(0.597988, 0.112677, 3.85046e-07, 1)
 dialogue_line_name = "COLONEL_mission"
@@ -2583,17 +2583,17 @@ speaker_name = "COLONEL"
 speaker_color = Color(0.597988, 0.112677, 3.85046e-07, 1)
 dialogue_line_name = "COLONEL_asks_pickup_cigarettes"
 
-[node name="DialogueTriggerArea6" parent="NavigationRegion3D/Dialogue" instance=ExtResource("15_jgyjt")]
-transform = Transform3D(5.09509, 0, 0, 0, 5.09509, 0, 0, 0, 5.09509, -5.4006, 0.0596456, 22.1608)
-speaker_name = "COLONEL"
-speaker_color = Color(0.597988, 0.112677, 3.85046e-07, 1)
-dialogue_line_name = "COLONEL_dont_kill_them"
-
 [node name="DialogueTriggerArea7" parent="NavigationRegion3D/Dialogue" instance=ExtResource("15_jgyjt")]
 transform = Transform3D(1.74102, 0, 0, 0, 1.74102, 0, 0, 0, 1.74102, -61.4555, 0.0596437, 31.6479)
 speaker_name = "COLONEL"
 speaker_color = Color(0.597988, 0.112677, 3.85046e-07, 1)
 dialogue_line_name = "COLONEL_gg_you_win"
+
+[node name="DialogueTriggerArea8" parent="NavigationRegion3D/Dialogue" instance=ExtResource("15_jgyjt")]
+transform = Transform3D(3.03115, 0, 0, 0, 3.03115, 0, 0, 0, 3.03115, -2.6657, 0.163485, 23.2738)
+speaker_name = "COLONEL"
+speaker_color = Color(0.597988, 0.112677, 3.85046e-07, 1)
+dialogue_line_name = "COLONEL_dont_kill_them"
 
 [node name="Walls" type="Node" parent="NavigationRegion3D"]
 
@@ -3917,7 +3917,7 @@ transform = Transform3D(3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, -27.7407, 
 [node name="Checkpoint" type="Node" parent="NavigationRegion3D"]
 
 [node name="Checkpoint" parent="NavigationRegion3D/Checkpoint" instance=ExtResource("19_e46ah")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.6959, 1.39608, -44.965)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.8541, 2.964, -44.965)
 
 [node name="Checkpoint5" parent="NavigationRegion3D/Checkpoint" instance=ExtResource("19_e46ah")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5317, 0.396075, 5.71088)
@@ -4184,7 +4184,7 @@ directional_shadow_max_distance = 110.0
 directional_shadow_pancake_size = 16.0
 
 [node name="Player" parent="." instance=ExtResource("1_jnyte")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14.6886, 5.02145, -44.415)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.3446, 3.78045, -44.415)
 
 [node name="Area3D" type="Area3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -65.1926, 1.00784, 30.9888)
