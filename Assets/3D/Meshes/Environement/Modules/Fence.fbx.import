@@ -1,0 +1,43 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://onxh3xag1m6x"
+path="res://.godot/imported/Fence.fbx-61b7d5980b54ef86428ed330a18da3fd.scn"
+
+[deps]
+
+source_file="res://Assets/3D/Meshes/Environement/Modules/Fence.fbx"
+dest_files=["res://.godot/imported/Fence.fbx-61b7d5980b54ef86428ed330a18da3fd.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"Material #48": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Materials/Environement/Modules/M_Fence.tres"
+},
+"Material #49": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Materials/Environement/Modules/M_Fence_Grid.tres"
+}
+}
+}
+gltf/embedded_image_handling=1
