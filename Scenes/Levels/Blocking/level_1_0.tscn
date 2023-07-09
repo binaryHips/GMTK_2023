@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://c1gv8twl1ft85"]
+[gd_scene load_steps=32 format=3 uid="uid://c1gv8twl1ft85"]
 
 [ext_resource type="PackedScene" uid="uid://crq2xjn1pfqua" path="res://Scenes/Player/Player.tscn" id="1_jnyte"]
 [ext_resource type="PackedScene" uid="uid://est2r0xb5v75" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_001.fbx" id="2_nb3br"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://onxh3xag1m6x" path="res://Assets/3D/Meshes/Environement/Modules/Fence.fbx" id="19_2qfjb"]
 [ext_resource type="PackedScene" uid="uid://de2mb6dviknqk" path="res://Assets/Asset_Scenes/Levels/CheckpointArea.tscn" id="19_e46ah"]
 [ext_resource type="PackedScene" uid="uid://cr8kl3ir8kbtt" path="res://Assets/3D/Meshes/Environement/Modules/Fence_Pillard.fbx" id="20_pv4w7"]
+[ext_resource type="PackedScene" uid="uid://4tbkh01g3x6r" path="res://Scenes/Characters/Enemy_knife.tscn" id="22_jis6x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gvu4f"]
 sky_top_color = Color(0.321569, 0.447059, 0.666667, 1)
@@ -3854,3 +3855,6 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 43.484
 
 [node name="Fence46" parent="Fence" instance=ExtResource("19_2qfjb")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 43.4846, -4.76837e-07, 0.198722)
+
+[node name="Player2" parent="." instance=ExtResource("22_jis6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.2695, 0.120314, -2.17588)

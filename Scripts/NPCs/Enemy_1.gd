@@ -55,12 +55,12 @@ func _physics_process(delta):
 	# RUNS ENEMY ANIMATION
 	animate()
 	
-	if position.distance_squared_to(target.position) < 3 :
-		attack()
 	
 	# HANDLES CHASING
 	if target and not dead:
 		if chasing:
+			if position.distance_squared_to(target.position) < 3 :
+				attack()
 			var next_path_position = navigationagent.get_next_path_position()
 			var new_velocity = (next_path_position - global_position).normalized() * chase_speed
 			navigationagent.set_velocity(new_velocity)
@@ -122,12 +122,12 @@ func animate():
 	move_state = clamp(move_state, 0, 1)
 	
 	# ANIMATIONTREE BLEND
-	animation["parameters/Blend2/blend_amount"]=move_state
-	animation["parameters/Blend3/blend_amount"]=move_state
+	#animation["parameters/Blend2/blend_amount"]=move_state
+	#animation["parameters/Blend3/blend_amount"]=move_state
 	
 	# ANIMATIONTREE TRANSITION
-	if animation.get("parameters/state/current_index") != anim:
-		animation["parameters/state/transition_request"]="state " + str(anim)
+	#if animation.get("parameters/state/current_index") != anim:
+		#animation["parameters/state/transition_request"]="state " + str(anim)
 
 
 
