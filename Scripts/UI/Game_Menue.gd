@@ -11,7 +11,7 @@ func _ready():
 func _on_visibility_changed():
 	if visible:
 		
-		if not FileAccess.file_exists("user://savegame.json"):
+		if not FileAccess.file_exists("user://savegame.dat"):
 			$Reload.disabled = true
 		else:
 			$Reload.disabled = false
