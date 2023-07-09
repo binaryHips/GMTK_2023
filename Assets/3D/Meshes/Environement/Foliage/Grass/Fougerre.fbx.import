@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Fougerre.fbx-b42127a942a6e5ef8436eaf7b43dd432
 
 [params]
 
-nodes/root_type="Node3D"
+nodes/root_type="MeshInstance3D"
 nodes/root_name="Scene Root"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
