@@ -138,8 +138,7 @@ func animate():
 	move_state = clamp(move_state, 0, 1)
 	
 	# ANIMATIONTREE BLEND
-	#animation["parameters/Blend2/blend_amount"]=move_state
-	#animation["parameters/Blend3/blend_amount"]=move_state
+	animation["parameters/Run/blend_amount"] = min(velocity, 1)
 	
 	# ANIMATIONTREE TRANSITION
 	#if animation.get("parameters/state/current_index") != anim:
