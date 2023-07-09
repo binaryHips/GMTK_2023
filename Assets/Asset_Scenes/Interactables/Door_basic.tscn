@@ -11,9 +11,11 @@ script/source = "extends RigidBody3D
 
 func interact():
 	
-	if freeze and get_parent().key_id in GameMaster.acquired_keys:
+	if freeze and int(get_parent().key_id) in GameMaster.acquired_keys:
 		freeze = false
+		print(\"test\")
 		$key.hide()
+
 "
 
 [sub_resource type="BoxMesh" id="BoxMesh_fud8p"]

@@ -2,21 +2,23 @@ extends Control
 
 const OPTIONS = preload("res://Scenes/UI/Options.tscn")
 
-func _ready():
-	get_tree().paused = false
-	if not FileAccess.file_exists("user://savegame.json"):
-		$Reload.disabled = true
-	else:
-		$Reload.disabled = false
-	
 
-func _process(delta):
-	pass
+func _ready():
+	GameMaster.pause_menue = self
+	Input.use_accumulated_input = false
+
+
+func _on_visibility_changed():
+	if visible:
+		
+		if not FileAccess.file_exists("user://savegame.json"):
+			$Reload.disabled = true
+		else:
+			$Reload.disabled = false
 
 
 func _on_resume_pressed():
-	$AnimationPlayer.play("screen_fade_new_game")
-	
+	GameMaster.toggle_pause(false)
 
 
 func _on_reload_pressed():
@@ -31,8 +33,11 @@ func _on_options_pressed():
 func _on_quit_pressed():
 	get_tree().quit()
 
+
+func _input(event):
+	if event.is_action_released("menue"):
+		
+		GameMaster.toggle_pause(false)
+
 func load_checkpoint():
 	SaveManager.load_checkpoint()
-
-func new_game():
-	SaveManager.start_new_game()

@@ -150,3 +150,17 @@ func apply_damage(n):
 	if hp <= 0:
 		if bluey:
 			GameMaster.game_over(1)
+
+
+func save():
+	var save_dict = {
+		"filename" : get_scene_file_path(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x,
+		"pos_y" : position.y,
+		"pos_z" : position.z,
+		
+		"hp" : hp,
+		"bluey" : bluey
+	}
+	return save_dict

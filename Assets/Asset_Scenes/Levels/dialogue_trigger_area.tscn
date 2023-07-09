@@ -4,7 +4,9 @@
 resource_name = "DialogueTriggerArea"
 script/source = "extends Area3D
 
-@export var Speaker_name := \"Billy\"
+@export var can_retrigger := false
+
+@export var speaker_name := \"Billy\"
 
 @export var speaker_color := Color.AQUA
 
@@ -20,9 +22,30 @@ script/source = "extends Area3D
 func _on_body_entered(body):
 	print(\"entré!\")
 	if force_priority == false:
-		DialogueManager.queue_dialogue(dialogue_line_name, Speaker_name, speaker_color, speaker_priority)
+		DialogueManager.queue_dialogue(dialogue_line_name, speaker_name, speaker_color, speaker_priority)
 	else:
-		DialogueManager.try_force_dialogue(dialogue_line_name, Speaker_name, speaker_color, speaker_priority)
+		DialogueManager.try_force_dialogue(dialogue_line_name, speaker_name, speaker_color, speaker_priority)
+	
+	if !can_retrigger:
+		queue_free()
+
+func save():
+	var save_dict = {
+		\"filename\" : get_scene_file_path(),
+		\"parent\" : get_parent().get_path(),
+		\"pos_x\" : position.x,
+		\"pos_y\" : position.y,
+		\"pos_z\" : position.z,
+		
+		\"can_retrigger\" : can_retrigger,
+		\"dialogue_line_name\" : dialogue_line_name,
+		\"force_priority\" : force_priority,
+		\"speaker_color\" : speaker_color,
+		\"speaker_name\" : speaker_name,
+		\"speaker_priority\" : speaker_priority
+		
+	}
+	return save_dict
 "
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vd7bb"]

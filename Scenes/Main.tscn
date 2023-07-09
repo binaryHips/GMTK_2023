@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc83dlvxtabgu"]
+
+[ext_resource type="PackedScene" uid="uid://3a1go5l7py1x" path="res://Scenes/UI/Main_menue.tscn" id="2_7j5k4"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_u0cnj"]
+radius = 2.474
+height = 2.974
+
+[node name="root" type="Node3D"]
+
+[node name="menue_cam" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="menue_cam"]
+mesh = SubResource("SphereMesh_u0cnj")
+skeleton = NodePath("../..")
+
+[node name="Camera3D" type="Camera3D" parent="menue_cam"]
+transform = Transform3D(0.880913, -0.0222808, 0.472754, -0.20583, 0.881444, 0.425078, -0.426177, -0.471763, 0.771889, 5.29458, 5.38185, 9.69199)
+
+[node name="Control" type="Control" parent="menue_cam"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Main_menue" parent="menue_cam/Control" instance=ExtResource("2_7j5k4")]
+layout_mode = 1

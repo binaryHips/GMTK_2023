@@ -10,6 +10,7 @@ var pause_menue:Control
 var game_paused := false
 var game_lost := false
 
+
 func game_over(cause:int = 0):
 	game_lost = true
 	get_tree().paused = true
@@ -18,6 +19,9 @@ func game_over(cause:int = 0):
 func game_won():
 	pass
 	
+
+func _process(delta):
+	pass
 
 
 func toggle_pause(state:bool):
@@ -34,6 +38,7 @@ func toggle_pause(state:bool):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		get_tree().paused = true
 		game_paused = true
+
 
 
 

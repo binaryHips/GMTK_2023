@@ -1,19 +1,136 @@
-[gd_scene load_steps=4 format=3 uid="uid://jbjcevw7m6oc"]
+[gd_scene load_steps=10 format=3 uid="uid://jbjcevw7m6oc"]
 
 [ext_resource type="Script" path="res://Scripts/Game/cigars.gd" id="1_kremq"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_07wvd"]
-size = Vector3(0.4, 0.2, 0.6)
+[ext_resource type="PackedScene" uid="uid://dtblr5jshjqbx" path="res://Assets/3D/Meshes/Gameplay/Cigares/Cigare_Boite.fbx" id="2_q850w"]
+[ext_resource type="PackedScene" uid="uid://dh0fwhy61ommu" path="res://Assets/3D/Meshes/Gameplay/Cigares/Cigare_Couvercle.fbx" id="3_qicpr"]
+[ext_resource type="PackedScene" uid="uid://da86ul4ardq7d" path="res://Assets/3D/Meshes/Gameplay/Cigares/Cigare.fbx" id="4_xm2mf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kvxtl"]
-size = Vector3(0.41188, 0.19538, 0.596349)
+size = Vector3(0.386648, 0.166661, 0.0246734)
 
-[node name="cigarbox" type="RigidBody3D" groups=["Interactables"]]
-mass = 0.5
+[sub_resource type="BoxShape3D" id="BoxShape3D_5hskq"]
+size = Vector3(0.509737, 0.162051, 0.0208351)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6q4wm"]
+size = Vector3(0.554163, 0.016939, 0.384078)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d3qic"]
+size = Vector3(0.387146, 0.0334184, 0.534561)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hhwiu"]
+height = 0.315112
+radius = 0.0272069
+
+[node name="cigarbox" type="RigidBody3D" groups=["Interactables", "Persistant"]]
+transform = Transform3D(1.00001, 0, 0, 0, 1.00001, 0, 0, 0, 1.00001, 0, 0, 0)
+mass = 50.0
+continuous_cd = true
 script = ExtResource("1_kremq")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_07wvd")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00550319, 0, -0.26192)
 shape = SubResource("BoxShape3D_kvxtl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0120893, 0.00596529, 0.263888)
+shape = SubResource("BoxShape3D_kvxtl")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.19656, 0.00472113, -0.000640899)
+shape = SubResource("BoxShape3D_5hskq")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.176676, 0.00472113, -0.000640899)
+shape = SubResource("BoxShape3D_5hskq")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.00612471, -0.0579747, -0.000640899)
+shape = SubResource("BoxShape3D_6q4wm")
+
+[node name="Cigare2" parent="." instance=ExtResource("4_xm2mf")]
+transform = Transform3D(-0.998313, -0.0104562, -0.0571265, -0.0108158, 0.999923, 0.00598979, 0.0570595, 0.00659755, -0.998349, 0.0196887, 0.0254687, 0.19438)
+
+[node name="Cigare3" parent="." instance=ExtResource("4_xm2mf")]
+transform = Transform3D(-0.998313, -0.0104562, -0.0571265, -0.0108158, 0.999923, 0.00598979, 0.0570595, 0.00659755, -0.998349, 0.0196887, 0.0254687, 0.105168)
+
+[node name="Cigare4" parent="." instance=ExtResource("4_xm2mf")]
+transform = Transform3D(-0.998313, -0.0104562, -0.0571265, -0.0108158, 0.999923, 0.00598979, 0.0570595, 0.00659755, -0.998349, 0.0196887, 0.0254687, 0.0119632)
+
+[node name="Cigare5" parent="." instance=ExtResource("4_xm2mf")]
+transform = Transform3D(-0.998313, -0.0104562, -0.0571265, -0.0108158, 0.999923, 0.00598979, 0.0570595, 0.00659755, -0.998349, 0.0196887, 0.0662998, 0.0574012)
+
+[node name="Cigare6" parent="." instance=ExtResource("4_xm2mf")]
+transform = Transform3D(-0.998313, -0.0104562, -0.0571265, -0.0108158, 0.999923, 0.00598979, 0.0570595, 0.00659755, -0.998349, 0.0196887, 0.0662998, 0.149842)
+
+[node name="Cigare8" parent="." instance=ExtResource("4_xm2mf")]
+transform = Transform3D(-0.998313, -0.0104562, -0.0571265, -0.0108158, 0.999923, 0.00598979, 0.0570595, 0.00659755, -0.998349, 0.0196887, 0.0662998, 0.222369)
+
+[node name="Cigare7" parent="." instance=ExtResource("4_xm2mf")]
+transform = Transform3D(-0.942013, -0.0081798, -0.335478, -0.0108158, 0.999923, 0.00598979, 0.335403, 0.00927092, -0.94203, 0.0196887, 0.00165688, -0.0833496)
+
+[node name="Cigare_Boite" parent="." instance=ExtResource("2_q850w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0803956, 0)
+
+[node name="cap" type="RigidBody3D" parent="."]
+transform = Transform3D(0.831944, 0, 0.554859, 0, 1, 0, -0.554859, 0, 0.831944, 0.0417221, 0.137715, 0.107344)
+collision_layer = 0
+continuous_cd = true
+
+[node name="Cigare_Couvercle" parent="cap" instance=ExtResource("3_qicpr")]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.0780586, -0.12075, -0.00323839)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cap"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.0686029, 0.0618531, 9.03457e-05)
+shape = SubResource("BoxShape3D_d3qic")
+
+[node name="cigar" type="RigidBody3D" parent="."]
+transform = Transform3D(0.57289, 0, 0.819632, 0, 1, 0, -0.819632, 0, 0.57289, -0.0207267, 0.323338, -0.00691512)
+collision_layer = 0
+mass = 50.0
+continuous_cd = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cigar"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 5.32907e-15, 0, 1, 0.0577771, 0.0639537, 0.0258122)
+shape = SubResource("CylinderShape3D_hhwiu")
+
+[node name="Cigare" parent="cigar" instance=ExtResource("4_xm2mf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0578919, 0.0656425, 0.0298935)
+
+[node name="cigar2" type="RigidBody3D" parent="."]
+transform = Transform3D(0.87989, -0.464007, 0.102429, 0.460895, 0.885831, 0.0536535, -0.115631, 0, 0.993292, 0.023303, 0.356044, -0.203117)
+collision_layer = 0
+mass = 50.0
+continuous_cd = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cigar2"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 5.32907e-15, 0, 1, 0.0577771, 0.0639537, 0.0258122)
+shape = SubResource("CylinderShape3D_hhwiu")
+
+[node name="Cigare" parent="cigar2" instance=ExtResource("4_xm2mf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0578919, 0.0656425, 0.0298935)
+
+[node name="cigar3" type="RigidBody3D" parent="."]
+transform = Transform3D(0.987091, -0.111573, 0.114909, 0.110825, 0.993756, 0.0129013, -0.115631, 6.75707e-09, 0.993292, -0.0361356, 0.356044, 0.114638)
+collision_layer = 0
+mass = 50.0
+continuous_cd = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cigar3"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 5.32907e-15, 0, 1, 0.0577771, 0.0639537, 0.0258122)
+shape = SubResource("CylinderShape3D_hhwiu")
+
+[node name="Cigare" parent="cigar3" instance=ExtResource("4_xm2mf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0578919, 0.0656425, 0.0298935)
+
+[node name="cigar4" type="RigidBody3D" parent="."]
+transform = Transform3D(0.0785059, -0.0216942, 0.996678, 0.110825, 0.993756, 0.0129013, -0.990735, 0.109444, 0.0804199, 0.0970469, 0.30275, 0.114638)
+collision_layer = 0
+mass = 2.0
+continuous_cd = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cigar4"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 5.32907e-15, 0, 1, 0.0577771, 0.0639537, 0.0258122)
+shape = SubResource("CylinderShape3D_hhwiu")
+
+[node name="Cigare" parent="cigar4" instance=ExtResource("4_xm2mf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0578919, 0.0656425, 0.0298935)

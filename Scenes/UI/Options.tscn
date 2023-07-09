@@ -1,0 +1,160 @@
+[gd_scene load_steps=5 format=3 uid="uid://brtf4jdiq7kh1"]
+
+[ext_resource type="Script" path="res://Scripts/UI/Options.gd" id="1_n6s02"]
+[ext_resource type="Script" path="res://Scenes/UI/Inputs.gd" id="2_tg01g"]
+[ext_resource type="Shader" path="res://Assets/UI/Shaders/SS_Blur.gdshader" id="3_5t6mh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_77bnf"]
+shader = ExtResource("3_5t6mh")
+shader_parameter/amount = 1.354
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n6s02")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 295.0
+offset_bottom = 444.0
+bbcode_enabled = true
+text = "[center] Credits
+
+SkyToWind
+Goat_wenn
+Ohhnyx
+
+
+[/center]
+"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.986
+anchor_top = 0.113
+anchor_right = 0.986
+anchor_bottom = 0.655
+offset_left = -172.872
+offset_top = -0.224007
+offset_right = 0.128052
+offset_bottom = -0.439972
+
+[node name="Inputs" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+alignment = 2
+script = ExtResource("2_tg01g")
+
+[node name="Go_back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.872
+anchor_top = 0.905
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.0640001
+offset_bottom = 0.224
+theme_override_font_sizes/font_size = 36
+toggle_mode = true
+text = "Go back"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+material = SubResource("ShaderMaterial_77bnf")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="sens" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.536
+anchor_bottom = 0.5
+offset_left = -143.0
+offset_top = -8.0
+offset_right = 143.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 2.0
+step = 0.01
+value = 0.3
+
+[node name="sens_text" type="RichTextLabel" parent="sens"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -87.736
+offset_right = 88.264
+offset_bottom = 54.0
+grow_horizontal = 2
+bbcode_enabled = true
+text = "[center]mouse sensivity
+0.3
+[/center]"
+
+[node name="volume" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.35
+anchor_right = 0.536
+anchor_bottom = 0.35
+offset_left = -143.0
+offset_top = -8.0
+offset_right = 143.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 2.0
+step = 0.01
+value = 1.0
+
+[node name="volume_text" type="RichTextLabel" parent="volume"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -87.736
+offset_right = 88.264
+offset_bottom = 54.0
+grow_horizontal = 2
+bbcode_enabled = true
+text = "[center]volume
+1.0
+[/center]"
+
+[node name="reset_mapping" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.986
+anchor_top = 0.02
+anchor_right = 0.986
+anchor_bottom = 0.1
+offset_left = -172.872
+offset_right = 0.12793
+offset_bottom = -0.104
+grow_horizontal = 0
+text = "reset input mapping!"
+
+[connection signal="pressed" from="Go_back" to="." method="_on_go_back_pressed"]
+[connection signal="value_changed" from="sens" to="." method="_on_sens_value_changed"]
+[connection signal="value_changed" from="volume" to="." method="_on_volume_value_changed"]
+[connection signal="pressed" from="reset_mapping" to="ScrollContainer/Inputs" method="_on_reset_mapping_pressed"]
