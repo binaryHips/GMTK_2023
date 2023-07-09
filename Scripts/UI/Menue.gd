@@ -4,7 +4,7 @@ const OPTIONS = preload("res://Scenes/UI/Options.tscn")
 
 func _ready():
 	get_tree().paused = false
-	if not FileAccess.file_exists("user://savegame.json"):
+	if not FileAccess.file_exists("user://savegame.dat"):
 		$Reload.disabled = true
 	else:
 		$Reload.disabled = false
