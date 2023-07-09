@@ -1,21 +1,53 @@
-[gd_scene load_steps=3 format=3 uid="uid://bc83dlvxtabgu"]
+[gd_scene load_steps=5 format=3 uid="uid://bc83dlvxtabgu"]
 
 [ext_resource type="PackedScene" uid="uid://3a1go5l7py1x" path="res://Scenes/UI/Main_menue.tscn" id="2_7j5k4"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_u0cnj"]
-radius = 2.474
-height = 2.974
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5p5jl"]
+sky_top_color = Color(0.270588, 0.427451, 0.788235, 1)
+sky_horizon_color = Color(0.796078, 0.337255, 0.254902, 1)
+sky_curve = 0.191184
+sky_energy_multiplier = 1.5
+
+[sub_resource type="Sky" id="Sky_hk1f2"]
+sky_material = SubResource("ProceduralSkyMaterial_5p5jl")
+process_mode = 1
+radiance_size = 5
+
+[sub_resource type="Environment" id="Environment_nb61f"]
+background_mode = 2
+sky = SubResource("Sky_hk1f2")
+ambient_light_sky_contribution = 0.5
+glow_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.012
+adjustment_enabled = true
+adjustment_contrast = 1.1
+adjustment_saturation = 1.1
 
 [node name="root" type="Node3D"]
 
 [node name="menue_cam" type="Node3D" parent="."]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="menue_cam"]
-mesh = SubResource("SphereMesh_u0cnj")
-skeleton = NodePath("../..")
-
 [node name="Camera3D" type="Camera3D" parent="menue_cam"]
-transform = Transform3D(0.880913, -0.0222808, 0.472754, -0.20583, 0.881444, 0.425078, -0.426177, -0.471763, 0.771889, 5.29458, 5.38185, 9.69199)
+transform = Transform3D(0.258819, 0.554032, 0.79124, 0, 0.819152, -0.573576, -0.965926, 0.148453, 0.212012, -20, 20, 20)
+fov = 50.0
+near = 0.706
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="menue_cam"]
+transform = Transform3D(0.353357, 0.352584, -0.866501, 0.00451758, 0.925601, 0.378474, 0.935478, -0.137651, 0.325475, -38.5502, 3.07992, -26.7426)
+light_color = Color(1, 0.654902, 0.533333, 1)
+light_energy = 2.0
+light_angular_distance = 1.0
+shadow_enabled = true
+directional_shadow_split_1 = 0.8
+directional_shadow_split_2 = 0.81
+directional_shadow_split_3 = 0.82
+directional_shadow_fade_start = 1.0
+directional_shadow_max_distance = 110.0
+directional_shadow_pancake_size = 16.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="menue_cam"]
+environment = SubResource("Environment_nb61f")
 
 [node name="Control" type="Control" parent="menue_cam"]
 layout_mode = 3
