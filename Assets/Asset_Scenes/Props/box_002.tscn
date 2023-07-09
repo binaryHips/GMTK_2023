@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccjicd7ibqa5d"]
+
+[ext_resource type="PackedScene" uid="uid://bq05str3ndpw1" path="res://Assets/3D/Meshes/Environement/Boxs/Box_001.fbx" id="1_5ttct"]
+[ext_resource type="PackedScene" uid="uid://de8rsgknqctr0" path="res://Assets/3D/Meshes/Environement/Boxs/Box_002.fbx" id="2_1fgds"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uuwo8"]
+size = Vector3(2.0375, 2.02942, 1.97429)
+
+[node name="Box_001" instance=ExtResource("1_5ttct")]
+
+[node name="Box021" parent="RootNode" index="0"]
+visible = false
+
+[node name="Box_002" parent="RootNode" index="1" instance=ExtResource("2_1fgds")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00833464, 0, 0.0303292)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+shape = SubResource("BoxShape3D_uuwo8")

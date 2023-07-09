@@ -14,6 +14,7 @@ COLONEL_asks_pickup_cigarettes ; How look! they have cigarettes, so far away fro
 
 COLONEL_pickup_first_cigarettes ; Oh my god it actually healed you. Guess once we're done pacifying I'll start an import company. ; /Colonel/colonel_pickup_first_cigarettes
 
+COLONEL_dont_kill_them ; This enemy must not be killed ! (He spend a lot of money in my ... HUM HUM)
 
 
 COLONEL_gg_you_win ; Nice job kid! You killed their- wait... I just got a report telling me their boss was, in fact, that dumbass with the knife you killed when you arrived. This one was their janitor. Oh well, remember what I said about civilians? Anyway, your mission here is done. We're gonna send you an aircraft with the bill for your shock treatment. Don't even think about coming back without paying. Colonel, over. ; /Colonel/colonel_gg_you_win

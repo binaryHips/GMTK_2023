@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Grass.fbx-dbc5245967c2dc6e6eb8d31884f48194.sc
 
 [params]
 
-nodes/root_type="Node3D"
+nodes/root_type="MeshInstance3D"
 nodes/root_name="Scene Root"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
