@@ -38,6 +38,13 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "res://Assets/3D/Materials/Environement/Modules/M_Fence_Grid.tres"
 }
+},
+"nodes": {
+"PATH:RootNode/Plane331": {
+"generate/physics": true,
+"physics/shape_type": 3,
+"primitive/size": Vector3(4, 4, 0.2)
+}
 }
 }
 gltf/embedded_image_handling=1
