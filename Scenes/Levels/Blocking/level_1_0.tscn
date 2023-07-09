@@ -15,11 +15,13 @@
 [ext_resource type="PackedScene" uid="uid://bljdlpn8t70ek" path="res://Assets/3D/Meshes/Environement/Foliage/Grass/Grass.fbx" id="12_g7230"]
 [ext_resource type="PackedScene" uid="uid://ccjicd7ibqa5d" path="res://Assets/Asset_Scenes/Props/box_002.tscn" id="15_bgdng"]
 [ext_resource type="PackedScene" uid="uid://dmcvphic6b33w" path="res://Assets/Asset_Scenes/Levels/dialogue_trigger_area.tscn" id="15_jgyjt"]
+
 [ext_resource type="PackedScene" uid="uid://db55puhnei8us" path="res://Assets/3D/Meshes/Environement/Modules/Walls.fbx" id="16_jkapy"]
 [ext_resource type="PackedScene" uid="uid://cixpjlysnw25h" path="res://Assets/3D/Meshes/Environement/Modules/Walls_Beam.fbx" id="17_5weg1"]
 [ext_resource type="PackedScene" uid="uid://drls73edqqhkg" path="res://Assets/3D/Meshes/Environement/Modules/Walls_Pillar.fbx" id="18_kfcvf"]
 [ext_resource type="PackedScene" uid="uid://onxh3xag1m6x" path="res://Assets/3D/Meshes/Environement/Modules/Fence.fbx" id="19_2qfjb"]
 [ext_resource type="PackedScene" uid="uid://cr8kl3ir8kbtt" path="res://Assets/3D/Meshes/Environement/Modules/Fence_Pillard.fbx" id="20_pv4w7"]
+
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gvu4f"]
 sky_top_color = Color(0.321569, 0.447059, 0.666667, 1)

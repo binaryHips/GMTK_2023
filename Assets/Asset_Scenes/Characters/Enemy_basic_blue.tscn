@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2f102nouuywk"]
+
+[ext_resource type="PackedScene" uid="uid://cuwx7owkajs2m" path="res://Assets/3D/Meshes/Character/SWAT_Blue.glb" id="1_2cldw"]
+
+[node name="SWAT_Blue" instance=ExtResource("1_2cldw")]

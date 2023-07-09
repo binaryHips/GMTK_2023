@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-const BLUEY = preload("res://Scenes/Player/Enemy_1.tscn")
+const BLUEY = preload("res://Assets/Asset_Scenes/Characters/Enemy_basic_blue.tscn")
 
 
 var target
@@ -33,26 +33,30 @@ func _ready():
 	#good color
 	
 	if bluey:
-		pass #change color here!
-	
+		var blue_mesh = BLUEY.instantiate()
+		animation = blue_mesh.get_node("AnimationTree")
+		$SWAT.queue_free()
 	
 	#INITIAL STATE
 	change_state(IDLE)
-	
-	# PATROL TIMER START
-	$Timer.start()
-	
-	# RANDOMIZE PATROL POINTS
-	randomize()
 
 func updata_target_location():
 	navigationagent.target_position = GameMaster.player.position
 
-
+func attack():
+	
+	if $Timer.is_stopped():
+		$Timer.start()
+	
+	hp -= 20
+	
 func _physics_process(delta):
 	updata_target_location()
 	# RUNS ENEMY ANIMATION
 	animate()
+	
+	if position.distance_squared_to(target.position) < 3 :
+		attack()
 	
 	# HANDLES CHASING
 	if target and not dead:
@@ -118,12 +122,12 @@ func animate():
 	move_state = clamp(move_state, 0, 1)
 	
 	# ANIMATIONTREE BLEND
-	#animation["parameters/Blend2/blend_amount"]=move_state
-	#animation["parameters/Blend3/blend_amount"]=move_state
+	animation["parameters/Blend2/blend_amount"]=move_state
+	animation["parameters/Blend3/blend_amount"]=move_state
 	
 	# ANIMATIONTREE TRANSITION
-	#if animation.get("parameters/state/current_index") != anim:
-	#	animation["parameters/state/transition_request"]="state " + str(anim)
+	if animation.get("parameters/state/current_index") != anim:
+		animation["parameters/state/transition_request"]="state " + str(anim)
 
 
 
@@ -135,15 +139,14 @@ func _on_vision_cone_body_entered(body):
 	if body == GameMaster.player:
 		target = body
 		chasing = true
-		$Timer.stop()
 
 
 func _on_vision_cone_body_exited(body):
 	
 	if body == GameMaster.player:
+		pass
 		#target = null
 		#chasing = false
-		$Timer.start()
 
 
 #####
@@ -157,7 +160,8 @@ func apply_damage(n):
 	if hp <= 0:
 		if bluey:
 			GameMaster.game_over(1)
-
+	
+	dead = true
 
 func save():
 	var save_dict = {

@@ -1,4 +1,0 @@
-null
-{"ammo":20,"filename":"res://Scenes/Characters/weapon.tscn","parent":"/root/Node3D/Player/Camera/hand","pos_x":0,"pos_y":0,"pos_z":0}
-{"filename":"res://Assets/Asset_Scenes/Interactables/Door_basic.tscn","key_id":0,"locked":true,"parent":"/root/Node3D","pos_x":0,"pos_y":-0.02950239926577,"pos_z":-3.85355997085571}
-{"ammo":20,"filename":"res://Scenes/Characters/weapon.tscn","parent":"/root/Node3D/Enemy_1/hand","pos_x":0,"pos_y":0,"pos_z":0}
