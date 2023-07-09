@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://banu54y61v2hf"
-path.s3tc="res://.godot/imported/Walls_DefaultMaterial_BaseColor.png-caff308dcbaf2876ea945e5fab11f73f.s3tc.ctex"
+uid="uid://emt42ai2gtwb"
+path.s3tc="res://.godot/imported/Walls_Pillar_DefaultMaterial_BaseColor.png-18073f05ab3423022ea76351c278ef13.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/3D/Textures/Environement/Modules/Walls_DefaultMaterial_BaseColor.png"
-dest_files=["res://.godot/imported/Walls_DefaultMaterial_BaseColor.png-caff308dcbaf2876ea945e5fab11f73f.s3tc.ctex"]
+source_file="res://Assets/3D/Textures/Environement/Modules/Walls_Pillar_DefaultMaterial_BaseColor.png"
+dest_files=["res://.godot/imported/Walls_Pillar_DefaultMaterial_BaseColor.png-18073f05ab3423022ea76351c278ef13.s3tc.ctex"]
 
 [params]
 
