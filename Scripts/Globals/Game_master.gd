@@ -12,6 +12,7 @@ var game_lost := false
 
 
 func game_over(cause:int = 0):
+	print("gameover!!!")
 	game_lost = true
 	get_tree().paused = true
 	print("perdu")

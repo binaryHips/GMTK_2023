@@ -34,6 +34,8 @@ func _ready():
 	
 	if bluey:
 		var blue_mesh = BLUEY.instantiate()
+		add_child(blue_mesh)
+		blue_mesh.rotate_y(PI)
 		animation = blue_mesh.get_node("AnimationTree")
 		$SWAT.queue_free()
 	
@@ -48,9 +50,22 @@ func attack():
 	if $Timer.is_stopped():
 		$Timer.start()
 	
-	hp -= 20
+		apply_damage(20)
 	
 func _physics_process(delta):
+	
+	if bluey and not has_node("blue_mesh"):
+		print("ha")
+		var blue_mesh = BLUEY.instantiate()
+		blue_mesh.name = "blue_mesh"
+		add_child(blue_mesh)
+		blue_mesh.rotate_y(PI)
+		animation = blue_mesh.get_node("AnimationTree")
+		
+		if has_node("SWAT"):
+			$SWAT.queue_free()
+	
+	
 	updata_target_location()
 	# RUNS ENEMY ANIMATION
 	animate()
@@ -61,6 +76,7 @@ func _physics_process(delta):
 		if chasing:
 			if position.distance_squared_to(target.position) < 3 :
 				attack()
+				
 			var next_path_position = navigationagent.get_next_path_position()
 			var new_velocity = (next_path_position - global_position).normalized() * chase_speed
 			navigationagent.set_velocity(new_velocity)
@@ -135,7 +151,6 @@ func animate():
 
 # DETECTION AREA - PLAYER IS NEARBY
 func _on_vision_cone_body_entered(body):
-	print("jtévu")
 	if body == GameMaster.player:
 		target = body
 		chasing = true
@@ -156,12 +171,11 @@ func apply_damage(n):
 	
 	hp -= n
 	print("PV: ", hp)
-	
 	if hp <= 0:
 		if bluey:
 			GameMaster.game_over(1)
 	
-	dead = true
+		dead = true
 
 func save():
 	var save_dict = {
