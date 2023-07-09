@@ -4,6 +4,31 @@
 [ext_resource type="PackedScene" uid="uid://pr005c72xgxj" path="res://Assets/3D/Meshes/Gameplay/PlayerGun.fbx" id="2_1kdcg"]
 [ext_resource type="PackedScene" uid="uid://dq1alkveacmnu" path="res://Assets/3D/Meshes/Gameplay/MuzzleFlash.fbx" id="2_gkajq"]
 
+[sub_resource type="Animation" id="Animation_auhyg"]
+resource_name = "weapon_reload"
+length = 1.4
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.2, 1, 0, -0.3, 0.1, 1, 1, 0, -0.3, 0, 1.4, 1, 0, 0, 0)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.2, 1, -0.174, 0, 0, 0.985, 1, 1, -0.173956, 0, 0, 0.984753, 1.4, 1, 0, 0, 0, 1)
+tracks/2/type = "scale_3d"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("muzzle/MuzzleFlash")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array()
+
 [sub_resource type="Animation" id="Animation_akcvg"]
 resource_name = "weapon_shoot"
 length = 0.1075
@@ -38,31 +63,6 @@ tracks/2/keys = {
 "update": 0,
 "values": [0.0, 4.093, 0.0]
 }
-
-[sub_resource type="Animation" id="Animation_auhyg"]
-resource_name = "weapon_reload"
-length = 1.4
-tracks/0/type = "position_3d"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.2, 1, 0, -0.3, 0.1, 1, 1, 0, -0.3, 0, 1.4, 1, 0, 0, 0)
-tracks/1/type = "rotation_3d"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.2, 1, -0.174, 0, 0, 0.985, 1, 1, -0.173956, 0, 0, 0.984753, 1.4, 1, 0, 0, 0, 1)
-tracks/2/type = "scale_3d"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("muzzle/MuzzleFlash")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = PackedFloat32Array()
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8pdfp"]
 _data = {

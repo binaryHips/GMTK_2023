@@ -18,9 +18,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameMaster="*res://Scripts/Globals/Game_master.gd"
-SaveManager="*res://Scripts/Globals/Save_manager.gd"
 Settings="*res://Scripts/Globals/Settings.gd"
 DialogueManager="*res://Scripts/Globals/Dialogue_manager.gd"
+SaveManager="*res://Scripts/Globals/Save_manager.gd"
 
 [input]
 

@@ -1,6 +1,8 @@
 extends Node
 
 #attributes
+const GAMEOVER = preload("res://Scenes/UI/GAMEOVER.tscn")
+const WIN = preload("res://Scenes/UI/END.tscn")
 
 var player:CharacterBody3D
 
@@ -12,13 +14,18 @@ var game_lost := false
 
 
 func game_over(cause:int = 0):
-	print("gameover!!!")
 	game_lost = true
-	get_tree().paused = true
+	#get_tree().paused = true
 	print("perdu")
+	var GO = GAMEOVER.instantiate()
+	player.add_child(GO)
+	GO._ready()
+	
 
 func game_won():
-	pass
+	#get_tree().paused = true
+	print("gagné")
+	player.add_child(WIN.instantiate())
 	
 
 func _process(delta):
