@@ -1,6 +1,5 @@
 [gd_scene load_steps=31 format=3 uid="uid://c1gv8twl1ft85"]
 
-
 [ext_resource type="PackedScene" uid="uid://crq2xjn1pfqua" path="res://Scenes/Player/Player.tscn" id="1_jnyte"]
 [ext_resource type="PackedScene" uid="uid://est2r0xb5v75" path="res://Assets/3D/Meshes/Environement/Foliage/Trees/Tree_001.fbx" id="2_nb3br"]
 [ext_resource type="PackedScene" uid="uid://de8rsgknqctr0" path="res://Assets/3D/Meshes/Environement/Boxs/Box_002.fbx" id="3_5hq3j"]
@@ -16,7 +15,6 @@
 [ext_resource type="PackedScene" uid="uid://bljdlpn8t70ek" path="res://Assets/3D/Meshes/Environement/Foliage/Grass/Grass.fbx" id="12_g7230"]
 [ext_resource type="PackedScene" uid="uid://ccjicd7ibqa5d" path="res://Assets/Asset_Scenes/Props/box_002.tscn" id="15_bgdng"]
 [ext_resource type="PackedScene" uid="uid://dmcvphic6b33w" path="res://Assets/Asset_Scenes/Levels/dialogue_trigger_area.tscn" id="15_jgyjt"]
-
 [ext_resource type="PackedScene" uid="uid://db55puhnei8us" path="res://Assets/3D/Meshes/Environement/Modules/Walls.fbx" id="16_jkapy"]
 [ext_resource type="PackedScene" uid="uid://cixpjlysnw25h" path="res://Assets/3D/Meshes/Environement/Modules/Walls_Beam.fbx" id="17_5weg1"]
 [ext_resource type="PackedScene" uid="uid://drls73edqqhkg" path="res://Assets/3D/Meshes/Environement/Modules/Walls_Pillar.fbx" id="18_kfcvf"]
@@ -89,7 +87,6 @@ transform = Transform3D(0.731485, 0, -0.681858, 0, 1, 0, 0.681858, 0, 0.731485, 
 [node name="Rampe" type="Node" parent="."]
 
 [node name="Rampe" type="CSGBox3D" parent="Rampe"]
-
 transform = Transform3D(0.518057, 0.855346, 0, -0.855346, 0.518057, 0, 0, 0, 1, 41.9034, 0.537784, 5.22926)
 use_collision = true
 size = Vector3(0.374938, 3.08311, 6.08349)
@@ -1040,7 +1037,6 @@ size = Vector3(3.09273, 0.100375, 3.30502)
 [node name="Porte" type="Node" parent="."]
 
 [node name="Door" parent="Porte" instance=ExtResource("7_olr8l")]
-
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 44.5647, 1.49269, 5.80206)
 locked = false
 
