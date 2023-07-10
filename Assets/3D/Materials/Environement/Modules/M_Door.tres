@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://bfvhcmqy7ixt4"]
+
+[ext_resource type="Texture2D" uid="uid://bt4vhr3wxtogr" path="res://Assets/3D/Textures/Environement/Modules/Door_DefaultMaterial_BaseColor.png" id="1_poncr"]
+[ext_resource type="Texture2D" uid="uid://cpt72jdveiuq6" path="res://Assets/3D/Textures/Environement/Modules/Door_DefaultMaterial_Normal.png" id="2_yoyi5"]
+[ext_resource type="Texture2D" uid="uid://dqpnvqr01pxog" path="res://Assets/3D/Textures/Environement/Modules/Door_DefaultMaterial_OcclusionRoughnessMetallic.png" id="3_qhv03"]
+
+[resource]
+albedo_texture = ExtResource("1_poncr")
+orm_texture = ExtResource("3_qhv03")
+normal_enabled = true
+normal_texture = ExtResource("2_yoyi5")

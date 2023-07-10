@@ -1,0 +1,220 @@
+[gd_scene load_steps=9 format=3 uid="uid://3a1go5l7py1x"]
+
+[ext_resource type="Script" path="res://Scripts/UI/Menue.gd" id="1_c2b27"]
+[ext_resource type="Shader" path="res://Assets/UI/Shaders/SS_Blur.gdshader" id="2_qq3io"]
+[ext_resource type="Texture2D" uid="uid://bxmdgetmejssc" path="res://Assets/2D/Images/TitreJeu.png" id="3_r40ie"]
+[ext_resource type="AudioStream" uid="uid://dbck8wwvnhl3l" path="res://Assets/Ressources/Sound/music/title.mp3" id="4_2ggf2"]
+
+[sub_resource type="Animation" id="Animation_uwpso"]
+resource_name = "screen_fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../fader:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 0.7001),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.0980392, 0.0980392, 0.0980392, 0), Color(0.0980392, 0.0980392, 0.0980392, 1), Color(0.0980392, 0.0980392, 0.0980392, 1), Color(0.0980392, 0.0980392, 0.0980392, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.7),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"load_checkpoint"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_7qx2t"]
+resource_name = "screen_fade_new_game"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../fader:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.0980392, 0.0980392, 0.0980392, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.8),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"new_game"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uvb8y"]
+_data = {
+"screen_fade": SubResource("Animation_uwpso"),
+"screen_fade_new_game": SubResource("Animation_7qx2t")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u51hh"]
+shader = ExtResource("2_qq3io")
+shader_parameter/amount = 1.354
+
+[node name="Main_menue" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_c2b27")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Reload")
+libraries = {
+"": SubResource("AnimationLibrary_uvb8y")
+}
+
+[node name="Resume" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.2
+anchor_right = 0.6
+anchor_bottom = 0.3
+offset_left = -18.3
+offset_top = 69.4
+offset_right = 19.3
+offset_bottom = 82.6
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "New game"
+
+[node name="Reload" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.4
+anchor_right = 0.6
+anchor_bottom = 0.5
+offset_left = -1.80002
+offset_top = 45.8
+offset_right = 2.79999
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "Continue"
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.6
+anchor_right = 0.6
+anchor_bottom = 0.7
+offset_left = -1.80002
+offset_top = 19.2
+offset_right = 2.79999
+offset_bottom = 32.4
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "Options"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.8
+anchor_right = 0.6
+anchor_bottom = 0.9
+offset_left = -1.80002
+offset_top = -6.80002
+offset_right = 2.79999
+offset_bottom = 6.39999
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 51
+text = "Quit"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+material = SubResource("ShaderMaterial_u51hh")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.072
+anchor_right = 0.5
+anchor_bottom = 0.072
+offset_left = -325.0
+offset_top = 0.344002
+offset_right = 325.0
+offset_bottom = 134.344
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 46
+bbcode_enabled = true
+text = "[center] OPERATION
+REVERSISTAN"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.213
+offset_left = -0.200005
+offset_top = 0.199997
+offset_right = 0.200073
+offset_bottom = 37.976
+mouse_filter = 2
+texture = ExtResource("3_r40ie")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="fader" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.319946
+offset_bottom = -0.176025
+mouse_filter = 2
+color = Color(0.0980392, 0.0980392, 0.0980392, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_2ggf2")
+volume_db = -7.051
+autoplay = true
+
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Reload" to="." method="_on_reload_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

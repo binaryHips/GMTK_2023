@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwnf10rwbeapf"]
+
+[ext_resource type="Script" path="res://Scripts/Game/Lock.gd" id="1_penr6"]
+[ext_resource type="PackedScene" uid="uid://dg14tp0ioy0sj" path="res://Assets/3D/Meshes/Gameplay/Lock.fbx" id="2_gu5yw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4tf7h"]
+size = Vector3(0.41188, 0.19538, 0.596349)
+
+[node name="Lock" type="RigidBody3D" groups=["Interactables"]]
+script = ExtResource("1_penr6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_4tf7h")
+
+[node name="Lock" parent="." instance=ExtResource("2_gu5yw")]
+transform = Transform3D(2.98038, 0, 0, 0, -0.00775074, 2.98037, 0, -2.98037, -0.00775074, 0.0078014, -0.00690155, 0.103283)

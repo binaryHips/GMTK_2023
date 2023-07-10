@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://de2mb6dviknqk"]
+
+[sub_resource type="GDScript" id="GDScript_423i4"]
+resource_name = "checkpoint"
+script/source = "extends Area3D
+
+@export var can_retrigger := false
+
+func _on_body_entered(body):
+	print(\"sauvé!\")
+	
+
+	SaveManager.save_checkpoint(self)
+	
+	#await get_tree().create_timer(2).timeout #wait for file write
+	if !can_retrigger:
+		queue_free()
+
+func save():
+	var save_dict = {
+		\"filename\" : get_scene_file_path(),
+		\"parent\" : get_parent().get_path(),
+		\"pos_x\" : position.x,
+		\"pos_y\" : position.y,
+		\"pos_z\" : position.z,
+		
+		\"can_retrigger\" : can_retrigger,
+		
+	}
+	return save_dict
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e20wj"]
+size = Vector3(4, 4, 4)
+
+[node name="Checkpoint" type="Area3D" groups=["Persistant"]]
+collision_layer = 8
+collision_mask = 8
+script = SubResource("GDScript_423i4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_e20wj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

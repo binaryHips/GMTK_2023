@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://4tbkh01g3x6r"]
+
+[ext_resource type="Script" path="res://Scripts/NPCs/Enemy_1.gd" id="1_a8iod"]
+[ext_resource type="PackedScene" uid="uid://c2vgamxlo4ylp" path="res://Assets/Asset_Scenes/Characters/Enemy_basic.tscn" id="2_e04gs"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k17um"]
+radius = 0.612156
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_scclt"]
+size = Vector3(10, 2, 10)
+
+[node name="enemy" type="CharacterBody3D" groups=["Alive", "Persistant"]]
+collision_layer = 9
+script = ExtResource("1_a8iod")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_k17um")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="SWAT" parent="." instance=ExtResource("2_e04gs")]
+transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 0, 0, 0)
+
+[node name="vision_cone" type="Area3D" parent="."]
+transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="vision_cone"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 0, 1, 6.28072)
+shape = SubResource("BoxShape3D_scclt")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.138
+one_shot = true
+
+[connection signal="body_entered" from="vision_cone" to="." method="_on_vision_cone_body_entered"]
+[connection signal="body_exited" from="vision_cone" to="." method="_on_vision_cone_body_exited"]

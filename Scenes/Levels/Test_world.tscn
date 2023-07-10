@@ -1,0 +1,67 @@
+[gd_scene load_steps=12 format=3 uid="uid://b0brw1u5h2pvf"]
+
+[ext_resource type="PackedScene" uid="uid://crq2xjn1pfqua" path="res://Scenes/Player/Player.tscn" id="1_5blo6"]
+[ext_resource type="PackedScene" uid="uid://dmcvphic6b33w" path="res://Assets/Asset_Scenes/Levels/dialogue_trigger_area.tscn" id="1_hddrw"]
+[ext_resource type="PackedScene" uid="uid://de2mb6dviknqk" path="res://Assets/Asset_Scenes/Levels/CheckpointArea.tscn" id="2_s81a1"]
+[ext_resource type="PackedScene" uid="uid://c1exy8ydgrli" path="res://Scenes/Characters/grenade.tscn" id="3_3fpev"]
+[ext_resource type="PackedScene" uid="uid://gif5k0ycyjty" path="res://Assets/Asset_Scenes/Interactables/Door_basic.tscn" id="3_bb5a2"]
+[ext_resource type="PackedScene" uid="uid://jbjcevw7m6oc" path="res://Assets/Asset_Scenes/Interactables/cigars.tscn" id="4_l4053"]
+[ext_resource type="PackedScene" uid="uid://cwnf10rwbeapf" path="res://Assets/Asset_Scenes/Interactables/Lock.tscn" id="5_umrvy"]
+[ext_resource type="PackedScene" uid="uid://rj818n25phgr" path="res://Scenes/Player/Enemy_1.tscn" id="7_55as5"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hj7ca"]
+sky_top_color = Color(0.219608, 0.690196, 1, 1)
+sky_horizon_color = Color(0.639216, 0.858824, 0.878431, 1)
+
+[sub_resource type="Sky" id="Sky_g0ddr"]
+sky_material = SubResource("ProceduralSkyMaterial_hj7ca")
+
+[sub_resource type="Environment" id="Environment_kpapw"]
+background_mode = 2
+sky = SubResource("Sky_g0ddr")
+glow_enabled = true
+glow_bloom = 0.55
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.369935, 0)
+use_collision = true
+size = Vector3(24.5121, 0.027, 24.6863)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.11576, -0.00464821, 0.571642)
+use_collision = true
+size = Vector3(4.31013, 1.28548, 3.89957)
+
+[node name="DialogueTriggerArea" parent="CSGBox3D2" instance=ExtResource("1_hddrw")]
+transform = Transform3D(2.07, 0, 0, 0, 2.07, 0, 0, 0, 2.07, -0.126695, 0.580595, 0.121868)
+can_retrigger = true
+dialogue_line_name = "COLONEL_greetings"
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.03974, -0.00464821, -8.36985)
+use_collision = true
+size = Vector3(4.31013, 1.28548, 3.89957)
+
+[node name="Checkpoint" parent="CSGBox3D3" instance=ExtResource("2_s81a1")]
+
+[node name="Player" parent="." instance=ExtResource("1_5blo6")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_kpapw")
+
+[node name="Door" parent="." instance=ExtResource("3_bb5a2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0295024, -3.85356)
+
+[node name="cigarbox" parent="." instance=ExtResource("4_l4053")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, 0)
+
+[node name="Lock" parent="." instance=ExtResource("5_umrvy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.62009, 0.365146, 0)
+
+[node name="grenade" parent="." instance=ExtResource("3_3fpev")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.50963, 3.47552)
+
+[node name="Enemy_1" parent="." instance=ExtResource("7_55as5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7)

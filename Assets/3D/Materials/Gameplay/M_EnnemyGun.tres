@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://b5p4bb4ypp4du"]
+
+[ext_resource type="Texture2D" uid="uid://c4bsvlaw0mkuf" path="res://Assets/3D/Textures/Gameplay/T_EnnemyGun_D.png" id="1_yik1x"]
+[ext_resource type="Texture2D" uid="uid://bicysbtaccdvp" path="res://Assets/3D/Textures/Gameplay/T_EnnemyGun_N.png" id="2_3bkyg"]
+[ext_resource type="Texture2D" uid="uid://ci37phmyquymy" path="res://Assets/3D/Textures/Gameplay/T_EnnemyGun_ORM.png" id="3_qu2fy"]
+
+[resource]
+albedo_texture = ExtResource("1_yik1x")
+orm_texture = ExtResource("3_qu2fy")
+normal_enabled = true
+normal_texture = ExtResource("2_3bkyg")
